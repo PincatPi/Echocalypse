@@ -191,17 +191,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 154940130}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!1 &1856059
 GameObject:
   m_ObjectHideFlags: 0
@@ -383,17 +372,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 949400451}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!1 &8381616
 GameObject:
   m_ObjectHideFlags: 0
@@ -481,17 +459,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 2010771118}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!4 &9448774 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7601146994807745369, guid: e6be662361bf53c4797cb51c922e9024,
@@ -599,17 +566,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 1045019181}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!1 &11802121 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7856256664811409586, guid: 05f1611eef196ff44b32ee4be95b5656,
@@ -634,17 +590,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 1767334234}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!4 &12085870 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -744066906599388375, guid: 5662b9ef69cd0944bb5588fe94b42d53,
@@ -699,17 +644,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 894616674}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!4 &13818580 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6926116047216690041, guid: 5662b9ef69cd0944bb5588fe94b42d53,
@@ -778,17 +712,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 537894408}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!4 &15197963 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8801000132830286883, guid: 5662b9ef69cd0944bb5588fe94b42d53,
@@ -1004,17 +927,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 146465634}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!1 &28192184 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -3665294736329961534, guid: 05f1611eef196ff44b32ee4be95b5656,
@@ -1039,17 +951,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 1569892055}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!1 &29778766
 GameObject:
   m_ObjectHideFlags: 0
@@ -1150,17 +1051,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 135994951}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!4 &32078349 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8763267914455783973, guid: e6be662361bf53c4797cb51c922e9024,
@@ -1329,17 +1219,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 577482861}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!1 &39774547 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -1712948158642328839, guid: 05f1611eef196ff44b32ee4be95b5656,
@@ -1364,17 +1243,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 203214001}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!4 &40076750 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -1021128634945909389, guid: e6be662361bf53c4797cb51c922e9024,
@@ -1649,17 +1517,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 8150819}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!4 &52680583 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -2104352552181790293, guid: 05f1611eef196ff44b32ee4be95b5656,
@@ -2554,17 +2411,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 121718327}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!4 &91214883 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -7938915435529136506, guid: 5662b9ef69cd0944bb5588fe94b42d53,
@@ -2642,7 +2488,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 92345746}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.0662273, y: -0.00000002880809, z: 0.0000000019120798, w: 0.9978046}
+  m_LocalRotation: {x: 0.06622727, y: 9.437845e-10, z: -6.264188e-11, w: 0.9978046}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2769,17 +2615,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 1522904352}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!4 &97869559 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -461416891099419439, guid: e6be662361bf53c4797cb51c922e9024,
@@ -3277,16 +3112,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 80614337}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders: []
-  debug: 1
-  threshold: 0.01
 --- !u!1 &119202566
 GameObject:
   m_ObjectHideFlags: 0
@@ -4171,17 +3996,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 845688914}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!1 &119868170
 GameObject:
   m_ObjectHideFlags: 0
@@ -4250,17 +4064,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 529165158}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!4 &122892936 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -1008376805210107805, guid: e6be662361bf53c4797cb51c922e9024,
@@ -4303,17 +4106,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 857045993}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!4 &124474449 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8646370280345338163, guid: e6be662361bf53c4797cb51c922e9024,
@@ -4350,17 +4142,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 939540593}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!4 &125451770 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -6254428029758998510, guid: 5662b9ef69cd0944bb5588fe94b42d53,
@@ -4582,17 +4363,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 8591389}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!1 &130565547 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -891688903397380829, guid: 05f1611eef196ff44b32ee4be95b5656,
@@ -4617,17 +4387,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 1303715262}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!4 &132333812 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6560557700690265021, guid: e6be662361bf53c4797cb51c922e9024,
@@ -4658,17 +4417,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 90987746}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!1 &134459781 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 840789878172723412, guid: 05f1611eef196ff44b32ee4be95b5656,
@@ -4693,17 +4441,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 1757887156}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!1 &135135086
 GameObject:
   m_ObjectHideFlags: 0
@@ -4766,17 +4503,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 1149666545}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!1 &136263003 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -3637224302654494629, guid: 05f1611eef196ff44b32ee4be95b5656,
@@ -4801,17 +4527,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 1619347031}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!4 &136461566 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8697294837991512692, guid: e6be662361bf53c4797cb51c922e9024,
@@ -5024,17 +4739,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 1712462824}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!1 &143657006 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1710022318128655942, guid: 2e2060c2dcf9ee2498c90f0a9fe6848c,
@@ -5241,17 +4945,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 1669923733}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!1 &155083484 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3876233391724051799, guid: 05f1611eef196ff44b32ee4be95b5656,
@@ -5276,17 +4969,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 39774548}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!4 &155246161 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1231405268569961009, guid: 5662b9ef69cd0944bb5588fe94b42d53,
@@ -5323,17 +5005,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 11802122}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!4 &156751013 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1086069430606011517, guid: 2e2060c2dcf9ee2498c90f0a9fe6848c,
@@ -5364,17 +5035,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 13744778}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!4 &157041197 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8472511564396640634, guid: e6be662361bf53c4797cb51c922e9024,
@@ -5423,17 +5083,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 723466140}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!4 &163684216 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1405389372785514372, guid: e6be662361bf53c4797cb51c922e9024,
@@ -5624,17 +5273,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 2091423415}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!4 &177957875 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -3092451967041164917, guid: 5662b9ef69cd0944bb5588fe94b42d53,
@@ -6478,17 +6116,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 419783961}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!1 &211902395 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -7396839632648357521, guid: 05f1611eef196ff44b32ee4be95b5656,
@@ -6513,17 +6140,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 1407590661}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!1 &214165894
 GameObject:
   m_ObjectHideFlags: 0
@@ -6746,17 +6362,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 621864446}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!1 &225936372
 GameObject:
   m_ObjectHideFlags: 0
@@ -6968,17 +6573,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 880932652}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!4 &240785991 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2442742704270987240, guid: e6be662361bf53c4797cb51c922e9024,
@@ -7053,17 +6647,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 980194853}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!4 &246060751 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8658188347117611640, guid: 5662b9ef69cd0944bb5588fe94b42d53,
@@ -7094,17 +6677,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 1015722011}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!4 &250307775 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4579115867966405815, guid: 5662b9ef69cd0944bb5588fe94b42d53,
@@ -7326,17 +6898,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 1659492525}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!4 &258745346 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -3503732834303469665, guid: e6be662361bf53c4797cb51c922e9024,
@@ -7493,17 +7054,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 949532744}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!4 &264844543 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7903412640768922721, guid: e6be662361bf53c4797cb51c922e9024,
@@ -7540,17 +7090,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 420335339}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!4 &268166310 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -2120172198644632256, guid: 5662b9ef69cd0944bb5588fe94b42d53,
@@ -7581,17 +7120,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 1412989206}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!4 &268369805 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -1604712571767050822, guid: e6be662361bf53c4797cb51c922e9024,
@@ -7703,17 +7231,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 30967399}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!4 &276612310 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4147379076103667604, guid: e6be662361bf53c4797cb51c922e9024,
@@ -8047,17 +7564,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 1878620759}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!114 &296621095 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5230826355494726490, guid: 2e2060c2dcf9ee2498c90f0a9fe6848c,
@@ -8174,17 +7680,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 122803057}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!4 &300780092 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -7059293300802131274, guid: e6be662361bf53c4797cb51c922e9024,
@@ -8246,17 +7741,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 1020657257}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!1001 &304811469
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8452,17 +7936,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 123319120}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!1 &308420365 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3813750890430276667, guid: 05f1611eef196ff44b32ee4be95b5656,
@@ -8487,17 +7960,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 956785931}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!4 &310987893 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7481807833908327724, guid: e6be662361bf53c4797cb51c922e9024,
@@ -8652,17 +8114,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 2071599772}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!4 &323479879 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -6666958312839851437, guid: 5662b9ef69cd0944bb5588fe94b42d53,
@@ -8823,7 +8274,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.08045479, y: 3.5729104e-17, z: 4.426496e-16, w: 0.9967583}
+  m_LocalRotation: {x: 0.0804548, y: 3.5729107e-17, z: 4.426496e-16, w: 0.9967583}
   m_LocalPosition: {x: -1.69, y: 2.526, z: -2.796}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -8932,17 +8383,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 343665989}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!4 &334908873 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3658598265523552412, guid: e6be662361bf53c4797cb51c922e9024,
@@ -9138,17 +8578,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 1688004336}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!1 &344114917
 GameObject:
   m_ObjectHideFlags: 0
@@ -9352,17 +8781,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 1536194650}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!1 &362786862
 GameObject:
   m_ObjectHideFlags: 0
@@ -10881,17 +10299,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 886129036}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!1 &386425252
 GameObject:
   m_ObjectHideFlags: 0
@@ -10966,17 +10373,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 750551137}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!4 &389862885 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 341992941599985081, guid: e6be662361bf53c4797cb51c922e9024,
@@ -14499,17 +13895,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 255682027}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!1 &419783960 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6497907508565696246, guid: 05f1611eef196ff44b32ee4be95b5656,
@@ -14534,17 +13919,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 1220992018}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!1 &419912301
 GameObject:
   m_ObjectHideFlags: 0
@@ -14601,17 +13975,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 1554857418}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!1 &421519448
 GameObject:
   m_ObjectHideFlags: 0
@@ -15038,17 +14401,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 485171169}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!4 &439622337 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2856611929680825195, guid: e6be662361bf53c4797cb51c922e9024,
@@ -15097,17 +14449,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 1365577817}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!4 &441788140 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -1616053936637335534, guid: 5662b9ef69cd0944bb5588fe94b42d53,
@@ -15156,17 +14497,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 194768160}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!4 &451502481 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8986697227236489208, guid: e6be662361bf53c4797cb51c922e9024,
@@ -15203,17 +14533,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 1918223355}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!1 &453531118
 GameObject:
   m_ObjectHideFlags: 0
@@ -15654,17 +14973,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 1975318511}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!4 &464367373 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 324220211229443210, guid: e6be662361bf53c4797cb51c922e9024,
@@ -16510,17 +15818,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 560101980}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!4 &472327428 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8951792676745590957, guid: 5662b9ef69cd0944bb5588fe94b42d53,
@@ -16665,17 +15962,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 264655340}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!1 &477382460 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -8511928020577668815, guid: 05f1611eef196ff44b32ee4be95b5656,
@@ -16700,17 +15986,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 211902396}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!4 &478443962 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -3887028907572949137, guid: e6be662361bf53c4797cb51c922e9024,
@@ -16791,17 +16066,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 2120740650}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!1 &485198272
 GameObject:
   m_ObjectHideFlags: 0
@@ -17553,17 +16817,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 294561452}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!4 &515493135 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 858581837453335623, guid: e6be662361bf53c4797cb51c922e9024,
@@ -17638,17 +16891,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 1653751993}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!1 &520267996 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -3745340614786302199, guid: 05f1611eef196ff44b32ee4be95b5656,
@@ -17673,17 +16915,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 1000194519}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!4 &520399748 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8802166527076830061, guid: e6be662361bf53c4797cb51c922e9024,
@@ -17848,17 +17079,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 664688062}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!4 &529469012 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8502287109482676564, guid: 5662b9ef69cd0944bb5588fe94b42d53,
@@ -17933,17 +17153,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 542933233}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!4 &534347156 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -482080497212928239, guid: 5662b9ef69cd0944bb5588fe94b42d53,
@@ -18006,17 +17215,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 1974038464}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!4 &535918309 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5054761441952171961, guid: e6be662361bf53c4797cb51c922e9024,
@@ -18097,17 +17295,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 699053819}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!4 &537929328 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -2377352012044269997, guid: e6be662361bf53c4797cb51c922e9024,
@@ -18246,17 +17433,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 714250551}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!4 &542952634 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -5312749549392559962, guid: e6be662361bf53c4797cb51c922e9024,
@@ -18658,17 +17834,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 1704821659}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!4 &558871497 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -5063012061319338087, guid: e6be662361bf53c4797cb51c922e9024,
@@ -18699,17 +17864,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 224308060}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!1 &560101979 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3852100686173959655, guid: 05f1611eef196ff44b32ee4be95b5656,
@@ -18734,17 +17888,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 2124168963}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!4 &560652665 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6940156712178298890, guid: 5662b9ef69cd0944bb5588fe94b42d53,
@@ -19031,17 +18174,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 703916199}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!4 &578936632 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2776566913919453178, guid: e6be662361bf53c4797cb51c922e9024,
@@ -19096,17 +18228,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 1574152198}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!4 &583327094 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6305508466287908322, guid: e6be662361bf53c4797cb51c922e9024,
@@ -19137,17 +18258,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 868990517}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!4 &587076729 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8694176623373771309, guid: e6be662361bf53c4797cb51c922e9024,
@@ -19351,17 +18461,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 439473986}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!4 &608805038 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8571101096097457569, guid: e6be662361bf53c4797cb51c922e9024,
@@ -19529,17 +18628,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 257116454}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!1 &622513519
 GameObject:
   m_ObjectHideFlags: 0
@@ -19602,17 +18690,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 136263004}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!1 &623753831
 GameObject:
   m_ObjectHideFlags: 0
@@ -19897,17 +18974,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 1683865453}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!1 &627264205 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -7828280382497451992, guid: 05f1611eef196ff44b32ee4be95b5656,
@@ -19932,17 +18998,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 520267997}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!4 &628885742 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -979953147687842776, guid: e6be662361bf53c4797cb51c922e9024,
@@ -20093,17 +19148,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 1918263942}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!1 &637917827
 GameObject:
   m_ObjectHideFlags: 0
@@ -20243,17 +19287,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 1180602946}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!4 &641410310 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7558887321326162534, guid: e6be662361bf53c4797cb51c922e9024,
@@ -20499,17 +19532,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 130170043}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!1 &665908262
 GameObject:
   m_ObjectHideFlags: 0
@@ -20721,17 +19743,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 1789257792}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!4 &679473611 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 905530729209696146, guid: 5662b9ef69cd0944bb5588fe94b42d53,
@@ -21076,17 +20087,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 993732085}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!4 &701055009 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4955717575718125403, guid: 5662b9ef69cd0944bb5588fe94b42d53,
@@ -21155,17 +20155,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 1679212255}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!4 &704127572 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7720098708649353934, guid: 5662b9ef69cd0944bb5588fe94b42d53,
@@ -21346,17 +20335,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 2136237180}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!1 &715387906
 GameObject:
   m_ObjectHideFlags: 0
@@ -21610,17 +20588,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 1291051441}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!1 &724033637
 GameObject:
   m_ObjectHideFlags: 0
@@ -22244,17 +21211,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 754705782}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!1 &748277629
 GameObject:
   m_ObjectHideFlags: 3
@@ -22428,17 +21384,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 440387326}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!1 &751396885
 GameObject:
   m_ObjectHideFlags: 0
@@ -22513,17 +21458,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 1832509813}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!1 &757141199
 GameObject:
   m_ObjectHideFlags: 0
@@ -22592,17 +21526,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 1221211681}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!1 &761504273
 GameObject:
   m_ObjectHideFlags: 0
@@ -22659,17 +21582,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 156264484}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!4 &765831435 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 114491200215826217, guid: e6be662361bf53c4797cb51c922e9024,
@@ -22765,17 +21677,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 1517191249}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!4 &767573606 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -484444037552573092, guid: 05f1611eef196ff44b32ee4be95b5656,
@@ -22945,17 +21846,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 177436648}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!1 &778746539
 GameObject:
   m_ObjectHideFlags: 0
@@ -25152,17 +24042,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 1944661333}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!1 &805707211
 GameObject:
   m_ObjectHideFlags: 0
@@ -25651,7 +24530,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a38e39ada51aaba4db6d352ce218849e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isWindActive: 1
 --- !u!114 &811913022
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25664,290 +24542,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6514ba86f976d724ab63844a6015b2aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dynamicRatio: 0.7
-  stiffnessForce: 0.03
-  stiffnessCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0.0041656494
-      value: 0.9967041
-      inSlope: 2.2877975
-      outSlope: 2.2877975
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0.059874814
-    - serializedVersion: 3
-      time: 0.9083252
-      value: 0.0032997131
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  dragForce: 0.4
-  dragCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0.029167175
-      value: 1.0037651
-      inSlope: -0.96505755
-      outSlope: -0.96505755
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0.070093095
-    - serializedVersion: 3
-      time: 0.92083126
-      value: 0.28603545
-      inSlope: -4.2769876
-      outSlope: -4.2769876
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.07174683
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  springBones:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
 --- !u!114 &811913023
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26693,17 +25287,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 1623125761}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!4 &815638337 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 7566b4959573f5242824ddeaced1b129,
@@ -26817,17 +25400,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 1403599034}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!4 &819743455 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1531381623843267382, guid: e6be662361bf53c4797cb51c922e9024,
@@ -26945,17 +25517,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 155083485}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!1 &823764627
 GameObject:
   m_ObjectHideFlags: 0
@@ -27555,17 +26116,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 267916051}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!1 &846581364
 GameObject:
   m_ObjectHideFlags: 0
@@ -27634,17 +26184,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 477350086}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!4 &854766974 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6956758634538198304, guid: 5662b9ef69cd0944bb5588fe94b42d53,
@@ -27772,17 +26311,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 2102064247}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!4 &856120188 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3317169337206606581, guid: e6be662361bf53c4797cb51c922e9024,
@@ -27844,17 +26372,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 943215661}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!4 &857829436 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4123601984100775383, guid: 5662b9ef69cd0944bb5588fe94b42d53,
@@ -28085,17 +26602,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 777633272}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!1 &868990516 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -8264620714160864156, guid: 05f1611eef196ff44b32ee4be95b5656,
@@ -28120,17 +26626,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 819065671}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!4 &869395915 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -3893246987991666339, guid: 5662b9ef69cd0944bb5588fe94b42d53,
@@ -28279,17 +26774,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 24888878}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!1 &883358014
 GameObject:
   m_ObjectHideFlags: 0
@@ -28378,17 +26862,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 559824613}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!4 &886867073 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4922515823264387076, guid: e6be662361bf53c4797cb51c922e9024,
@@ -28843,17 +27316,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 766571198}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!1 &894510856
 GameObject:
   m_ObjectHideFlags: 0
@@ -28941,17 +27403,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 558732503}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!4 &896707152 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5796394764925632677, guid: e6be662361bf53c4797cb51c922e9024,
@@ -29504,17 +27955,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 1669728996}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!1 &927440785
 GameObject:
   m_ObjectHideFlags: 0
@@ -29635,17 +28075,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 2132995389}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!4 &930202596 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5082162957069502524, guid: 5662b9ef69cd0944bb5588fe94b42d53,
@@ -29783,23 +28212,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6d76b3ea5980214995220b11ee130f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
-  rotationSpeed: 5
-  health: 2000
-  defense: 20
-  attack: 100
-  detectionCenter: {fileID: 2099377713}
-  detectionRadius: 15
+  currentComboList: {fileID: 0}
+  multiplier: 1.2
+  hitCoolDown: 0.25
+  hitFXList:
+  - {fileID: 11400000, guid: f937dd40ba0a4e545bbc8e9929212aab, type: 2}
+  hitTransform: {fileID: 1944931766}
   playerLayer:
     serializedVersion: 2
     m_Bits: 256
-  obstacleLayer:
-    serializedVersion: 2
-    m_Bits: 64
-  targets:
-  - {fileID: 0}
   currentTarget: {fileID: 0}
-  detectAngle: 135
   attacker: {fileID: 0}
   patrolPoints: []
 --- !u!4 &935286414 stripped
@@ -29834,6 +28256,47 @@ CharacterController:
   m_SkinWidth: 0.05
   m_MinMoveDistance: 0
   m_Center: {x: 0, y: 0.85, z: -0.06}
+--- !u!114 &935286417
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 935286410}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68f67acd7230aeb42a53df3c55dde465, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  detectionCenter: {fileID: 2099377713}
+  detectionRadius: 15
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 256
+  obstacleLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  targets:
+  - {fileID: 0}
+  currentTarget: {fileID: 0}
+  detectAngle: 135
+--- !u!114 &935286418
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 935286410}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb0652ddbcc4f2941b50113c2a4b10e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 2
+  rotationSpeed: 2
+  health: 4093
+  defense: 0.2
+  attack: 1
 --- !u!4 &935402581 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -3915122272136039909, guid: 5662b9ef69cd0944bb5588fe94b42d53,
@@ -29920,17 +28383,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 586602600}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!1 &939746182
 GameObject:
   m_ObjectHideFlags: 0
@@ -30024,17 +28476,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 1268498536}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!1 &947877913
 GameObject:
   m_ObjectHideFlags: 0
@@ -30115,17 +28556,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 1041021908}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!1 &949532743 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8611738325775911020, guid: 05f1611eef196ff44b32ee4be95b5656,
@@ -30150,17 +28580,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 303535523}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!1 &951425040
 GameObject:
   m_ObjectHideFlags: 0
@@ -30336,17 +28755,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 2107121994}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!1 &956807199
 GameObject:
   m_ObjectHideFlags: 0
@@ -30471,17 +28879,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 268256107}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!1001 &965152041
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30599,17 +28996,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 1980505573}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!4 &965905769 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6496322890483196764, guid: e6be662361bf53c4797cb51c922e9024,
@@ -31008,17 +29394,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 163598032}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!1 &991872894
 GameObject:
   m_ObjectHideFlags: 0
@@ -31107,17 +29482,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 1745426516}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!1 &994625585
 GameObject:
   m_ObjectHideFlags: 0
@@ -31289,17 +29653,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 1670856526}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!4 &1000704763 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4233187006157390747, guid: e6be662361bf53c4797cb51c922e9024,
@@ -31511,17 +29864,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 308420366}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!1 &1007092199
 GameObject:
   m_ObjectHideFlags: 0
@@ -31793,17 +30135,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 2037596003}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!1 &1018426356
 GameObject:
   m_ObjectHideFlags: 0
@@ -31878,17 +30209,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 894453561}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!1 &1021213300
 GameObject:
   m_ObjectHideFlags: 0
@@ -32226,17 +30546,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 2128586638}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!4 &1042524900 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -2957046426910575768, guid: 5662b9ef69cd0944bb5588fe94b42d53,
@@ -32355,17 +30664,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 1848639505}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!1 &1045085827
 GameObject:
   m_ObjectHideFlags: 0
@@ -32644,17 +30942,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 97538757}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!1 &1054550049
 GameObject:
   m_ObjectHideFlags: 0
@@ -32711,17 +30998,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 1766837219}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!4 &1054831678 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -1809807979382515042, guid: e6be662361bf53c4797cb51c922e9024,
@@ -32973,17 +31249,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 26708694}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!4 &1065615514 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1825159233871028783, guid: e6be662361bf53c4797cb51c922e9024,
@@ -34193,17 +32458,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 133476663}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!1 &1100085199
 GameObject:
   m_ObjectHideFlags: 0
@@ -34703,17 +32957,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 519251831}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!4 &1122953552 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -5107633338155193102, guid: e6be662361bf53c4797cb51c922e9024,
@@ -34990,17 +33233,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 534156053}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!1 &1143200952
 GameObject:
   m_ObjectHideFlags: 0
@@ -35143,17 +33375,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 299894989}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!4 &1152195925 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3481238051826895022, guid: e6be662361bf53c4797cb51c922e9024,
@@ -35350,290 +33571,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6514ba86f976d724ab63844a6015b2aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dynamicRatio: 0.7
-  stiffnessForce: 0.03
-  stiffnessCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0.0041656494
-      value: 0.9967041
-      inSlope: 2.2877975
-      outSlope: 2.2877975
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0.059874814
-    - serializedVersion: 3
-      time: 0.9083252
-      value: 0.0032997131
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  dragForce: 0.4
-  dragCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0.029167175
-      value: 1.0037651
-      inSlope: -0.96505755
-      outSlope: -0.96505755
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0.070093095
-    - serializedVersion: 3
-      time: 0.92083126
-      value: 0.28603545
-      inSlope: -4.2769876
-      outSlope: -4.2769876
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.07174683
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  springBones:
-  - {fileID: 1427251409}
-  - {fileID: 1486197502}
-  - {fileID: 52196209}
-  - {fileID: 8150820}
-  - {fileID: 949400452}
-  - {fileID: 1041021909}
-  - {fileID: 2128586639}
-  - {fileID: 583305989}
-  - {fileID: 1574152199}
-  - {fileID: 1399642904}
-  - {fileID: 39679439}
-  - {fileID: 577482862}
-  - {fileID: 703916200}
-  - {fileID: 1679212256}
-  - {fileID: 2020286381}
-  - {fileID: 1608017705}
-  - {fileID: 2138841761}
-  - {fileID: 762561475}
-  - {fileID: 156264485}
-  - {fileID: 11802123}
-  - {fileID: 1767334235}
-  - {fileID: 1688733159}
-  - {fileID: 246475697}
-  - {fileID: 1747666018}
-  - {fileID: 990301395}
-  - {fileID: 163598033}
-  - {fileID: 723466141}
-  - {fileID: 1291051442}
-  - {fileID: 1099853635}
-  - {fileID: 133476664}
-  - {fileID: 90987747}
-  - {fileID: 1005566573}
-  - {fileID: 308420367}
-  - {fileID: 956785932}
-  - {fileID: 2107121995}
-  - {fileID: 1140673323}
-  - {fileID: 534156054}
-  - {fileID: 542933234}
-  - {fileID: 714250552}
-  - {fileID: 627264207}
-  - {fileID: 520267998}
-  - {fileID: 1000194520}
-  - {fileID: 1670856527}
-  - {fileID: 1909027421}
-  - {fileID: 362161598}
-  - {fileID: 1536194651}
-  - {fileID: 514953122}
-  - {fileID: 679265947}
-  - {fileID: 1789257793}
-  - {fileID: 1739391923}
-  - {fileID: 1157604997}
-  - {fileID: 156858460}
-  - {fileID: 13744779}
-  - {fileID: 894616675}
-  - {fileID: 558732504}
-  - {fileID: 608321182}
-  - {fileID: 439473987}
-  - {fileID: 485171170}
-  - {fileID: 2120740651}
-  - {fileID: 477382462}
-  - {fileID: 211902397}
-  - {fileID: 1407590662}
-  - {fileID: 2019770963}
-  - {fileID: 322540593}
-  - {fileID: 2071599773}
-  - {fileID: 1346643622}
-  - {fileID: 1264247}
-  - {fileID: 154940131}
-  - {fileID: 1669923734}
-  - {fileID: 626965290}
-  - {fileID: 1683865454}
-  - {fileID: 637304252}
-  - {fileID: 1918263943}
-  - {fileID: 1708238088}
-  - {fileID: 1347365587}
-  - {fileID: 1054684171}
-  - {fileID: 1766837220}
-  - {fileID: 1893252706}
-  - {fileID: 1423398248}
-  - {fileID: 295769582}
-  - {fileID: 1878620760}
-  - {fileID: 211771430}
-  - {fileID: 419783962}
-  - {fileID: 1220992019}
-  - {fileID: 1890744049}
-  - {fileID: 134459783}
-  - {fileID: 1757887157}
-  - {fileID: 1299621863}
-  - {fileID: 1655722654}
-  - {fileID: 641088969}
-  - {fileID: 1180602947}
-  - {fileID: 1755899969}
-  - {fileID: 1016011174}
-  - {fileID: 2037596004}
-  - {fileID: 447123398}
-  - {fileID: 868143354}
-  - {fileID: 777633273}
-  - {fileID: 177436649}
-  - {fileID: 2091423416}
-  - {fileID: 2095854280}
-  - {fileID: 142970233}
-  - {fileID: 1712462825}
-  - {fileID: 1203302292}
-  - {fileID: 1772153651}
-  - {fileID: 125100023}
-  - {fileID: 939540594}
-  - {fileID: 586602601}
-  - {fileID: 868990518}
-  - {fileID: 819065672}
-  - {fileID: 1403599035}
-  - {fileID: 1254845688}
-  - {fileID: 759810626}
-  - {fileID: 1221211682}
-  - {fileID: 1483355155}
-  - {fileID: 964360883}
-  - {fileID: 268256108}
-  - {fileID: 1412989207}
-  - {fileID: 1710264361}
-  - {fileID: 822992936}
-  - {fileID: 155083486}
-  - {fileID: 39774549}
-  - {fileID: 1802036458}
-  - {fileID: 1826345454}
-  - {fileID: 419397922}
-  - {fileID: 118490245}
-  - {fileID: 1880351801}
-  - {fileID: 119410850}
-  - {fileID: 845688915}
-  - {fileID: 267916052}
-  - {fileID: 420335340}
-  - {fileID: 1554857419}
-  - {fileID: 965777333}
-  - {fileID: 1980505574}
-  - {fileID: 130565549}
-  - {fileID: 1303715263}
-  - {fileID: 623730627}
-  - {fileID: 136263005}
-  - {fileID: 1619347032}
-  - {fileID: 1376210673}
-  - {fileID: 1308363903}
-  - {fileID: 471768450}
-  - {fileID: 560101981}
-  - {fileID: 2124168964}
-  - {fileID: 1065208273}
-  - {fileID: 26708695}
-  - {fileID: 535546229}
-  - {fileID: 1974038465}
-  - {fileID: 814163073}
-  - {fileID: 1623125762}
-  - {fileID: 275728635}
-  - {fileID: 30967400}
-  - {fileID: 135994952}
-  - {fileID: 1149666546}
-  - {fileID: 299894990}
-  - {fileID: 122803058}
-  - {fileID: 529165159}
-  - {fileID: 664688063}
-  - {fileID: 130170044}
-  - {fileID: 8591390}
-  - {fileID: 2010771119}
-  - {fileID: 1054070268}
-  - {fileID: 97538758}
-  - {fileID: 1522904353}
-  - {fileID: 238616420}
-  - {fileID: 880932653}
-  - {fileID: 805272258}
-  - {fileID: 1944661334}
-  - {fileID: 1610438217}
-  - {fileID: 452369283}
-  - {fileID: 1918223356}
-  - {fileID: 1199401126}
-  - {fileID: 927875098}
-  - {fileID: 2132995390}
-  - {fileID: 1605195297}
-  - {fileID: 28192186}
-  - {fileID: 1569892056}
-  - {fileID: 244701003}
-  - {fileID: 1894088894}
-  - {fileID: 1748462699}
-  - {fileID: 307544893}
-  - {fileID: 123319121}
-  - {fileID: 857045994}
-  - {fileID: 943215662}
-  - {fileID: 1268498537}
-  - {fileID: 1770765925}
-  - {fileID: 747955791}
-  - {fileID: 754705783}
-  - {fileID: 1832509814}
-  - {fileID: 2074599357}
-  - {fileID: 1381136958}
-  - {fileID: 927213956}
-  - {fileID: 1669728997}
-  - {fileID: 389127210}
-  - {fileID: 750551138}
-  - {fileID: 440387327}
-  - {fileID: 1365577818}
-  - {fileID: 1389178738}
-  - {fileID: 330604588}
-  - {fileID: 343665990}
-  - {fileID: 1688004337}
-  - {fileID: 1120955659}
-  - {fileID: 519251832}
-  - {fileID: 1653751994}
-  - {fileID: 14991831}
-  - {fileID: 537894409}
-  - {fileID: 699053820}
-  - {fileID: 993732086}
-  - {fileID: 1745426517}
-  - {fileID: 459426251}
-  - {fileID: 1975318512}
-  - {fileID: 11168121}
-  - {fileID: 1045019182}
-  - {fileID: 382494179}
-  - {fileID: 886129037}
-  - {fileID: 559824614}
-  - {fileID: 224308061}
-  - {fileID: 621864447}
-  - {fileID: 257116455}
-  - {fileID: 1659492526}
-  - {fileID: 855866554}
-  - {fileID: 2102064248}
-  - {fileID: 1879292576}
-  - {fileID: 1916035583}
-  - {fileID: 1329604857}
-  - {fileID: 854058094}
-  - {fileID: 477350087}
-  - {fileID: 264655341}
-  - {fileID: 949532745}
-  - {fileID: 303535524}
-  - {fileID: 1020657258}
-  - {fileID: 894453562}
-  - {fileID: 766571199}
 --- !u!114 &1155446013
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35998,7 +33935,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a38e39ada51aaba4db6d352ce218849e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isWindActive: 1
 --- !u!4 &1155446015 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 05f1611eef196ff44b32ee4be95b5656,
@@ -36408,17 +34344,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 156858459}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!4 &1157637767 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8737112836505026844, guid: 5662b9ef69cd0944bb5588fe94b42d53,
@@ -36795,17 +34720,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 1755899968}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!4 &1183812812 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7562688018740912797, guid: e6be662361bf53c4797cb51c922e9024,
@@ -37100,17 +35014,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 927875097}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!4 &1200088901 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -7123430945037165533, guid: 5662b9ef69cd0944bb5588fe94b42d53,
@@ -37217,17 +35120,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 2097230723}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!4 &1203973885 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4119921351481745956, guid: 5662b9ef69cd0944bb5588fe94b42d53,
@@ -37575,17 +35467,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 1890744048}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!1 &1221211680 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2057085693515470129, guid: 05f1611eef196ff44b32ee4be95b5656,
@@ -37610,17 +35491,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 1483355154}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!4 &1221676673 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2568319349738934680, guid: e6be662361bf53c4797cb51c922e9024,
@@ -38069,15 +35939,6 @@ MonoBehaviour:
   - {fileID: 1882216638}
   - {fileID: 1002792772}
   - {fileID: 0}
-  mainCamera: {fileID: 330585545}
-  cinemachineTargetGroup: {fileID: 1567772237}
-  attackEffects:
-  - {fileID: 8049695311549817459, guid: 82f717fbf9bbd57439863c36b801fff0, type: 3}
-  attack: 100
-  attackCount: 0
-  isLockTarget: 0
-  timeCounter: 0
-  stunned: 0
   weaponOnBack:
   - {fileID: 0}
   - {fileID: 1689273581}
@@ -38088,21 +35949,6 @@ MonoBehaviour:
   - {fileID: 854940581}
   - {fileID: 2063845821}
   - {fileID: 0}
-  targetTransform: {fileID: 0}
-  distance: 30
-  offset: {x: 15, y: 15, z: 10}
-  size: {x: 25, y: 20, z: 25}
-  cubeCenter: {x: -1.69, y: 0.120180845, z: 7.0745406}
-  rotateEuler: {x: 0, y: 45, z: 0}
-  enemyLayer:
-    serializedVersion: 2
-    m_Bits: 128
-  playerLayer:
-    serializedVersion: 2
-    m_Bits: 256
-  playerSubLayer:
-    serializedVersion: 2
-    m_Bits: 512
 --- !u!95 &1241238851 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 8993767646530670619, guid: 2e2060c2dcf9ee2498c90f0a9fe6848c,
@@ -38151,6 +35997,61 @@ MonoBehaviour:
   attackCheckPoints: []
   lastCheckPointsPosition: []
   timeBetweenCheck: 0.01
+--- !u!114 &1241238862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 327754784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0533bb9aedde6e24e811499bf702e649, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentComboList: {fileID: 11400000, guid: fe53ff30013e7c744bc47823bc730614, type: 2}
+  multiplier: 2
+  hitCoolDown: 0.5
+  hitFXList:
+  - {fileID: 11400000, guid: f937dd40ba0a4e545bbc8e9929212aab, type: 2}
+  hitTransform: {fileID: 0}
+  attack: 1
+  weaponType: 0
+  comboDictStructs:
+  - weaponType: 1
+    comboList: {fileID: 11400000, guid: fe53ff30013e7c744bc47823bc730614, type: 2}
+  - weaponType: 2
+    comboList: {fileID: 11400000, guid: aa63da0f03f0eee4d93a09b81293642c, type: 2}
+--- !u!114 &1241238863
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 327754784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bdc0bb3ec0a8fa4d9c2006871053ab7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainCamera: {fileID: 330585545}
+  cinemachineTargetGroup: {fileID: 1567772237}
+  targetTransform: {fileID: 0}
+  isLockTarget: 0
+  distance: 30
+  offset: {x: 15, y: 15, z: 10}
+  size: {x: 25, y: 20, z: 25}
+  cubeCenter: {x: -1.69, y: 0.12018061, z: 7.0745406}
+  rotateEuler: {x: 0, y: 0, z: 0}
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 128
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 256
+  playerSubLayer:
+    serializedVersion: 2
+    m_Bits: 512
 --- !u!1 &1241621744
 GameObject:
   m_ObjectHideFlags: 0
@@ -38349,17 +36250,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 1132991019}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!1 &1256264072
 GameObject:
   m_ObjectHideFlags: 0
@@ -38560,17 +36450,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 1770765924}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!1 &1270895791
 GameObject:
   m_ObjectHideFlags: 0
@@ -39017,17 +36896,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 1099853634}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!4 &1291709202 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5010296459538127521, guid: 05f1611eef196ff44b32ee4be95b5656,
@@ -39134,17 +37002,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 1655722653}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!4 &1301569537 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -2900685811165177132, guid: e6be662361bf53c4797cb51c922e9024,
@@ -39611,17 +37468,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 623730626}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!1 &1304505019
 GameObject:
   m_ObjectHideFlags: 0
@@ -39870,17 +37716,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 471768449}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!1 &1308601911
 GameObject:
   m_ObjectHideFlags: 0
@@ -40183,7 +38018,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1326575442}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.0804548, y: -0, z: -0, w: 0.9967583}
+  m_LocalRotation: {x: 0.080454804, y: -0, z: -0, w: 0.9967583}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -40291,17 +38126,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 854058093}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!1 &1331454638
 GameObject:
   m_ObjectHideFlags: 0
@@ -40619,17 +38443,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 1264246}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!1 &1347365585 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7661189620785782821, guid: 05f1611eef196ff44b32ee4be95b5656,
@@ -40654,17 +38467,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 1054684170}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!1 &1349604670
 GameObject:
   m_ObjectHideFlags: 0
@@ -40883,17 +38685,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 1389178737}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!4 &1365636970 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3685247318316477984, guid: e6be662361bf53c4797cb51c922e9024,
@@ -45423,25 +43214,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eaa864495fab0544f86dc9896c823ae5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
-  rotationSpeed: 5
-  health: 2000
-  defense: 20
-  attack: 100
-  detectionCenter: {fileID: 8436064}
-  detectionRadius: 15
-  playerLayer:
-    serializedVersion: 2
-    m_Bits: 256
-  obstacleLayer:
-    serializedVersion: 2
-    m_Bits: 64
-  targets:
-  - {fileID: 0}
-  currentTarget: {fileID: 0}
-  detectAngle: 135
-  attacker: {fileID: 0}
-  patrolPoints: []
 --- !u!136 &1376111048
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -45489,17 +43261,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 1308363902}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!4 &1376279853 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -6723169828059881157, guid: 5662b9ef69cd0944bb5588fe94b42d53,
@@ -45809,17 +43570,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 927213955}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!1 &1381370912
 GameObject:
   m_ObjectHideFlags: 0
@@ -45976,17 +43726,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 330604587}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!4 &1389726667 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -1554556815440546156, guid: e6be662361bf53c4797cb51c922e9024,
@@ -46108,17 +43847,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 39679438}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!4 &1400813954 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -2513933573120210504, guid: 5662b9ef69cd0944bb5588fe94b42d53,
@@ -46167,17 +43895,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 1254845687}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!1 &1403600711
 GameObject:
   m_ObjectHideFlags: 0
@@ -46246,17 +43963,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 2019770962}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!4 &1407768517 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -5555717311634780437, guid: e6be662361bf53c4797cb51c922e9024,
@@ -46441,17 +44147,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 1710264360}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!4 &1414496698 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4969184906950215526, guid: e6be662361bf53c4797cb51c922e9024,
@@ -46715,17 +44410,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 591302502}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!1 &1424614892
 GameObject:
   m_ObjectHideFlags: 0
@@ -46877,17 +44561,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 1486197501}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!4 &1428170403 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -6438131201461440001, guid: e6be662361bf53c4797cb51c922e9024,
@@ -47889,17 +45562,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 964360882}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!4 &1484721813 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -3029459745561157770, guid: e6be662361bf53c4797cb51c922e9024,
@@ -47974,17 +45636,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 52196208}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!4 &1486687816 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2721017499869860863, guid: 5662b9ef69cd0944bb5588fe94b42d53,
@@ -50757,7 +48408,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e6be662361bf53c4797cb51c922e9024,
         type: 3}
       propertyPath: m_Name
-      value: EnemyTestFSM
+      value: "\u654C\u4EBABoss"
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: e6be662361bf53c4797cb51c922e9024,
         type: 3}
@@ -52656,7 +50307,19 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 2099377713}
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: e6be662361bf53c4797cb51c922e9024,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1944931766}
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: e6be662361bf53c4797cb51c922e9024,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 935286415}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: e6be662361bf53c4797cb51c922e9024,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 935286418}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: e6be662361bf53c4797cb51c922e9024,
         type: 3}
       insertIndex: -1
@@ -52664,7 +50327,7 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: e6be662361bf53c4797cb51c922e9024,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 935286415}
+      addedObject: {fileID: 935286417}
   m_SourcePrefab: {fileID: 100100000, guid: e6be662361bf53c4797cb51c922e9024, type: 3}
 --- !u!1 &1504652743
 GameObject:
@@ -53004,17 +50667,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 238616419}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!4 &1523083949 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2539303751596220742, guid: e6be662361bf53c4797cb51c922e9024,
@@ -53235,17 +50887,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 514953121}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!1 &1536405488
 GameObject:
   m_ObjectHideFlags: 0
@@ -53916,17 +51557,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 965777332}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!4 &1554944423 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -7400410148523278443, guid: 5662b9ef69cd0944bb5588fe94b42d53,
@@ -54320,17 +51950,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 244701002}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!4 &1571025417 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4663228179215131425, guid: e6be662361bf53c4797cb51c922e9024,
@@ -54393,17 +52012,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 1399642903}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!4 &1574228341 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -2158040335636105980, guid: e6be662361bf53c4797cb51c922e9024,
@@ -55090,17 +52698,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 28192185}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!4 &1606405114 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3225139891687636082, guid: e6be662361bf53c4797cb51c922e9024,
@@ -55163,17 +52760,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 828871332}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!4 &1608411327 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -6550519010323291949, guid: e6be662361bf53c4797cb51c922e9024,
@@ -55281,17 +52867,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 452369282}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!4 &1610524139 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -1008376805210107805, guid: 5662b9ef69cd0944bb5588fe94b42d53,
@@ -55416,17 +52991,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 1376210672}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!4 &1619449970 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8969904746837048304, guid: e6be662361bf53c4797cb51c922e9024,
@@ -55526,17 +53090,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 275728634}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!1 &1623239084
 GameObject:
   m_ObjectHideFlags: 0
@@ -56630,17 +54183,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 14991830}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!1 &1655722652 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6063285047627323665, guid: 05f1611eef196ff44b32ee4be95b5656,
@@ -56665,17 +54207,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 641088968}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!4 &1656006835 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9177299393639588097, guid: e6be662361bf53c4797cb51c922e9024,
@@ -56840,17 +54371,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 855866553}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!1 &1661110461
 GameObject:
   m_ObjectHideFlags: 0
@@ -57169,17 +54689,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 648774861}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!4 &1669898281 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4882789178547667742, guid: e6be662361bf53c4797cb51c922e9024,
@@ -57210,17 +54719,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 626965289}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!4 &1670830255 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1371897827823415048, guid: e6be662361bf53c4797cb51c922e9024,
@@ -57251,17 +54749,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 1909027420}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!4 &1671622194 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5940779864243116631, guid: e6be662361bf53c4797cb51c922e9024,
@@ -57353,17 +54840,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 2020286380}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!4 &1680110014 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 86189205244442064, guid: e6be662361bf53c4797cb51c922e9024,
@@ -57418,17 +54894,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 206357111}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!4 &1685751049 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7346855809375370653, guid: e6be662361bf53c4797cb51c922e9024,
@@ -57488,17 +54953,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 1120955658}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!1 &1688733157 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4194722057576894677, guid: 05f1611eef196ff44b32ee4be95b5656,
@@ -57523,17 +54977,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 246475696}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!4 &1688796223 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7569057641214526108, guid: 5662b9ef69cd0944bb5588fe94b42d53,
@@ -57808,17 +55251,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 1347365586}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!4 &1708500732 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6367561640802815362, guid: 5662b9ef69cd0944bb5588fe94b42d53,
@@ -57894,17 +55326,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 1899557182}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!1 &1712462823 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -3735590484169108475, guid: 05f1611eef196ff44b32ee4be95b5656,
@@ -57929,17 +55350,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 1203302291}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!1 &1712655411
 GameObject:
   m_ObjectHideFlags: 0
@@ -58498,17 +55908,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 1157604996}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!4 &1740043866 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4139074710644392222, guid: 5662b9ef69cd0944bb5588fe94b42d53,
@@ -58645,17 +56044,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 459426250}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!4 &1746529146 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -398832140582947461, guid: 5662b9ef69cd0944bb5588fe94b42d53,
@@ -58686,17 +56074,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 990301394}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!1 &1748462697 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -3133058196180473578, guid: 05f1611eef196ff44b32ee4be95b5656,
@@ -58721,17 +56098,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 307544892}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!4 &1748490137 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -2128977324038936798, guid: 5662b9ef69cd0944bb5588fe94b42d53,
@@ -59052,17 +56418,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 1016011173}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!1 &1757162970
 GameObject:
   m_ObjectHideFlags: 0
@@ -59125,17 +56480,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 2131294353}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!1 &1759485873
 GameObject:
   m_ObjectHideFlags: 0
@@ -59349,17 +56693,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 1893252705}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!1 &1767334233 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -678248584694572743, guid: 05f1611eef196ff44b32ee4be95b5656,
@@ -59384,17 +56717,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 1688733158}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!4 &1767386619 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -633394184932599632, guid: 5662b9ef69cd0944bb5588fe94b42d53,
@@ -59469,17 +56791,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 747955790}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!4 &1770867217 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4008242595897666846, guid: 05f1611eef196ff44b32ee4be95b5656,
@@ -59547,17 +56858,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 125100022}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!4 &1772310985 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -7322535678057152826, guid: 5662b9ef69cd0944bb5588fe94b42d53,
@@ -59794,17 +57094,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 1739391922}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!1 &1790090635
 GameObject:
   m_ObjectHideFlags: 0
@@ -60146,17 +57435,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 1826345453}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!1 &1802242531
 GameObject:
   m_ObjectHideFlags: 0
@@ -62435,17 +59713,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 419397921}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!1 &1826537308
 GameObject:
   m_ObjectHideFlags: 0
@@ -62590,17 +59857,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 2074599356}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!1 &1833595399
 GameObject:
   m_ObjectHideFlags: 0
@@ -64302,17 +61558,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 211771429}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!1 &1878765292
 GameObject:
   m_ObjectHideFlags: 0
@@ -64374,17 +61619,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 1916035582}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!1 &1879634638
 GameObject:
   m_ObjectHideFlags: 0
@@ -64479,17 +61713,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 119410849}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!1 &1880950143
 GameObject:
   m_ObjectHideFlags: 0
@@ -64916,17 +62139,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 134459782}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!1 &1891220725
 GameObject:
   m_ObjectHideFlags: 0
@@ -65029,17 +62241,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 1423398247}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!1 &1894088892 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -201437108399278414, guid: 05f1611eef196ff44b32ee4be95b5656,
@@ -65064,17 +62265,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 1748462698}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!1 &1895160222
 GameObject:
   m_ObjectHideFlags: 0
@@ -65255,17 +62445,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 362161597}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!1 &1911434457
 GameObject:
   m_ObjectHideFlags: 0
@@ -65397,17 +62576,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 1329604856}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!4 &1916502962 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5946297473715332048, guid: e6be662361bf53c4797cb51c922e9024,
@@ -65444,17 +62612,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 1199401125}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!1 &1918263941 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3728521200309232586, guid: 05f1611eef196ff44b32ee4be95b5656,
@@ -65479,17 +62636,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 1708238087}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!4 &1918906728 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9056756761328283594, guid: 5662b9ef69cd0944bb5588fe94b42d53,
@@ -66115,17 +63261,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 1610438216}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
+--- !u!1 &1944931765
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1944931766}
+  m_Layer: 0
+  m_Name: HitTransform
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1944931766
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1944931765}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.217, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 935286414}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1945223121 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8225578832664931647, guid: e6be662361bf53c4797cb51c922e9024,
@@ -79605,17 +76771,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 814163072}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!4 &1974126914 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5010296459538127521, guid: e6be662361bf53c4797cb51c922e9024,
@@ -79678,17 +76833,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 11168120}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!1 &1976915471
 GameObject:
   m_ObjectHideFlags: 0
@@ -79822,17 +76966,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 130565548}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!4 &1981757403 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5202978360229214817, guid: e6be662361bf53c4797cb51c922e9024,
@@ -80345,17 +77478,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 1054070267}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!4 &2013066296 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8146213283639349799, guid: 5662b9ef69cd0944bb5588fe94b42d53,
@@ -80475,17 +77597,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 157496544}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!1 &2020286379 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -596503407600027886, guid: 05f1611eef196ff44b32ee4be95b5656,
@@ -80510,17 +77621,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 1713221934}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!1 &2020540212
 GameObject:
   m_ObjectHideFlags: 0
@@ -80622,7 +77722,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2027832628}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.027242374, y: -0.0000000010749999, z: 2.9296423e-11, w: 0.9996289}
+  m_LocalRotation: {x: 0.027242374, y: 0.0000000010737649, z: -2.9262762e-11, w: 0.9996289}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -80824,17 +77924,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 447123397}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!4 &2038082727 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6245864368314930776, guid: e6be662361bf53c4797cb51c922e9024,
@@ -81395,17 +78484,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 1346643621}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!4 &2072131885 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2579341220134283546, guid: e6be662361bf53c4797cb51c922e9024,
@@ -81492,17 +78570,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 681904479}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!1 &2075439821
 GameObject:
   m_ObjectHideFlags: 0
@@ -81866,17 +78933,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 2095854279}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!1 &2092171987
 GameObject:
   m_ObjectHideFlags: 0
@@ -81945,17 +79001,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 142970232}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!4 &2096057242 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 929676595696411654, guid: e6be662361bf53c4797cb51c922e9024,
@@ -81995,7 +79040,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2099377713}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: RangeDetction
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -82047,17 +79092,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 1879292575}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!1 &2102246125
 GameObject:
   m_ObjectHideFlags: 0
@@ -82785,17 +79819,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 1140673322}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!4 &2107798817 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5688115120189995323, guid: 5662b9ef69cd0944bb5588fe94b42d53,
@@ -82944,17 +79967,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 477382461}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!1 &2122020943
 GameObject:
   m_ObjectHideFlags: 0
@@ -83173,17 +80185,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 1065208272}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!1 &2124325316
 GameObject:
   m_ObjectHideFlags: 0
@@ -83284,17 +80285,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 1272865164}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!4 &2131294353 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2327152547460262819, guid: 05f1611eef196ff44b32ee4be95b5656,
@@ -83362,17 +80352,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 1605195296}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!1 &2133932074
 GameObject:
   m_ObjectHideFlags: 0
@@ -83510,17 +80489,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  child: {fileID: 762561474}
-  boneAxis: {x: 0, y: 1, z: 0}
-  radius: 0.05
-  isUseEachBoneForceSettings: 0
-  stiffnessForce: 0.01
-  dragForce: 0.4
-  springForce: {x: 0, y: -0.0001, z: 0}
-  colliders:
-  - {fileID: 0}
-  debug: 1
-  threshold: 0.01
 --- !u!1 &2139283055
 GameObject:
   m_ObjectHideFlags: 0
@@ -84203,7 +81171,7 @@ PrefabInstance:
     - target: {fileID: 807862358036111615, guid: 2e2060c2dcf9ee2498c90f0a9fe6848c,
         type: 3}
       propertyPath: m_ActionEvents.Array.size
-      value: 13
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 807862358036111615, guid: 2e2060c2dcf9ee2498c90f0a9fe6848c,
         type: 3}
@@ -84232,6 +81200,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 807862358036111615, guid: 2e2060c2dcf9ee2498c90f0a9fe6848c,
         type: 3}
+      propertyPath: m_ActionEvents.Array.data[13].m_ActionId
+      value: 8536b2a3-ef81-49b5-a0eb-a51bc096a349
+      objectReference: {fileID: 0}
+    - target: {fileID: 807862358036111615, guid: 2e2060c2dcf9ee2498c90f0a9fe6848c,
+        type: 3}
       propertyPath: m_ActionEvents.Array.data[8].m_ActionName
       value: Player/Attack[/Mouse/press]
       objectReference: {fileID: 0}
@@ -84254,6 +81227,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_ActionEvents.Array.data[12].m_ActionName
       value: Player/LockTarget[/Keyboard/q]
+      objectReference: {fileID: 0}
+    - target: {fileID: 807862358036111615, guid: 2e2060c2dcf9ee2498c90f0a9fe6848c,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[13].m_ActionName
+      value: Player/AttackTest[/Mouse/rightButton]
       objectReference: {fileID: 0}
     - target: {fileID: 807862358036111615, guid: 2e2060c2dcf9ee2498c90f0a9fe6848c,
         type: 3}
@@ -84283,6 +81261,11 @@ PrefabInstance:
     - target: {fileID: 807862358036111615, guid: 2e2060c2dcf9ee2498c90f0a9fe6848c,
         type: 3}
       propertyPath: m_ActionEvents.Array.data[12].m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 807862358036111615, guid: 2e2060c2dcf9ee2498c90f0a9fe6848c,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[13].m_PersistentCalls.m_Calls.Array.size
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 807862358036111615, guid: 2e2060c2dcf9ee2498c90f0a9fe6848c,
@@ -84317,9 +81300,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 807862358036111615, guid: 2e2060c2dcf9ee2498c90f0a9fe6848c,
         type: 3}
+      propertyPath: m_ActionEvents.Array.data[13].m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 807862358036111615, guid: 2e2060c2dcf9ee2498c90f0a9fe6848c,
+        type: 3}
       propertyPath: m_ActionEvents.Array.data[3].m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 1241238841}
+      objectReference: {fileID: 1241238862}
     - target: {fileID: 807862358036111615, guid: 2e2060c2dcf9ee2498c90f0a9fe6848c,
         type: 3}
       propertyPath: m_ActionEvents.Array.data[7].m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -84329,7 +81317,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_ActionEvents.Array.data[8].m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1241238841}
+      objectReference: {fileID: 1241238862}
     - target: {fileID: 807862358036111615, guid: 2e2060c2dcf9ee2498c90f0a9fe6848c,
         type: 3}
       propertyPath: m_ActionEvents.Array.data[9].m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -84349,7 +81337,12 @@ PrefabInstance:
         type: 3}
       propertyPath: m_ActionEvents.Array.data[12].m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1241238841}
+      objectReference: {fileID: 1241238863}
+    - target: {fileID: 807862358036111615, guid: 2e2060c2dcf9ee2498c90f0a9fe6848c,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[13].m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1241238862}
     - target: {fileID: 807862358036111615, guid: 2e2060c2dcf9ee2498c90f0a9fe6848c,
         type: 3}
       propertyPath: m_ActionEvents.Array.data[3].m_PersistentCalls.m_Calls.Array.data[1].m_CallState
@@ -84378,6 +81371,11 @@ PrefabInstance:
     - target: {fileID: 807862358036111615, guid: 2e2060c2dcf9ee2498c90f0a9fe6848c,
         type: 3}
       propertyPath: m_ActionEvents.Array.data[12].m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 807862358036111615, guid: 2e2060c2dcf9ee2498c90f0a9fe6848c,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[13].m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 807862358036111615, guid: 2e2060c2dcf9ee2498c90f0a9fe6848c,
@@ -84417,8 +81415,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 807862358036111615, guid: 2e2060c2dcf9ee2498c90f0a9fe6848c,
         type: 3}
+      propertyPath: m_ActionEvents.Array.data[13].m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: GetInput
+      objectReference: {fileID: 0}
+    - target: {fileID: 807862358036111615, guid: 2e2060c2dcf9ee2498c90f0a9fe6848c,
+        type: 3}
       propertyPath: m_ActionEvents.Array.data[3].m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
-      value: PlayerAttackController, Assembly-CSharp
+      value: PlayerCombatController, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 807862358036111615, guid: 2e2060c2dcf9ee2498c90f0a9fe6848c,
         type: 3}
@@ -84428,7 +81431,7 @@ PrefabInstance:
     - target: {fileID: 807862358036111615, guid: 2e2060c2dcf9ee2498c90f0a9fe6848c,
         type: 3}
       propertyPath: m_ActionEvents.Array.data[8].m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: PlayerAttackController, Assembly-CSharp
+      value: PlayerCombatController, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 807862358036111615, guid: 2e2060c2dcf9ee2498c90f0a9fe6848c,
         type: 3}
@@ -84448,7 +81451,12 @@ PrefabInstance:
     - target: {fileID: 807862358036111615, guid: 2e2060c2dcf9ee2498c90f0a9fe6848c,
         type: 3}
       propertyPath: m_ActionEvents.Array.data[12].m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: PlayerAttackController, Assembly-CSharp
+      value: PlayerViewDetection, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 807862358036111615, guid: 2e2060c2dcf9ee2498c90f0a9fe6848c,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[13].m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: PlayerCombatController, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 807862358036111615, guid: 2e2060c2dcf9ee2498c90f0a9fe6848c,
         type: 3}
@@ -84478,6 +81486,11 @@ PrefabInstance:
     - target: {fileID: 807862358036111615, guid: 2e2060c2dcf9ee2498c90f0a9fe6848c,
         type: 3}
       propertyPath: m_ActionEvents.Array.data[12].m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 807862358036111615, guid: 2e2060c2dcf9ee2498c90f0a9fe6848c,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[13].m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 817062882600787238, guid: 2e2060c2dcf9ee2498c90f0a9fe6848c,
@@ -85033,7 +82046,7 @@ PrefabInstance:
     - target: {fileID: 2412720479116792027, guid: 2e2060c2dcf9ee2498c90f0a9fe6848c,
         type: 3}
       propertyPath: m_Name
-      value: Player
+      value: "\u73A9\u5BB6"
       objectReference: {fileID: 0}
     - target: {fileID: 2412720479116792027, guid: 2e2060c2dcf9ee2498c90f0a9fe6848c,
         type: 3}
@@ -87835,6 +84848,14 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1241238861}
+    - targetCorrespondingSourceObject: {fileID: 2412720479116792027, guid: 2e2060c2dcf9ee2498c90f0a9fe6848c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1241238863}
+    - targetCorrespondingSourceObject: {fileID: 2412720479116792027, guid: 2e2060c2dcf9ee2498c90f0a9fe6848c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1241238862}
   m_SourcePrefab: {fileID: 100100000, guid: 2e2060c2dcf9ee2498c90f0a9fe6848c, type: 3}
 --- !u!1001 &2726488351591016464
 PrefabInstance:

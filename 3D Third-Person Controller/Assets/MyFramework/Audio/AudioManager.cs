@@ -115,7 +115,7 @@ public class AudioManager : SingletonPatternBase<AudioManager>
     /// <param name="callback">用于外部获取新增的audioSource的回调函数</param>
     public void PlaySound(string path, float volume, bool isLoop, UnityAction<AudioSource> callback = null)
     {
-        if (soundObj == null)
+        if (!soundObj)
         {
             soundObj = new GameObject("Sounds");
         }
@@ -133,6 +133,24 @@ public class AudioManager : SingletonPatternBase<AudioManager>
                 callback.Invoke(audioSource);
             }
         });
+    }
+
+    public void PlaySound(AudioClip clip, float volume, bool isLoop, UnityAction<AudioSource> callback = null)
+    {
+        if (!soundObj)
+        {
+            soundObj = new GameObject("Sounds");
+            AudioSource audioSource = soundObj.AddComponent<AudioSource>();
+            audioSource.clip = clip;
+            audioSource.loop = isLoop;
+            audioSource.volume = volume;
+            audioSource.Play();
+            soundsList.Add(audioSource);
+            if (callback != null)
+            {
+                callback.Invoke(audioSource);
+            }
+        }
     }
 
     /// <summary>

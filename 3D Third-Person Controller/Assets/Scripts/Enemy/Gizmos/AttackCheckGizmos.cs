@@ -12,9 +12,9 @@ public class AttackCheckGizmos : MonoBehaviour
     //是否正在攻击
     [SerializeField] private bool isAttacking = false;
     //当前的武器类型
-    [SerializeField] public PlayerAttackController.E_WeaponType weaponType = PlayerAttackController.E_WeaponType.Empty;
+    [SerializeField] public E_WeaponType weaponType = E_WeaponType.Empty;
     //对应武器和攻击检测点组的字典
-    private Dictionary<PlayerAttackController.E_WeaponType, Transform[]> attackCheckPointsOfWeapon = new Dictionary<PlayerAttackController.E_WeaponType, Transform[]>();
+    private Dictionary<E_WeaponType, Transform[]> attackCheckPointsOfWeapon = new Dictionary<E_WeaponType, Transform[]>();
     //太刀攻击检测点
     public Transform[] katanaCheckPoints;
     //大剑攻击检测点
@@ -31,12 +31,15 @@ public class AttackCheckGizmos : MonoBehaviour
     //是否是第一次检测
     private bool isFirstCheck = true;
     private RaycastHit[] enemiesRaycastHits;
+    
+    //本次攻击的交互数据
+    private ComboInteractionConfig comboInteractionConfig;
 
     private void Start()
     {
         //注册不同武器的攻击检测点
-        attackCheckPointsOfWeapon.Add(PlayerAttackController.E_WeaponType.Katana, katanaCheckPoints);
-        attackCheckPointsOfWeapon.Add(PlayerAttackController.E_WeaponType.GreatSword, greatSwordCheckPoints);
+        attackCheckPointsOfWeapon.Add(E_WeaponType.Katana, katanaCheckPoints);
+        attackCheckPointsOfWeapon.Add(E_WeaponType.GreatSword, greatSwordCheckPoints);
     }
 
     private void Update()
@@ -53,28 +56,28 @@ public class AttackCheckGizmos : MonoBehaviour
     {
         switch (weaponType)
         {
-            case PlayerAttackController.E_WeaponType.Empty:
+            case E_WeaponType.Empty:
                 break;
             
-            case PlayerAttackController.E_WeaponType.Katana:
-                attackCheckPoints = attackCheckPointsOfWeapon[PlayerAttackController.E_WeaponType.Katana];
+            case E_WeaponType.Katana:
+                attackCheckPoints = attackCheckPointsOfWeapon[E_WeaponType.Katana];
                 enemiesRaycastHits = new RaycastHit[attackCheckPoints.Length];
                 break;
             
-            case PlayerAttackController.E_WeaponType.GreatSword:
-                attackCheckPoints = attackCheckPointsOfWeapon[PlayerAttackController.E_WeaponType.GreatSword];
+            case E_WeaponType.GreatSword:
+                attackCheckPoints = attackCheckPointsOfWeapon[E_WeaponType.GreatSword];
                 enemiesRaycastHits = new RaycastHit[attackCheckPoints.Length];
                 break;
             
-            case PlayerAttackController.E_WeaponType.Bow:
+            case E_WeaponType.Bow:
                 //功能待添加
                 break;
         }
     }
     
-    private void AttackCheck()
+    public void AttackCheck()
     {
-        if(weaponType == PlayerAttackController.E_WeaponType.Empty)
+        if(weaponType == E_WeaponType.Empty)
             return;
         
         //若当时处于攻击状态
@@ -103,8 +106,16 @@ public class AttackCheckGizmos : MonoBehaviour
                             foreach (RaycastHit enemy in enemiesRaycastHits)
                             {
                                 //TODO: 此处改为调用Enemy身上的受伤函数
-                                EnemyBase enemyHit = enemy.transform.GetComponent<BossFSM>();
-                                enemyHit.TakeDamage(this.transform.gameObject);
+                                // EnemyBase enemyHit = enemy.transform.GetComponent<BossFSM>();
+                                // enemyHit.TakeDamage(this.transform.gameObject);
+                                if (enemy.transform)
+                                {
+                                    EnemyCombatController enemyHit = enemy.transform.gameObject.GetComponent<EnemyCombatController>();
+                                    if (enemyHit)
+                                    {
+                                        enemyHit.OnHit(comboInteractionConfig, this.transform); //调用受击函数   
+                                    }
+                                }
                             }
                         }
                         //绘制从上一次记录的该点的位置到当前该点的位置的线段
@@ -126,13 +137,15 @@ public class AttackCheckGizmos : MonoBehaviour
         }
     }
 
-    public void StartAttacking()
+    public void StartAttacking(ComboInteractionConfig config)
     {
         isAttacking = true;
+        comboInteractionConfig = config;
     }
 
     public void EndAttacking()
     {
         isAttacking = false;
+        comboInteractionConfig = null;
     }
 }

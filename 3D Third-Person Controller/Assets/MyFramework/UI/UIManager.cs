@@ -116,7 +116,6 @@ public class UIManager : SingletonMonoBase<UIManager>
         pathDict = new Dictionary<string, string>();
         foreach (var config in _panelConfig)
         {
-            Debug.Log(config.panelPrefab.name + " " + config.path);
             pathDict.Add(config.panelPrefab.name, config.path);
         }
     }

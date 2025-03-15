@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: baaf5ef6b7f6a6a4d865781e7df08a27, type: 3}
+  m_Name: Katana
+  m_EditorClassIdentifier: 
+  comboList:
+  - {fileID: 11400000, guid: de4aea476c0fdf64ca3f98d95a4c5df5, type: 2}
+  - {fileID: 11400000, guid: d59a67a17129dde4585f3362a8efc6c6, type: 2}
+  - {fileID: 11400000, guid: 71ca369934bd8ba4ca2ada705dfa13f0, type: 2}
+  - {fileID: 11400000, guid: 2cf10f5e051faf54e82c27215850bcab, type: 2}
+  - {fileID: 11400000, guid: 61ef150812cd6d349a13df8ffb644b09, type: 2}
+  - {fileID: 11400000, guid: a12ee636f9cfc9d4584e929959ba666e, type: 2}

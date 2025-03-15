@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4ab011b806aa5c4fb30cbebecf457c0, type: 3}
+  m_Name: KatanaCombo02
+  m_EditorClassIdentifier: 
+  comboName: KatanaCombo02
+  coolDownTime: 0.5
+  comboInteractionConfigs:
+  - startTime: 0.1
+    endTime: 0.3
+    hitName: hit_front
+    hitAirName: 
+    weaponType: 1
+    attackForce: 0
+    damage: 83
+  fxConfigs:
+  - startTime: 0.2
+    FXPrefab: {fileID: 1046192946819082376, guid: b2760cdc16d0f8b488a657151f064bd0,
+      type: 3}
+    FXName: FX/FX01
+    position: {x: 0, y: 1, z: 0}
+    rotation: {x: 180, y: 0, z: -45}
+    scale: {x: 1, y: 1, z: 1}
+  clipConfigs:
+  - startTime: 0.1
+    audioClip: {fileID: 8300000, guid: 2a0f7df8ab67f5b449624170c5115551, type: 3}
+    volume: 1
+    duration: 0
+  selfMoveOffsetConfigsConfigs: []
+  targetMoveOffsetConfigsConfigs: []

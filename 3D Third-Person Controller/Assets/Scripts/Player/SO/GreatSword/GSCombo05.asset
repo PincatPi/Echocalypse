@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4ab011b806aa5c4fb30cbebecf457c0, type: 3}
+  m_Name: GSCombo05
+  m_EditorClassIdentifier: 
+  comboName: GSCombo05
+  coolDownTime: 2.5
+  comboInteractionConfigs:
+  - startTime: 0.3
+    endTime: 0.4
+    hitName: hit_frontDown
+    hitAirName: 
+    weaponType: 2
+    attackForce: 0
+    damage: 223
+  fxConfigs:
+  - startTime: 0.36
+    FXPrefab: {fileID: 8049695311549817459, guid: 91c4875628c3abd4fbe9ea8dbc43c61c,
+      type: 3}
+    FXName: FX/FX_hit03
+    position: {x: 0, y: 0.7, z: 0}
+    rotation: {x: 0, y: 200, z: 0}
+    scale: {x: -1, y: 1, z: 1}
+  clipConfigs:
+  - startTime: 0.31
+    audioClip: {fileID: 8300000, guid: 1db58812792640849899f44e6adf968e, type: 3}
+    volume: 1
+    duration: 0
+  selfMoveOffsetConfigsConfigs: []
+  targetMoveOffsetConfigsConfigs: []

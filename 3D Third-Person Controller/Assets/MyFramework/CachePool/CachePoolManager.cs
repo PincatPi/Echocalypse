@@ -13,8 +13,15 @@ public class CachePoolData
 
     public CachePoolData(GameObject obj, GameObject cachePoolRoot)
     {
-        dataRoot = new GameObject(obj.name);
-        dataRoot.transform.parent = cachePoolRoot.transform;
+        if(!obj)
+            Debug.Log("CahcePoolData中的obj等于null");
+        dataRoot = new GameObject(obj.name)
+        {
+            transform =
+            {
+                parent = cachePoolRoot.transform
+            }
+        };
         //压入列表中
         cachePoolList = new List<GameObject>() { };
         PushObject(obj);
@@ -26,12 +33,19 @@ public class CachePoolData
     /// <param name="obj"></param>
     public void PushObject(GameObject obj)
     {
-        //存入缓存池中
-        cachePoolList.Add(obj);
-        //失活
-        obj.SetActive(false);
-        //设置inspector窗口中的父对象
-        obj.transform.parent = dataRoot.transform;
+        if (obj)
+        {
+            //存入缓存池中
+            cachePoolList.Add(obj);
+            //失活
+            obj.SetActive(false);
+            //设置inspector窗口中的父对象
+            obj.transform.parent = dataRoot.transform;
+        }
+        else
+        {
+            Debug.Log("Object is null");   
+        }
     }
 
     /// <summary>
@@ -42,14 +56,16 @@ public class CachePoolData
     {
         GameObject result = null;
         //取出第一个缓存对象
-        result = cachePoolList[0];
-        //将其从缓存池中移除
-        cachePoolList.RemoveAt(0);
-        //激活，令其显示
-        result.SetActive(true);
-        //断开父子关系
-        result.transform.parent = null;
-        
+        if (cachePoolList.Count > 0)
+        {
+            result = cachePoolList[0];
+            //将其从缓存池中移除
+            cachePoolList.RemoveAt(0);
+            //激活，令其显示
+            result.SetActive(true);
+            //断开父子关系
+            result.transform.parent = null;
+        }
         return result;
     }
 }
@@ -60,11 +76,14 @@ public class CachePoolData
 /// </summary>
 public class CachePoolManager : SingletonPatternBase<CachePoolManager>
 {
-    public Dictionary<string, CachePoolData> cachePoolDic = new Dictionary<string, CachePoolData>();
+    public Dictionary<string, CachePoolData> cachePoolDic;
 
     private GameObject cachePoolRoot;
 
-    private CachePoolManager() { }
+    private CachePoolManager()
+    {
+        cachePoolDic = new Dictionary<string, CachePoolData>(); 
+    }
 
     /// <summary>
     /// 从缓存池中获取对象
@@ -96,7 +115,7 @@ public class CachePoolManager : SingletonPatternBase<CachePoolManager>
     /// <param name="obj">被添加的对象</param>
     public void PushObject(string key, GameObject obj)
     {
-        if (cachePoolRoot == null)
+        if (!cachePoolRoot)
         {
             cachePoolRoot = new GameObject("CachePool");
         }
