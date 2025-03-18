@@ -11,7 +11,8 @@ public class EnemyBase : MonoBehaviour
     //private EnemyView enemyView;
     
     //敌人公共字段
-    public float moveSpeed; //移动速度
+    public float walkSpeed; //走路移动速度
+    public float runSpeed; //奔跑移动速度
     public float rotationSpeed; //旋转速度
     public float health; //血量
     public float defense; //防御力

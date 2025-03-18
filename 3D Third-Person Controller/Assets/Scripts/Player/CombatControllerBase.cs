@@ -19,6 +19,7 @@ public class CombatControllerBase : MonoBehaviour
     protected int currentComboIndex;
     protected int nextComboIndex;
     protected bool canExecuteCombo;
+    public bool CanExecuteCombo => canExecuteCombo;
     [SerializeField] protected float multiplier = 1.2f;
     protected bool canBeHit;
     [SerializeField] protected float hitCoolDown = 0.25f;
@@ -152,11 +153,18 @@ public class CombatControllerBase : MonoBehaviour
         }
     }
 
+    [SerializeField] private float rotationSpeed;
     //受击函数
     public virtual void OnHit(ComboInteractionConfig interactionConfig, Transform attacker)
     {
         //看向攻击者
-        transform.forward = -attacker.forward;
+        //transform.forward = -attacker.forward;
+        // 获取当前的旋转和目标旋转
+        Quaternion fromRotation = transform.rotation;
+        Quaternion toRotation = Quaternion.LookRotation(-attacker.position, Vector3.up);
+        // 平滑过渡到目标旋转
+        transform.rotation = Quaternion.Lerp(fromRotation, toRotation, Time.deltaTime * rotationSpeed);
+        
         //播放受击动画
         if(!canBeHit)
             return;

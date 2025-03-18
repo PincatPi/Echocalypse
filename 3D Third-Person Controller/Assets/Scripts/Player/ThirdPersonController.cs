@@ -19,6 +19,7 @@ public class ThirdPersonController : MonoBehaviour
     private Transform cameraTransform;
     private CharacterController characterController;
     private PlayerSoundController playerSoundController;
+    private CombatControllerBase combatController;
     
     #endregion
     
@@ -88,6 +89,7 @@ public class ThirdPersonController : MonoBehaviour
     //角色是否可以急停
     [SerializeField]
     private bool canStop = false;
+    //角色是否可以旋转
     
     #region 角色状态
     
@@ -175,6 +177,7 @@ public class ThirdPersonController : MonoBehaviour
         cameraTransform = Camera.main.transform;
         characterController = this.GetComponent<CharacterController>();
         playerSoundController = this.GetComponent<PlayerSoundController>();
+        combatController = this.GetComponent<CombatControllerBase>();
         
         //获取哈希值
         postureHash = Animator.StringToHash("Posture");
@@ -212,7 +215,6 @@ public class ThirdPersonController : MonoBehaviour
         //播放脚步声
         PlayFootStepSound();
         
-        //TEST: 测试急停
         //急停
         NoEquipEmergencyStop();
     }
@@ -347,6 +349,9 @@ public class ThirdPersonController : MonoBehaviour
     /// </summary>
     private void CaculateInputDirection()
     {
+        //TODO: 控制玩家在攻击时不能旋转
+        // if(combatController.CanExecuteCombo == false)
+        //     return;
         //获取相机在水平平面（XZ平面）上的投影，并做归一化
         Vector3 cameraForwardProjection = new Vector3(cameraTransform.forward.x, 0, cameraTransform.forward.z).normalized;
         //根据玩家输入moveInput和相机XZ投影，计算玩家移动的三维向量值

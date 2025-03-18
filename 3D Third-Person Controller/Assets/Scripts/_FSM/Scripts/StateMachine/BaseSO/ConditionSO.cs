@@ -8,9 +8,18 @@ using UnityEngine;
 public abstract class ConditionSO : ScriptableObject
 {
     [SerializeField] protected int priority; //条件优先级
+    [SerializeField] protected EnemyCombatController enemyCombatController;
+    [SerializeField] protected EnemyBase enemyParameter;
+    [SerializeField] protected Transform transform;
 
     //初始化
-    public virtual void Init(StateMachineSystem stateSystem) { }
+    public virtual void Init(StateMachineSystem stateSystem)
+    {
+        Debug.Log("ConditionSO Init");
+        enemyCombatController = stateSystem.enemyCombatController;
+        enemyParameter = stateSystem.enemyParameter;
+        transform = stateSystem.transform;
+    }
     
     /// <summary>
     /// 判断转换条件是否满足

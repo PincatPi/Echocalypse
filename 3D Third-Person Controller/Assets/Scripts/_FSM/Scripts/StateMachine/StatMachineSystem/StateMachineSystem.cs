@@ -11,9 +11,24 @@ public class StateMachineSystem : MonoBehaviour
     //当前状态
     public StateActionSO currentState;
 
+    #region 组件
+
+    public EnemyCombatController enemyCombatController;
+    public EnemyMovementController enemyMovementController;
+    public Animator animator;
+    public EnemyBase enemyParameter;
+
+    #endregion
+
 
     private void Awake()
     {
+        //初始化组件
+        enemyCombatController = GetComponent<EnemyCombatController>();
+        enemyMovementController = GetComponent<EnemyMovementController>();
+        animator = GetComponent<Animator>();
+        enemyParameter = GetComponent<EnemyBase>();
+        
         transition?.Init(this);
         currentState?.OnEnter(this);
     }

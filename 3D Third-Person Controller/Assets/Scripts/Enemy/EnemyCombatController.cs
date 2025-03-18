@@ -18,17 +18,21 @@ public class EnemyCombatController : CombatControllerBase
     
     //巡逻
     public Transform[] patrolPoints;
+
+    private int lockOnHash;
     
     private void Start()
     {
         base.Start();
         enemyView = GetComponent<EnemyView>();
         enemyParameter = GetComponent<EnemyBase>();
+        
+        lockOnHash = Animator.StringToHash("LockOn");
     }
 
     private void Update()
     {
-        
+        UpdateCurrentTarget();
     }
     
     //敌人公共方法
@@ -59,5 +63,39 @@ public class EnemyCombatController : CombatControllerBase
             return;
         Vector3 dir = currentTarget.position - transform.position;
         transform.forward = dir.normalized;
+    }
+
+    private void UpdateCurrentTarget()
+    {
+        currentTarget = enemyView.CurrentTarget;
+        if (currentTarget)
+        {
+            animator.SetFloat(lockOnHash, 1f);   
+        }
+        else
+        {
+            animator.SetFloat(lockOnHash, 0f);
+        }
+    }
+    
+    public Transform GetCurrentTarget()
+    {
+        if(!currentTarget)
+            return null;
+        return currentTarget;
+    }
+
+    public float GetCurrentTargetDistance()
+    {
+        if (!currentTarget)
+            return -1f;
+        return Vector3.Distance(transform.position, currentTarget.position);
+    }
+    
+    public Vector3 GetDirectionForTarget()
+    {
+        if(!currentTarget)
+            return Vector3.zero;
+        return (currentTarget.position - transform.position).normalized;
     }
 }

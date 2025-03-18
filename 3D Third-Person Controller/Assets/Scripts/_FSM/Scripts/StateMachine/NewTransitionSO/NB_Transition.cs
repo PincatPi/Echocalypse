@@ -36,11 +36,12 @@ public class NB_Transition : ScriptableObject
             if (!states.ContainsKey(item.fromState)) 
             {
                 states.Add(item.fromState, new List<StateActionConfig>());
-                states[item.fromState].Add(item);
             }
-            else 
+            states[item.fromState].Add(item);
+            foreach (ConditionSO condition in item.conditions)
             {
-                states[item.fromState].Add(item);
+                //初始化条件
+                condition.Init(stateMachineSystem);
             }
         }
     }
