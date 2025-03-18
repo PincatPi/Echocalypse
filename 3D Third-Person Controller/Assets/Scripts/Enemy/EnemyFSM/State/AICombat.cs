@@ -11,45 +11,18 @@ public class AICombat : StateActionSO
     [SerializeField] private float chaseDistance;
     [SerializeField] private float runDistance;
 
+    //当前技能
+    [SerializeField] private CombatAbilityBase currentAbility;
+    
     private int verticalHash = Animator.StringToHash("Vertical");
     private int horizontalHash = Animator.StringToHash("Horizontal");
     private int moveSpeedHash = Animator.StringToHash("MoveSpeed");
 
     private int randomHorizontal;
-    
-    // public override void OnUpdate()
-    // {
-    //     Debug.Log("此时处于AICombat状态");
-    //     LookAtTarget();
-    //     NoCombat();
-    // }
-
-    // private void NoCombat()
-    // {
-    //     //若不能攻击，则远离玩家
-    //     if (!animator.GetCurrentAnimatorStateInfo(0).IsTag("Attack"))
-    //     {
-    //         if (enemyCombatController.GetCurrentTargetDistance() < backwardDistance && enemyCombatController.GetCurrentTargetDistance() > 0f)
-    //         {
-    //             Debug.Log("开始慢速后退");
-    //             //往玩家反方向慢速移动
-    //             //TODO: 补全代码
-    //         
-    //             //TODO: Animator修改动画
-    //             if (enemyCombatController.GetCurrentTargetDistance() < fastBackwardDistance && enemyCombatController.GetCurrentTargetDistance() > 0f)
-    //             {
-    //                 //animator.CrossFadeInFixedTime("Roll_Back", 0.1f);
-    //                 //先面朝向玩家，然后向后翻滚
-    //                 animator.Play("Roll_Back");
-    //             }
-    //         }
-    //     }
-    // }
-    //
 
     public override void OnUpdate()
     {
-        NoCombatMove();
+        CombatAction();
         LookAtTarget();
     }
 
@@ -60,25 +33,25 @@ public class AICombat : StateActionSO
     
     private void NoCombatMove()
     {
+        //若正在处于无法被打断的动画片段，或正处于动画过渡状态，则不执行
+        if (animator.GetCurrentAnimatorStateInfo(0).IsTag("Roll") || animator.GetCurrentAnimatorStateInfo(0).IsName("Ability") ||
+            animator.IsInTransition(0))
+            return;
+        
         if (animator.GetCurrentAnimatorStateInfo(0).IsTag("Motion") && !Mathf.Approximately(enemyCombatController.GetCurrentTargetDistance(), -1f))
         {
             //玩家距离小于攻击距离，则进行攻击
             if (enemyCombatController.GetCurrentTargetDistance() < attackDistance)
             {
-                Debug.Log("攻击");
-                if (!animator.GetCurrentAnimatorStateInfo(0).IsTag("Attack") || !animator.GetCurrentAnimatorStateInfo(0).IsTag("Defense"))
+                if (!animator.GetCurrentAnimatorStateInfo(0).IsTag("Attack") || !animator.GetCurrentAnimatorStateInfo(0).IsTag("Ability"))
                 {
                     //TODO:待添加
                     animator.Play("Normal01");
-                    //animator.CrossFade("Combo01_1", 0.25f);
                 }
             }
             //玩家距离小于后退距离，则向后退
             else if (enemyCombatController.GetCurrentTargetDistance() < backwardDistance)
             {
-                Debug.Log("后退");
-                //TODO: 检查此处是否需要加负号
-                //enemyMovementController.CharacterMoveInterface(-enemyCombatController.GetDirectionForTarget(), enemyParameter.walkSpeed, true);
                 animator.SetFloat(verticalHash, -1f, 0.25f, Time.deltaTime);
                 animator.SetFloat(horizontalHash, 0f, 0.25f, Time.deltaTime);
                 animator.SetFloat(moveSpeedHash, enemyParameter.walkSpeed, 0.25f, Time.deltaTime);
@@ -88,18 +61,13 @@ public class AICombat : StateActionSO
             //玩家距离大于后退距离且小于追击距离，则进行平移
             else if (enemyCombatController.GetCurrentTargetDistance() > backwardDistance && enemyCombatController.GetCurrentTargetDistance()< chaseDistance)
             {
-                Debug.Log("平移");
-                //enemyMovementController.CharacterMoveInterface(enemyMovementController.transform.right * ((randomHorizontal == 0) ? 1 : randomHorizontal), enemyParameter.walkSpeed, true);
                 animator.SetFloat(verticalHash, 0f,0.25f, Time.deltaTime);
-                Debug.Log(randomHorizontal);
                 animator.SetFloat(horizontalHash, randomHorizontal, 0.25f, Time.deltaTime);
                 animator.SetFloat(moveSpeedHash, enemyParameter.walkSpeed, 0.25f, Time.deltaTime);
             }
             //玩家距离大于追击距离，则向玩家移动
             else if (enemyCombatController.GetCurrentTargetDistance() > chaseDistance && enemyCombatController.GetCurrentTargetDistance() < runDistance)
             {
-                Debug.Log("向玩家走来");
-                //enemyMovementController.CharacterMoveInterface(enemyMovementController.transform.forward, enemyParameter.walkSpeed, true);
                 animator.SetFloat(verticalHash, 1f, 0.25f, Time.deltaTime);
                 animator.SetFloat(horizontalHash, 0f, 0.25f, Time.deltaTime);
                 animator.SetFloat(moveSpeedHash, enemyParameter.walkSpeed, 0.25f, Time.deltaTime);
@@ -109,8 +77,6 @@ public class AICombat : StateActionSO
             //玩家距离大于奔跑追击距离，则奔跑着向玩家移动
             else if (enemyCombatController.GetCurrentTargetDistance() > runDistance)
             {
-                Debug.Log("向玩家跑来");
-                //enemyMovementController.CharacterMoveInterface(enemyMovementController.transform.forward, enemyParameter.runSpeed, true);
                 animator.SetFloat(verticalHash, 1f, 0.25f, Time.deltaTime);
                 animator.SetFloat(horizontalHash, 0f, 0.25f, Time.deltaTime);
                 animator.SetFloat(moveSpeedHash, enemyParameter.runSpeed, 0.25f, Time.deltaTime);
@@ -133,6 +99,53 @@ public class AICombat : StateActionSO
         transform.forward = Vector3.Lerp(transform.forward, target.transform.position - transform.position, Time.deltaTime * enemyParameter.rotationSpeed);
     }
 
+    /// <summary>
+    /// 敌人战斗行为
+    /// </summary>
+    private void CombatAction()
+    {
+        //若当前没有技能，则执行NoCombatMove，进行移动
+        //若当前没有技能 或 敌人超出了技能释放范围
+        if (!currentAbility)
+        {
+            NoCombatMove();
+            if (Mathf.Approximately(enemyCombatController.GetCurrentTargetDistance(), -1f))
+            {
+                //TODO: 补充玩家不在敌人视野中的情况
+            }
+            GetAbility();
+        }
+        //有技能则使用技能
+        //else if(currentAbility && !Mathf.Approximately(enemyCombatController.GetCurrentTargetDistance(), -1f) &&
+        //        enemyCombatController.GetCurrentTargetDistance() < currentAbility.GetAbilityUseDistance())
+        //TEST: 测试代码
+        else if(currentAbility)
+        {
+            currentAbility.InvokeAbility();
+            //当前技能切换为不可用状态（即已经释放结束）
+            if (currentAbility.GetAbilityAvailable() == false)
+            {
+                //丢弃当前技能
+                currentAbility = null;
+            }
+        }
+    }
+
+    /// <summary>
+    /// 获取技能
+    /// </summary>
+    private void GetAbility()
+    {
+        if (!currentAbility)
+        {
+            //获取一个可用的技能
+            currentAbility = enemyCombatController.GetAnAvailableAbility();
+        }
+    }
+    
+    
+    #region 工具方法
+
     private int GetRandomHorizontal()
     {
         int randomNum = Random.Range(0, 100);
@@ -145,4 +158,6 @@ public class AICombat : StateActionSO
         
         Gizmos.DrawRay(transform.position + Vector3.up, -enemyCombatController.GetDirectionForTarget());
     }
+
+    #endregion
 }

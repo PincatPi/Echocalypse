@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class EnemyView : MonoBehaviour
@@ -5,6 +6,7 @@ public class EnemyView : MonoBehaviour
     //战斗相关
     [SerializeField] private Transform detectionCenter;
     [SerializeField] private float detectionRadius;
+    [SerializeField][Range(0.5f, 1f)] private float detectionRadiusMultiplier;
     [SerializeField] private LayerMask playerLayer;
     [SerializeField] private LayerMask obstacleLayer;
     [SerializeField] private Collider[] targets = new Collider[1];
@@ -37,11 +39,14 @@ public class EnemyView : MonoBehaviour
                 }
             }
         }
-
-        if (!isInView)
+        //如果在检测范围的一定距离以内，则不会丢失目标
+        if (currentTarget)
         {
-            currentTarget = null;
-            targets[0] = null;
+            if (!isInView && Vector3.Distance(transform.position, currentTarget.position) > detectionRadius * detectionRadiusMultiplier)
+            {
+                currentTarget = null;
+                targets[0] = null;
+            }   
         }
     }
     
