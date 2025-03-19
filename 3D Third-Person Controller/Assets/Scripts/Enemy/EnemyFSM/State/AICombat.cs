@@ -10,7 +10,10 @@ public class AICombat : StateActionSO
     [SerializeField] private float attackDistance;
     [SerializeField] private float chaseDistance;
     [SerializeField] private float runDistance;
-
+    //[SerializeField] private float abilityCooldownTime; //使用技能的间隔时间
+    
+    //private bool canUseAbility = true;
+    
     //当前技能
     [SerializeField] private CombatAbilityBase currentAbility;
     
@@ -105,7 +108,6 @@ public class AICombat : StateActionSO
     private void CombatAction()
     {
         //若当前没有技能，则执行NoCombatMove，进行移动
-        //若当前没有技能 或 敌人超出了技能释放范围
         if (!currentAbility)
         {
             NoCombatMove();
@@ -116,9 +118,6 @@ public class AICombat : StateActionSO
             GetAbility();
         }
         //有技能则使用技能
-        //else if(currentAbility && !Mathf.Approximately(enemyCombatController.GetCurrentTargetDistance(), -1f) &&
-        //        enemyCombatController.GetCurrentTargetDistance() < currentAbility.GetAbilityUseDistance())
-        //TEST: 测试代码
         else if(currentAbility)
         {
             currentAbility.InvokeAbility();
@@ -136,10 +135,12 @@ public class AICombat : StateActionSO
     /// </summary>
     private void GetAbility()
     {
-        if (!currentAbility)
+        //TODO: 考虑添加一个释放技能的CD时间，以控制敌人AI的攻击欲望
+        if (!currentAbility && !animator.GetCurrentAnimatorStateInfo(0).IsTag("Ability") &&
+            !animator.IsInTransition(0))
         {
             //获取一个可用的技能
-            currentAbility = enemyCombatController.GetAnAvailableAbility();
+            currentAbility = enemyCombatController.GetRandomAvailableAbility();
         }
     }
     

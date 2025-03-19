@@ -22,3 +22,4 @@ MonoBehaviour:
   attackDistance: 3
   chaseDistance: 7
   runDistance: 11
+  currentAbility: {fileID: 0}

@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   abilityName: Ability01_1
   abilityID: 1
-  abilityCD: 10
+  abilityCD: 13
   abilityUseDistance: 3
-  abilitiyIsAvailable: 0
+  abilitiyIsAvailable: 1

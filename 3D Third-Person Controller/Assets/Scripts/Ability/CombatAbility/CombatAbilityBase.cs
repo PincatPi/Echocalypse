@@ -44,18 +44,25 @@ public abstract class CombatAbilityBase : ScriptableObject
             animator.CrossFade(abilityName, 0.1f);
         }
         abilitiyIsAvailable = false;
-        //将自己从可用技能列表中移出，并移入冷却技能列表
-        
+        //将自己从可用技能列表中移出
+        Debug.Log("从可用列表中移除");
+        combatController.availableAbilityList.Remove(this);
         //技能CD
         AbilityCoolDown();
     }
 
+    /// <summary>
+    /// 技能CD
+    /// </summary>
     public void AbilityCoolDown()
     {
         Timer timer = CachePoolManager.Instance.GetObject("Tool/Timer").GetComponent<Timer>();
         timer.CreateTime(abilityCD, () =>
         {
-            abilitiyIsAvailable = true;
+            //CD结束
+            abilitiyIsAvailable = true; //技能设为可用
+            Debug.Log("加入了可用技能列表");
+            combatController.availableAbilityList.Add(this);
         });
     }
     

@@ -2,17 +2,31 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Ability2 : MonoBehaviour
+[CreateAssetMenu(fileName = "Ability2", menuName = "Abilities/上刺横扫")]
+public class Ability2 : CombatAbilityBase
 {
-    // Start is called before the first frame update
-    void Start()
+    /// <summary>
+    /// 技能逻辑
+    /// </summary>
+    public override void InvokeAbility()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        //若当前还没有使用技能或攻击
+        if (animator.GetCurrentAnimatorStateInfo(0).IsTag("Motion") && abilitiyIsAvailable)
+        {
+            Debug.Log("准备使用技能");
+            //当技能被激活时，还没有进入允许释放的距离，则向玩家接近
+            if (combatController.GetCurrentTargetDistance() > abilityUseDistance)
+            {
+                animator.SetFloat(verticalHash, 1f, 0.25f, Time.deltaTime);
+                animator.SetFloat(horizontalHash, 0f, 0.25f, Time.deltaTime);
+                animator.SetFloat(moveSpeedHash, enemyParameter.runSpeed, 0.25f, Time.deltaTime);   
+            }
+            //若已经进入允许释放的距离，则释放技能
+            else if(combatController.GetCurrentTargetDistance() < abilityUseDistance)
+            {
+                Debug.Log("使用技能" + combatController.GetCurrentTargetDistance());
+                UseAbility();
+            }
+        }
     }
 }

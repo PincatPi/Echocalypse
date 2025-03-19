@@ -20,6 +20,7 @@ public class EnemyCombatController : CombatControllerBase
     
     [Header("技能")]
     [SerializeField] private List<CombatAbilityBase> abilityList = new List<CombatAbilityBase>();
+    [SerializeField] public List<CombatAbilityBase> availableAbilityList = new List<CombatAbilityBase>();
 
     private int lockOnHash;
     
@@ -120,6 +121,8 @@ public class EnemyCombatController : CombatControllerBase
             abilityList[i].Init(animator, this, enemyMovementController, enemyParameter);
             //将技能设为可用
             abilityList[i].SetAbilityAvailable(true);
+            //将技能加入字典中，等待选择
+            availableAbilityList.Add(abilityList[i]);
         }
     }
 
@@ -135,6 +138,16 @@ public class EnemyCombatController : CombatControllerBase
         }
         
         return null;
+    }
+
+    /// <summary>
+    /// 随机返回一个可用技能
+    /// </summary>
+    public CombatAbilityBase GetRandomAvailableAbility()
+    {
+        if(availableAbilityList.Count == 0)
+            return null;
+        return availableAbilityList[UnityEngine.Random.Range(0, availableAbilityList.Count)];
     }
 
     /// <summary>
