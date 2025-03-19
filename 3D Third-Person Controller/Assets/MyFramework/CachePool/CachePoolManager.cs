@@ -8,30 +8,18 @@ using UnityEngine.UIElements;
 /// </summary>
 public class CachePoolData
 {
-    public GameObject dataRoot;
     public List<GameObject> cachePoolList;
 
     public CachePoolData(GameObject obj, GameObject cachePoolRoot)
     {
-        if(!obj)
-            Debug.Log("CahcePoolData中的obj等于null");
-        dataRoot = new GameObject(obj.name)
-        {
-            transform =
-            {
-                parent = cachePoolRoot.transform
-            }
-        };
-        //压入列表中
         cachePoolList = new List<GameObject>() { };
-        PushObject(obj);
+        PushObject(obj, cachePoolRoot);
     }
 
     /// <summary>
     /// 向缓存池中添加对象
     /// </summary>
-    /// <param name="obj"></param>
-    public void PushObject(GameObject obj)
+    public void PushObject(GameObject obj, GameObject cachePoolRoot)
     {
         if (obj)
         {
@@ -40,7 +28,7 @@ public class CachePoolData
             //失活
             obj.SetActive(false);
             //设置inspector窗口中的父对象
-            obj.transform.parent = dataRoot.transform;
+            obj.transform.parent = cachePoolRoot.transform; 
         }
         else
         {
@@ -62,9 +50,13 @@ public class CachePoolData
             //将其从缓存池中移除
             cachePoolList.RemoveAt(0);
             //激活，令其显示
-            result.SetActive(true);
-            //断开父子关系
-            result.transform.parent = null;
+            //TEST: 测试代码
+            if (result)
+            {
+                result.SetActive(true);
+                //断开父子关系
+                result.transform.parent = null;
+            }
         }
         return result;
     }
@@ -123,7 +115,7 @@ public class CachePoolManager : SingletonPatternBase<CachePoolManager>
         //缓存池中存在该类型对象的缓存
         if (cachePoolDic.ContainsKey(key))
         {
-            cachePoolDic[key].PushObject(obj);
+            cachePoolDic[key].PushObject(obj, cachePoolRoot);
         }
         else
         {

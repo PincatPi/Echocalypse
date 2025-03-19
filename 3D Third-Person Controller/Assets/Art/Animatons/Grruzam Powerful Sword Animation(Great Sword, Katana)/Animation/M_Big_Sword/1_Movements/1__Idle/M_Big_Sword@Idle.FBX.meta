@@ -1,7 +1,7 @@
 fileFormatVersion: 2
 guid: a6807a6471eddc440aadf941d9d3bdec
 ModelImporter:
-  serializedVersion: 19301
+  serializedVersion: 22200
   internalIDToNameTable:
   - first:
       1: 100000
@@ -995,14 +995,15 @@ ModelImporter:
     bakeSimulation: 0
     resampleCurves: 1
     optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
     motionNodeName: root
     rigImportErrors: 
     rigImportWarnings: "Copied Avatar Rig Configuration mis-match. Bone length in
       copied configuration does not match position in animation file:\n\t'thigh_l'
-      : position error = 22.382748 mm\n\t'calf_l' : position error = 2.568392 mm\n\t'foot_l'
-      : position error = 11.987082 mm\n\t'ball_l' : position error = 10.411225 mm\n\t'thigh_r'
-      : position error = 22.425657 mm\n\t'calf_r' : position error = 22.773691 mm\n\t'foot_r'
-      : position error = 16.557909 mm\n\t'ball_r' : position error = 12.273046 mm\n"
+      : position error = 22.382719 mm\n\t'calf_l' : position error = 2.568396 mm\n\t'foot_l'
+      : position error = 11.987134 mm\n\t'ball_l' : position error = 10.411245 mm\n\t'thigh_r'
+      : position error = 22.425661 mm\n\t'calf_r' : position error = 22.773598 mm\n\t'foot_r'
+      : position error = 16.558058 mm\n\t'ball_r' : position error = 12.273003 mm\n"
     animationImportErrors: 
     animationImportWarnings: "\nClip 'Take 001' has import animation warnings that
       might lower retargeting quality:\nNote: Activate translation DOF on avatar
@@ -1197,27 +1198,35 @@ ModelImporter:
     addColliders: 0
     useSRGBMaterialColor: 1
     sortHierarchyByName: 1
+    importPhysicalCameras: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
     importLights: 1
+    nodeNameCollisionStrategy: 0
     fileIdsGeneration: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
     keepQuads: 0
     weldVertices: 1
+    bakeAxisConversion: 0
     preserveHierarchy: 0
     skinWeightsMode: 0
     maxBonesPerVertex: 4
     minBoneWeight: 0.001
+    optimizeBones: 1
     meshOptimizationFlags: -1
     indexFormat: 0
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 0
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
     secondaryUVPackMargin: 4
     useFileScale: 1
+    strictVertexDataChecks: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -2016,6 +2025,9 @@ ModelImporter:
   animationType: 3
   humanoidOversampling: 1
   avatarSetup: 2
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 0
+  importBlendShapeDeformPercent: 0
+  remapMaterialsIfMaterialImportModeIsNone: 1
   additionalBone: 0
   userData: 
   assetBundleName: 

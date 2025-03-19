@@ -17,9 +17,9 @@ public class Ability2 : CombatAbilityBase
             //当技能被激活时，还没有进入允许释放的距离，则向玩家接近
             if (combatController.GetCurrentTargetDistance() > abilityUseDistance)
             {
-                animator.SetFloat(verticalHash, 1f, 0.25f, Time.deltaTime);
-                animator.SetFloat(horizontalHash, 0f, 0.25f, Time.deltaTime);
-                animator.SetFloat(moveSpeedHash, enemyParameter.runSpeed, 0.25f, Time.deltaTime);   
+                animator.SetFloat(verticalHash, 1f, 0.1f, Time.deltaTime);
+                animator.SetFloat(horizontalHash, 0f, 0.1f, Time.deltaTime);
+                animator.SetFloat(moveSpeedHash, enemyParameter.runSpeed, 0.1f, Time.deltaTime);   
             }
             //若已经进入允许释放的距离，则释放技能
             else if(combatController.GetCurrentTargetDistance() < abilityUseDistance)

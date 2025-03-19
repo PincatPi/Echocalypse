@@ -177,4 +177,10 @@ public class EnemyCombatController : CombatControllerBase
     }
 
     #endregion
+
+    #region 技能测试
+
+    //public Get
+
+    #endregion
 }

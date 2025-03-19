@@ -16,6 +16,12 @@ public class AICombat : StateActionSO
     
     //当前技能
     [SerializeField] private CombatAbilityBase currentAbility;
+
+    #region 测试技能
+
+    [SerializeField] private ComboList currentAbilityTest;
+
+    #endregion
     
     private int verticalHash = Animator.StringToHash("Vertical");
     private int horizontalHash = Animator.StringToHash("Horizontal");
@@ -55,41 +61,41 @@ public class AICombat : StateActionSO
             //玩家距离小于后退距离，则向后退
             else if (enemyCombatController.GetCurrentTargetDistance() < backwardDistance)
             {
-                animator.SetFloat(verticalHash, -1f, 0.25f, Time.deltaTime);
-                animator.SetFloat(horizontalHash, 0f, 0.25f, Time.deltaTime);
-                animator.SetFloat(moveSpeedHash, enemyParameter.walkSpeed, 0.25f, Time.deltaTime);
+                animator.SetFloat(verticalHash, -1f, 0.1f, Time.deltaTime);
+                animator.SetFloat(horizontalHash, 0f, 0.1f, Time.deltaTime);
+                animator.SetFloat(moveSpeedHash, enemyParameter.walkSpeed, 0.1f, Time.deltaTime);
 
                 randomHorizontal = GetRandomHorizontal();
             }
             //玩家距离大于后退距离且小于追击距离，则进行平移
             else if (enemyCombatController.GetCurrentTargetDistance() > backwardDistance && enemyCombatController.GetCurrentTargetDistance()< chaseDistance)
             {
-                animator.SetFloat(verticalHash, 0f,0.25f, Time.deltaTime);
-                animator.SetFloat(horizontalHash, randomHorizontal, 0.25f, Time.deltaTime);
-                animator.SetFloat(moveSpeedHash, enemyParameter.walkSpeed, 0.25f, Time.deltaTime);
+                animator.SetFloat(verticalHash, 0f,0.1f, Time.deltaTime);
+                animator.SetFloat(horizontalHash, randomHorizontal, 0.1f, Time.deltaTime);
+                animator.SetFloat(moveSpeedHash, enemyParameter.walkSpeed, 0.1f, Time.deltaTime);
             }
             //玩家距离大于追击距离，则向玩家移动
             else if (enemyCombatController.GetCurrentTargetDistance() > chaseDistance && enemyCombatController.GetCurrentTargetDistance() < runDistance)
             {
-                animator.SetFloat(verticalHash, 1f, 0.25f, Time.deltaTime);
-                animator.SetFloat(horizontalHash, 0f, 0.25f, Time.deltaTime);
-                animator.SetFloat(moveSpeedHash, enemyParameter.walkSpeed, 0.25f, Time.deltaTime);
+                animator.SetFloat(verticalHash, 1f, 0.1f, Time.deltaTime);
+                animator.SetFloat(horizontalHash, 0f, 0.1f, Time.deltaTime);
+                animator.SetFloat(moveSpeedHash, enemyParameter.walkSpeed, 0.1f, Time.deltaTime);
               
                 randomHorizontal = GetRandomHorizontal();
             }
             //玩家距离大于奔跑追击距离，则奔跑着向玩家移动
             else if (enemyCombatController.GetCurrentTargetDistance() > runDistance)
             {
-                animator.SetFloat(verticalHash, 1f, 0.25f, Time.deltaTime);
-                animator.SetFloat(horizontalHash, 0f, 0.25f, Time.deltaTime);
-                animator.SetFloat(moveSpeedHash, enemyParameter.runSpeed, 0.25f, Time.deltaTime);
+                animator.SetFloat(verticalHash, 1f, 0.1f, Time.deltaTime);
+                animator.SetFloat(horizontalHash, 0f, 0.1f, Time.deltaTime);
+                animator.SetFloat(moveSpeedHash, enemyParameter.runSpeed, 0.1f, Time.deltaTime);
             }
         }
         else
         {
-            animator.SetFloat(verticalHash, 0f, 0.5f, Time.deltaTime);
-            animator.SetFloat(horizontalHash, 0f, 0.5f, Time.deltaTime);
-            animator.SetFloat(moveSpeedHash, 0f, 0.5f, Time.deltaTime);
+            animator.SetFloat(verticalHash, 0f, 0.1f, Time.deltaTime);
+            animator.SetFloat(horizontalHash, 0f, 0.1f, Time.deltaTime);
+            animator.SetFloat(moveSpeedHash, 0f, 0.1f, Time.deltaTime);
         }
     }
     
@@ -141,6 +147,17 @@ public class AICombat : StateActionSO
         {
             //获取一个可用的技能
             currentAbility = enemyCombatController.GetRandomAvailableAbility();
+        }
+    }
+
+    //TEST: 技能系统重构的测试 
+    private void TestGetAbility()
+    {
+        if (!currentAbility && !animator.GetCurrentAnimatorStateInfo(0).IsTag("Ability") &&
+            !animator.IsInTransition(0))
+        {
+            //获取一个可用的技能
+            //currentAbilityTest = enemyCombatController.GetRandomAvailableAbility();
         }
     }
     
