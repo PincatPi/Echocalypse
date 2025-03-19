@@ -9,9 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: baaf5ef6b7f6a6a4d865781e7df08a27, type: 3}
-  m_Name: "\u6D4B\u8BD5\u5C45\u5408"
+  m_Script: {fileID: 11500000, guid: a51718d623f055045a21bc75d20877bd, type: 3}
+  m_Name: "\u5927\u5251\u53D1\u6CE2"
   m_EditorClassIdentifier: 
-  comboList:
-  - {fileID: 11400000, guid: 22c41f583ef7d514f9ea0b5f023c4112, type: 2}
-  - {fileID: 11400000, guid: 3de237572c1f2634abc0b582e3402e2e, type: 2}
+  abilityName: Ability05_1
+  abilityID: 5
+  abilityCD: 18
+  abilityUseDistance: 7
+  abilitiyIsAvailable: 1

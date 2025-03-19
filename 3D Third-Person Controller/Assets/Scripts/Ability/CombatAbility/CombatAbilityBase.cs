@@ -45,7 +45,6 @@ public abstract class CombatAbilityBase : ScriptableObject
         }
         abilitiyIsAvailable = false;
         //将自己从可用技能列表中移出
-        Debug.Log("从可用列表中移除");
         combatController.availableAbilityList.Remove(this);
         //技能CD
         AbilityCoolDown();
@@ -61,7 +60,6 @@ public abstract class CombatAbilityBase : ScriptableObject
         {
             //CD结束
             abilitiyIsAvailable = true; //技能设为可用
-            Debug.Log("加入了可用技能列表");
             combatController.availableAbilityList.Add(this);
         });
     }

@@ -12,27 +12,28 @@ public class EnemyCombatController : CombatControllerBase
     private EnemyView enemyView;
     private EnemyBase enemyParameter;
     private EnemyMovementController enemyMovementController;
-    
+
     //战斗相关
     [SerializeField] protected LayerMask playerLayer;
     [SerializeField, Header("攻击目标")] protected Transform currentTarget = null;
     [SerializeField] protected GameObject attacker;
-    
-    [Header("技能")]
-    [SerializeField] private List<CombatAbilityBase> abilityList = new List<CombatAbilityBase>();
-    [SerializeField] public List<CombatAbilityBase> availableAbilityList = new List<CombatAbilityBase>();
 
-    private int lockOnHash;
+    [Header("技能")] [SerializeField] private List<CombatAbilityBase> abilityList = new List<CombatAbilityBase>();
+    [SerializeField] public List<CombatAbilityBase> availableAbilityList = new List<CombatAbilityBase>();
     
+    [Header("攻击检测")] [SerializeField] public bool isAttacking = false;
+    
+    private int lockOnHash;
+
     private void Start()
     {
         base.Start();
         enemyView = GetComponent<EnemyView>();
         enemyParameter = GetComponent<EnemyBase>();
         enemyMovementController = GetComponent<EnemyMovementController>();
-        
+
         lockOnHash = Animator.StringToHash("LockOn");
-        
+
         //初始化所有技能
         InitAllAbilities();
     }
@@ -41,7 +42,7 @@ public class EnemyCombatController : CombatControllerBase
     {
         UpdateCurrentTarget();
     }
-    
+
     //敌人公共方法
     //受到攻击
     public override void OnHit(ComboInteractionConfig interactionConfig, Transform attacker)
@@ -54,10 +55,11 @@ public class EnemyCombatController : CombatControllerBase
     private void FindTarget()
     {
         //若已经有目标，则返回
-        if(currentTarget)
+        if (currentTarget)
             return;
         Collider[] target = new Collider[1];
-        var size = Physics.OverlapBoxNonAlloc(transform.position, new Vector3(4, 4, 4), target, Quaternion.identity, playerLayer);
+        var size = Physics.OverlapBoxNonAlloc(transform.position, new Vector3(4, 4, 4), target, Quaternion.identity,
+            playerLayer);
         if (size != 0)
         {
             currentTarget = target[0].transform;
@@ -66,7 +68,7 @@ public class EnemyCombatController : CombatControllerBase
 
     private void LookAtTarget()
     {
-        if(!currentTarget)
+        if (!currentTarget)
             return;
         Vector3 dir = currentTarget.position - transform.position;
         transform.forward = dir.normalized;
@@ -77,17 +79,17 @@ public class EnemyCombatController : CombatControllerBase
         currentTarget = enemyView.CurrentTarget;
         if (currentTarget)
         {
-            animator.SetFloat(lockOnHash, 1f);   
+            animator.SetFloat(lockOnHash, 1f);
         }
         else
         {
             animator.SetFloat(lockOnHash, 0f);
         }
     }
-    
+
     public Transform GetCurrentTarget()
     {
-        if(!currentTarget)
+        if (!currentTarget)
             return null;
         return currentTarget;
     }
@@ -98,10 +100,10 @@ public class EnemyCombatController : CombatControllerBase
             return -1f;
         return Vector3.Distance(transform.position, currentTarget.position);
     }
-    
+
     public Vector3 GetDirectionForTarget()
     {
-        if(!currentTarget)
+        if (!currentTarget)
             return Vector3.zero;
         return (currentTarget.position - transform.position).normalized;
     }
@@ -113,7 +115,7 @@ public class EnemyCombatController : CombatControllerBase
     /// </summary>
     private void InitAllAbilities()
     {
-        if(abilityList.Count == 0)
+        if (abilityList.Count == 0)
             return;
         for (int i = 0; i < abilityList.Count; i++)
         {
@@ -121,7 +123,7 @@ public class EnemyCombatController : CombatControllerBase
             abilityList[i].Init(animator, this, enemyMovementController, enemyParameter);
             //将技能设为可用
             abilityList[i].SetAbilityAvailable(true);
-            //将技能加入字典中，等待选择
+            //将技能加入可用列表中，等待选择
             availableAbilityList.Add(abilityList[i]);
         }
     }
@@ -133,10 +135,10 @@ public class EnemyCombatController : CombatControllerBase
     {
         for (int i = 0; i < abilityList.Count; i++)
         {
-            if(abilityList[i].GetAbilityAvailable())
+            if (abilityList[i].GetAbilityAvailable())
                 return abilityList[i];
         }
-        
+
         return null;
     }
 
@@ -145,7 +147,7 @@ public class EnemyCombatController : CombatControllerBase
     /// </summary>
     public CombatAbilityBase GetRandomAvailableAbility()
     {
-        if(availableAbilityList.Count == 0)
+        if (availableAbilityList.Count == 0)
             return null;
         return availableAbilityList[UnityEngine.Random.Range(0, availableAbilityList.Count)];
     }
@@ -157,12 +159,13 @@ public class EnemyCombatController : CombatControllerBase
     {
         for (int i = 0; i < abilityList.Count; i++)
         {
-            if(abilityList[i].GetAbilityName() == abilityName)
+            if (abilityList[i].GetAbilityName() == abilityName)
                 return abilityList[i];
         }
+
         return null;
     }
-    
+
     /// <summary>
     /// 根据技能ID，获得指定的可用技能（若该技能在冷却中则返回null）
     /// </summary>
@@ -170,17 +173,12 @@ public class EnemyCombatController : CombatControllerBase
     {
         for (int i = 0; i < abilityList.Count; i++)
         {
-            if(abilityList[i].GetAbilityID() == abilityID)
+            if (abilityList[i].GetAbilityID() == abilityID)
                 return abilityList[i];
         }
+
         return null;
     }
-
-    #endregion
-
-    #region 技能测试
-
-    //public Get
 
     #endregion
 }

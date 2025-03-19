@@ -6,6 +6,8 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "AICombat", menuName = "StateMachine/State/AICombat")]
 public class AICombat : StateActionSO
 {
+    private EnemyAttackAnimation enemyAttackAnimation;
+    
     [SerializeField] private float backwardDistance;
     [SerializeField] private float attackDistance;
     [SerializeField] private float chaseDistance;
@@ -16,12 +18,6 @@ public class AICombat : StateActionSO
     
     //当前技能
     [SerializeField] private CombatAbilityBase currentAbility;
-
-    #region 测试技能
-
-    [SerializeField] private ComboList currentAbilityTest;
-
-    #endregion
     
     private int verticalHash = Animator.StringToHash("Vertical");
     private int horizontalHash = Animator.StringToHash("Horizontal");
@@ -29,6 +25,12 @@ public class AICombat : StateActionSO
 
     private int randomHorizontal;
 
+    protected override void Init(StateMachineSystem stateMachineSystem)
+    {
+        base.Init(stateMachineSystem);
+        enemyAttackAnimation = stateMachineSystem.GetComponent<EnemyAttackAnimation>();
+    }
+    
     public override void OnUpdate()
     {
         CombatAction();
@@ -147,17 +149,6 @@ public class AICombat : StateActionSO
         {
             //获取一个可用的技能
             currentAbility = enemyCombatController.GetRandomAvailableAbility();
-        }
-    }
-
-    //TEST: 技能系统重构的测试 
-    private void TestGetAbility()
-    {
-        if (!currentAbility && !animator.GetCurrentAnimatorStateInfo(0).IsTag("Ability") &&
-            !animator.IsInTransition(0))
-        {
-            //获取一个可用的技能
-            //currentAbilityTest = enemyCombatController.GetRandomAvailableAbility();
         }
     }
     

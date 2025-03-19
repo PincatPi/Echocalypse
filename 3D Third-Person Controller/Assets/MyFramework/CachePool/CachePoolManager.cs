@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering.UI;
 using UnityEngine.UIElements;
 
 /// <summary>
@@ -27,8 +28,6 @@ public class CachePoolData
             cachePoolList.Add(obj);
             //失活
             obj.SetActive(false);
-            //设置inspector窗口中的父对象
-            obj.transform.parent = cachePoolRoot.transform; 
         }
         else
         {
@@ -68,13 +67,14 @@ public class CachePoolData
 /// </summary>
 public class CachePoolManager : SingletonPatternBase<CachePoolManager>
 {
-    public Dictionary<string, CachePoolData> cachePoolDic;
+    public Dictionary<string, CachePoolData> cachePoolDic = new Dictionary<string, CachePoolData>();
 
     private GameObject cachePoolRoot;
 
     private CachePoolManager()
     {
         cachePoolDic = new Dictionary<string, CachePoolData>(); 
+        cachePoolDic.Clear();
     }
 
     /// <summary>
@@ -89,6 +89,12 @@ public class CachePoolManager : SingletonPatternBase<CachePoolManager>
         if (cachePoolDic.ContainsKey(key) && cachePoolDic[key].cachePoolList.Count > 0)
         {
             result = cachePoolDic[key].GetObject();
+            if (!result)
+            {
+                result = GameObject.Instantiate(Resources.Load<GameObject>(key));
+                //把对象名改成缓存池名
+                result.name = key;
+            }
         }
         else
         {
