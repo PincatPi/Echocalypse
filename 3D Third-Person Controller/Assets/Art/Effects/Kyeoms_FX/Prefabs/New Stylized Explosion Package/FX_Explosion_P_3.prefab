@@ -1,0 +1,135 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &5159642830372596403
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3104147519919936105, guid: 562eda3ead7cbac4dbe7f08bdb0e6fd4, type: 3}
+      propertyPath: CustomDataModule.vectorLabel1_3
+      value: Chromatic Aberration
+      objectReference: {fileID: 0}
+    - target: {fileID: 3104147520211904734, guid: 562eda3ead7cbac4dbe7f08bdb0e6fd4, type: 3}
+      propertyPath: CustomDataModule.vectorLabel1_3
+      value: Chromatic Aberration
+      objectReference: {fileID: 0}
+    - target: {fileID: 3104147520536979929, guid: 562eda3ead7cbac4dbe7f08bdb0e6fd4, type: 3}
+      propertyPath: UVModule.frameOverTime.scalar
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3104147520536979929, guid: 562eda3ead7cbac4dbe7f08bdb0e6fd4, type: 3}
+      propertyPath: CustomDataModule.vectorLabel1_3
+      value: Chromatic Aberration
+      objectReference: {fileID: 0}
+    - target: {fileID: 3104147520536979929, guid: 562eda3ead7cbac4dbe7f08bdb0e6fd4, type: 3}
+      propertyPath: CustomDataModule.vector0_0.maxCurve.m_Curve.Array.data[0].inSlope
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3104147520536979929, guid: 562eda3ead7cbac4dbe7f08bdb0e6fd4, type: 3}
+      propertyPath: CustomDataModule.vector0_0.maxCurve.m_Curve.Array.data[1].inSlope
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3104147520536979929, guid: 562eda3ead7cbac4dbe7f08bdb0e6fd4, type: 3}
+      propertyPath: CustomDataModule.vector0_0.maxCurve.m_Curve.Array.data[0].outSlope
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3104147520536979929, guid: 562eda3ead7cbac4dbe7f08bdb0e6fd4, type: 3}
+      propertyPath: CustomDataModule.vector0_0.maxCurve.m_Curve.Array.data[1].outSlope
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3104147520536979929, guid: 562eda3ead7cbac4dbe7f08bdb0e6fd4, type: 3}
+      propertyPath: CustomDataModule.vector0_0.maxCurve.m_Curve.Array.data[0].tangentMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3104147520536979929, guid: 562eda3ead7cbac4dbe7f08bdb0e6fd4, type: 3}
+      propertyPath: CustomDataModule.vector0_0.maxCurve.m_Curve.Array.data[1].tangentMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3104147521730371937, guid: 562eda3ead7cbac4dbe7f08bdb0e6fd4, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3104147521730371937, guid: 562eda3ead7cbac4dbe7f08bdb0e6fd4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3104147521730371937, guid: 562eda3ead7cbac4dbe7f08bdb0e6fd4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3104147521730371937, guid: 562eda3ead7cbac4dbe7f08bdb0e6fd4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3104147521730371937, guid: 562eda3ead7cbac4dbe7f08bdb0e6fd4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3104147521730371937, guid: 562eda3ead7cbac4dbe7f08bdb0e6fd4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3104147521730371937, guid: 562eda3ead7cbac4dbe7f08bdb0e6fd4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3104147521730371937, guid: 562eda3ead7cbac4dbe7f08bdb0e6fd4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3104147521730371937, guid: 562eda3ead7cbac4dbe7f08bdb0e6fd4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3104147521730371937, guid: 562eda3ead7cbac4dbe7f08bdb0e6fd4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3104147521730371937, guid: 562eda3ead7cbac4dbe7f08bdb0e6fd4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3104147521730371948, guid: 562eda3ead7cbac4dbe7f08bdb0e6fd4, type: 3}
+      propertyPath: m_Name
+      value: FX_Explosion_P_3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3104147521730371950, guid: 562eda3ead7cbac4dbe7f08bdb0e6fd4, type: 3}
+      propertyPath: UVModule.frameOverTime.scalar
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3104147521730371950, guid: 562eda3ead7cbac4dbe7f08bdb0e6fd4, type: 3}
+      propertyPath: CustomDataModule.vectorLabel1_3
+      value: Chromatic Aberration
+      objectReference: {fileID: 0}
+    - target: {fileID: 3104147521730371950, guid: 562eda3ead7cbac4dbe7f08bdb0e6fd4, type: 3}
+      propertyPath: CustomDataModule.vector0_0.maxCurve.m_Curve.Array.data[0].inSlope
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3104147521730371950, guid: 562eda3ead7cbac4dbe7f08bdb0e6fd4, type: 3}
+      propertyPath: CustomDataModule.vector0_0.maxCurve.m_Curve.Array.data[1].inSlope
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3104147521730371950, guid: 562eda3ead7cbac4dbe7f08bdb0e6fd4, type: 3}
+      propertyPath: CustomDataModule.vector0_0.maxCurve.m_Curve.Array.data[0].outSlope
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3104147521730371950, guid: 562eda3ead7cbac4dbe7f08bdb0e6fd4, type: 3}
+      propertyPath: CustomDataModule.vector0_0.maxCurve.m_Curve.Array.data[1].outSlope
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3104147521730371950, guid: 562eda3ead7cbac4dbe7f08bdb0e6fd4, type: 3}
+      propertyPath: CustomDataModule.vector0_0.maxCurve.m_Curve.Array.data[0].tangentMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3104147521730371950, guid: 562eda3ead7cbac4dbe7f08bdb0e6fd4, type: 3}
+      propertyPath: CustomDataModule.vector0_0.maxCurve.m_Curve.Array.data[1].tangentMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3295517746249795623, guid: 562eda3ead7cbac4dbe7f08bdb0e6fd4, type: 3}
+      propertyPath: CustomDataModule.vectorLabel1_3
+      value: Chromatic Aberration
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 562eda3ead7cbac4dbe7f08bdb0e6fd4, type: 3}

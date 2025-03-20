@@ -1054,6 +1054,13 @@ ModelImporter:
         floatParameter: 0
         intParameter: 42
         messageOptions: 0
+      - time: 0.34847447
+        functionName: OnAttackAnimationEnter
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 43
+        messageOptions: 0
       transformMask:
       - path: 
         weight: 1

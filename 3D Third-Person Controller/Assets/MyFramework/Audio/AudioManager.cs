@@ -51,6 +51,8 @@ public class AudioManager : SingletonPatternBase<AudioManager>
         //异步加载背景音乐后播放
         ResourcesLodingManager.GetInstance().LoadAsync<AudioClip>(path, (clip) =>
         {
+            //TEST: 测试代码
+            Debug.Log(clip.name);
             backgroundMusic.clip = clip;
             backgroundMusic.loop = true;
             backgroundMusic.volume = volume;
