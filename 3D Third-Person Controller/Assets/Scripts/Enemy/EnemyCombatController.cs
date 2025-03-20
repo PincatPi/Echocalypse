@@ -1,8 +1,10 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Serialization;
+using UnityEngine.UIElements;
 using Assembly = System.Reflection.Assembly;
 
 
@@ -15,13 +17,20 @@ public class EnemyCombatController : CombatControllerBase
 
     //战斗相关
     [SerializeField] protected LayerMask playerLayer;
-    [SerializeField, Header("攻击目标")] protected Transform currentTarget = null;
+    [SerializeField, Header("攻击目标")] 
+    protected Transform currentTarget = null;
     [SerializeField] protected GameObject attacker;
 
-    [Header("技能")] [SerializeField] private List<CombatAbilityBase> abilityList = new List<CombatAbilityBase>();
+    [Header("技能")] 
+    [SerializeField] private List<CombatAbilityBase> abilityList = new List<CombatAbilityBase>();
     [SerializeField] public List<CombatAbilityBase> availableAbilityList = new List<CombatAbilityBase>();
     
-    [Header("攻击检测")] [SerializeField] public bool isAttacking = false;
+    [Header("攻击检测")] 
+    [SerializeField] public bool isAttacking = false;
+    [SerializeField] private Collider[] weaponDetection;
+    private int attackConfigCount; //当前攻击配置信息索引
+    private AbilityConfig currentAbilityConfig; //当前攻击配置信息
+    
     
     private int lockOnHash;
 
@@ -48,6 +57,8 @@ public class EnemyCombatController : CombatControllerBase
     public override void OnHit(ComboInteractionConfig interactionConfig, Transform attacker)
     {
         base.OnHit(interactionConfig, attacker);
+        //播放受击动画
+        //animator.Play(interactionConfig.hitName);
         FindTarget();
         LookAtTarget();
     }
@@ -71,7 +82,11 @@ public class EnemyCombatController : CombatControllerBase
         if (!currentTarget)
             return;
         Vector3 dir = currentTarget.position - transform.position;
-        transform.forward = dir.normalized;
+        //transform.forward = dir.normalized;
+        // 目标旋转
+        Quaternion targetRotation = Quaternion.LookRotation(dir.normalized);
+        // 当前旋转逐渐过渡到目标旋转
+        transform.rotation = Quaternion.Lerp(transform.rotation, targetRotation, enemyParameter.rotationSpeed * Time.deltaTime);
     }
 
     private void UpdateCurrentTarget()
@@ -87,6 +102,16 @@ public class EnemyCombatController : CombatControllerBase
         }
     }
 
+    /// <summary>
+    /// 攻击到玩家时执行的逻辑
+    /// </summary>
+    public void HitPlayer(Collider playerCollider)
+    {
+        playerCollider.GetComponent<PlayerCombatController>().PlayerOnHit(currentAbilityConfig.detectionConfigs[attackConfigCount], this.transform);
+    }
+
+    #region 公共接口
+    
     public Transform GetCurrentTarget()
     {
         if (!currentTarget)
@@ -107,6 +132,12 @@ public class EnemyCombatController : CombatControllerBase
             return Vector3.zero;
         return (currentTarget.position - transform.position).normalized;
     }
+
+    public void SetAttackConfigCount(int count) => attackConfigCount = count;
+    
+    public void SetCurrentAbilityConfig(AbilityConfig abilityConfig) => currentAbilityConfig = abilityConfig;
+    
+    #endregion
 
     #region 技能
 

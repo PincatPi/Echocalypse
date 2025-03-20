@@ -15,7 +15,6 @@ public abstract class ConditionSO : ScriptableObject
     //初始化
     public virtual void Init(StateMachineSystem stateSystem)
     {
-        Debug.Log("ConditionSO Init");
         enemyCombatController = stateSystem.enemyCombatController;
         enemyParameter = stateSystem.enemyParameter;
         transform = stateSystem.transform;

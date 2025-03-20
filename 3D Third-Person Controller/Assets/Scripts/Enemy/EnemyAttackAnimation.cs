@@ -13,6 +13,7 @@ public class EnemyAttackAnimation : MonoBehaviour
     [SerializeField] private EnemyCombatController enemyCombatController;
     [SerializeField] private Transform enemyTransform;
     [SerializeField] private AudioSource audioSource;
+    [SerializeField] private EnemySwapWeapon enemySwapWeapon;
 
     //每个技能的配置信息
     [SerializeField] private List<AbilityConfig> abilityConfigs;
@@ -25,6 +26,7 @@ public class EnemyAttackAnimation : MonoBehaviour
         enemyCombatController = GetComponent<EnemyCombatController>();
         enemyTransform = GetComponent<Transform>();
         audioSource = GetComponent<AudioSource>();
+        enemySwapWeapon = GetComponent<EnemySwapWeapon>();
     }
 
     /// <summary>
@@ -40,8 +42,12 @@ public class EnemyAttackAnimation : MonoBehaviour
             return;
         
         int currentAbilityID = count / 10;
-        currentAbilityConfig = GetAbilityConfigByID(currentAbilityID);
         int configIndex = count % 10;
+        
+        currentAbilityConfig = GetAbilityConfigByID(currentAbilityID);
+        enemyCombatController.SetCurrentAbilityConfig(currentAbilityConfig); //同步当前攻击配置信息
+        enemyCombatController.SetAttackConfigCount(configIndex); //同步当前攻击配置信息索引
+        
         AttackDetectionEvent(configIndex);
         PlayClipEvent(configIndex);
         PlayFXEvent(configIndex);
@@ -52,8 +58,8 @@ public class EnemyAttackAnimation : MonoBehaviour
         if(count >= currentAbilityConfig.detectionConfigs.Length)
             return;
         //攻击检测开启
-        Debug.Log("开启攻击判定");
         enemyCombatController.isAttacking = true;
+        enemySwapWeapon.GetCurrentActiveWeapon().weaponDetection.enabled = true; //碰撞体启用
         //开始进行攻击检测关闭倒数,倒数结束后关闭攻击检测
         StartCoroutine(IE_AttackDetectionCount(currentAbilityConfig.detectionConfigs[count].detectionTime));
     }
@@ -71,15 +77,14 @@ public class EnemyAttackAnimation : MonoBehaviour
             timer -= Time.deltaTime;
         }
         //结束攻击判定
-        Debug.Log("结束攻击判定");
         enemyCombatController.isAttacking = false;
+        enemySwapWeapon.GetCurrentActiveWeapon().weaponDetection.enabled = false; //关闭碰撞体
     }
 
     private void PlayFXEvent(int count)
     {
         if(count >= currentAbilityConfig.fxConfigs.Length)
             return;
-        Debug.Log("开启特效协程");
         StartCoroutine(IE_FXCount(currentAbilityConfig.fxConfigs[count]));
     }
     
@@ -105,11 +110,8 @@ public class EnemyAttackAnimation : MonoBehaviour
 
     private void PlayClipEvent(int count)
     {
-        Debug.Log(count);
-        Debug.Log(currentAbilityConfig.clipConfigs.Length);
         if(count >= currentAbilityConfig.clipConfigs.Length)
             return;
-        Debug.Log("开启音效协程");
         StartCoroutine(IE_ClipCount(currentAbilityConfig.clipConfigs[count]));
     }
     
@@ -122,13 +124,12 @@ public class EnemyAttackAnimation : MonoBehaviour
             timer -= Time.deltaTime;
         }
         //播放音效
-        Debug.Log("协程倒计时结束");
         if (clipConfig.audioClip)
         {
             audioSource.PlayOneShot(clipConfig.audioClip, clipConfig.volume);
         }
     }
-
+    
     private AbilityConfig GetAbilityConfigByID(int abilityID)
     {
         for (int i = 0; i < abilityConfigs.Count; i++)
@@ -186,6 +187,8 @@ public class EnemyAttackDetectionConfig
 {
     //攻击检测持续时间
     public float detectionTime;
+    //攻击伤害
+    public int damage;
 }
 
 [Serializable]

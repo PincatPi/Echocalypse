@@ -21,7 +21,7 @@ public class CombatControllerBase : MonoBehaviour
     protected bool canExecuteCombo;
     public bool CanExecuteCombo => canExecuteCombo;
     [SerializeField] protected float multiplier = 1.2f;
-    protected bool canBeHit;
+    [SerializeField] protected bool canBeHit;
     [SerializeField] protected float hitCoolDown = 0.25f;
     [SerializeField] protected HitFXConfig[] hitFXList;
     public Transform hitTransform; //播放受击特效的位置
@@ -158,7 +158,6 @@ public class CombatControllerBase : MonoBehaviour
     public virtual void OnHit(ComboInteractionConfig interactionConfig, Transform attacker)
     {
         //看向攻击者
-        //transform.forward = -attacker.forward;
         // 获取当前的旋转和目标旋转
         Quaternion fromRotation = transform.rotation;
         Quaternion toRotation = Quaternion.LookRotation(-attacker.position, Vector3.up);
@@ -169,7 +168,6 @@ public class CombatControllerBase : MonoBehaviour
         if(!canBeHit)
             return;
         Debug.Log("受击了!受到了来自" + interactionConfig.weaponType + "的" + interactionConfig.damage + "点伤害!");
-        animator.Play(interactionConfig.hitName);
         canBeHit = false;
         StartCoroutine(IE_HitCoolDown(hitCoolDown));
         //生成受击特效

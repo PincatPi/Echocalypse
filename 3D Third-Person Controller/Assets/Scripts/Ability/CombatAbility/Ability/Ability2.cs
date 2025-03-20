@@ -13,7 +13,6 @@ public class Ability2 : CombatAbilityBase
         //若当前还没有使用技能或攻击
         if (animator.GetCurrentAnimatorStateInfo(0).IsTag("Motion") && abilitiyIsAvailable)
         {
-            Debug.Log("准备使用技能");
             //当技能被激活时，还没有进入允许释放的距离，则向玩家接近
             if (combatController.GetCurrentTargetDistance() > abilityUseDistance)
             {
@@ -24,7 +23,6 @@ public class Ability2 : CombatAbilityBase
             //若已经进入允许释放的距离，则释放技能
             else if(combatController.GetCurrentTargetDistance() < abilityUseDistance)
             {
-                Debug.Log("使用技能" + combatController.GetCurrentTargetDistance());
                 UseAbility();
             }
         }

@@ -1,15 +1,18 @@
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemySwapWeapon : MonoBehaviour
 {
     [SerializeField] private WeaponConfig[] weapons;
     [SerializeField] private WeaponConfig currentActiveWeapon;
-
+    [SerializeField] private E_WeaponType enemyWeaponType = E_WeaponType.Katana;
+    
     void Start()
     {
         //默认手上拿的是Katana
         currentActiveWeapon = weapons[0];
+        currentActiveWeapon.weaponDetection.enabled = true;
     }
     
     public void EnemySwapWeapons(string weaponName)
@@ -27,12 +30,20 @@ public class EnemySwapWeapon : MonoBehaviour
         currentActiveWeapon.weaponOnBack.SetActive(false); //手上的武器显示
         currentActiveWeapon.weaponInHand.SetActive(true); //背上的武器隐藏
     }
+
+    #region 公共接口
+
+    public WeaponConfig GetCurrentActiveWeapon() => currentActiveWeapon;
+
+    #endregion
 }
 
 [Serializable]
 public struct WeaponConfig
 {
     public string weaponName;
+    public E_WeaponType weaponType;
     public GameObject weaponInHand;
     public GameObject weaponOnBack;
+    public Collider weaponDetection;
 }

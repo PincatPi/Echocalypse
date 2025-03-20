@@ -16532,7 +16532,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 92345746}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.02497662, y: -0.00000006826983, z: 0.0000000017056816, w: 0.999688}
+  m_LocalRotation: {x: 0.02497662, y: -0, z: -0, w: 0.999688}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -43365,7 +43365,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.031673107, y: -0.00000006825689, z: 0.0000000021629936, w: 0.9994983}
+  m_LocalRotation: {x: 0.031673107, y: 0.00000003466317, z: -0.000000001098441, w: 0.9994983}
   m_LocalPosition: {x: -4.56, y: 2.196, z: 1.0799999}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -51927,7 +51927,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 406882057}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 5f81f212a5f6af34ba553be561f23da5, type: 3}
@@ -97579,7 +97579,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 748277629}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.027170664, y: -0.00000006142242, z: 0.0000000016695043, w: 0.9996308}
+  m_LocalRotation: {x: 0.027170664, y: -0.000000017200035, z: 4.675089e-10, w: 0.9996308}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -111943,7 +111943,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 855427968}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.050337166, y: -0.0000000609144, z: 0.000000003070151, w: 0.9987323}
+  m_LocalRotation: {x: 0.050337166, y: -0.000000017713454, z: 8.927766e-10, w: 0.9987323}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -135603,7 +135603,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1066586012}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.03594865, y: -0.00000006824701, z: 0.000000002454974, w: 0.99935365}
+  m_LocalRotation: {x: 0.03594865, y: -0, z: -0, w: 0.99935365}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -167433,10 +167433,23 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b61107ea85fb2b749ac5c761a41a53fa,
+        type: 3}
+      propertyPath: m_TagString
+      value: EnemyWeapon
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: b61107ea85fb2b749ac5c761a41a53fa,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2017388294}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: b61107ea85fb2b749ac5c761a41a53fa,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2017388295}
   m_SourcePrefab: {fileID: 100100000, guid: b61107ea85fb2b749ac5c761a41a53fa, type: 3}
 --- !u!4 &1252514863 stripped
 Transform:
@@ -175283,7 +175296,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1326575442}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.031673104, y: -0.00000006130129, z: 0.0000000019425768, w: 0.9994983}
+  m_LocalRotation: {x: 0.031673104, y: 0.000000017331587, z: -5.4922067e-10, w: 0.9994983}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -184252,10 +184265,23 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f6def7be08557c840bcfd191ab70bef2,
+        type: 3}
+      propertyPath: m_TagString
+      value: EnemyWeapon
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: f6def7be08557c840bcfd191ab70bef2,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1715633144}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: f6def7be08557c840bcfd191ab70bef2,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1715633145}
   m_SourcePrefab: {fileID: 100100000, guid: f6def7be08557c840bcfd191ab70bef2, type: 3}
 --- !u!4 &1376945089 stripped
 Transform:
@@ -201582,7 +201608,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1535738811}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b2d8418b0b9634b1892b0268dd9c2743, type: 3}
   m_Name: 
@@ -201889,6 +201915,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentComboList: {fileID: 0}
   multiplier: 1.2
+  canBeHit: 0
   hitCoolDown: 0.25
   hitFXList:
   - {fileID: 11400000, guid: f937dd40ba0a4e545bbc8e9929212aab, type: 2}
@@ -201906,6 +201933,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: a7950a1f041d5a9419e90c2ef1ea719e, type: 2}
   availableAbilityList: []
   isAttacking: 0
+  weaponDetection: []
 --- !u!114 &1535738817
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -201944,7 +201972,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkSpeed: 1.5
   runSpeed: 3.3
-  rotationSpeed: 2
+  rotationSpeed: 3
   health: 8093
   defense: 0.2
   attack: 1
@@ -201993,7 +202021,7 @@ CharacterController:
   m_Height: 2
   m_Radius: 0.22
   m_SlopeLimit: 45
-  m_StepOffset: 0.3
+  m_StepOffset: 0.1
   m_SkinWidth: 0.05
   m_MinMoveDistance: 0
   m_Center: {x: 0, y: 1.04, z: -0.03}
@@ -202026,12 +202054,15 @@ MonoBehaviour:
   enemyCombatController: {fileID: 1535738816}
   enemyTransform: {fileID: 1535738822}
   audioSource: {fileID: 1535738824}
+  enemySwapWeapon: {fileID: 1535738825}
   abilityConfigs:
   - abilityID: 2
     ability: {fileID: 11400000, guid: a123d0a05c5720a4c80a4f40411228cb, type: 2}
     detectionConfigs:
-    - detectionTime: 0.3
-    - detectionTime: 0.3
+    - detectionTime: 0.4
+      damage: 59
+    - detectionTime: 0.4
+      damage: 43
     clipConfigs:
     - startTime: 0
       audioClip: {fileID: 8300000, guid: cef0cd1c49dd90c4f9ac6722b5d61917, type: 3}
@@ -202059,10 +202090,14 @@ MonoBehaviour:
   - abilityID: 3
     ability: {fileID: 11400000, guid: 2e7091396fe31d04e93baf925b2905b7, type: 2}
     detectionConfigs:
-    - detectionTime: 0.3
-    - detectionTime: 0.3
-    - detectionTime: 0.3
-    - detectionTime: 0.3
+    - detectionTime: 0.4
+      damage: 38
+    - detectionTime: 0.4
+      damage: 47
+    - detectionTime: 0.4
+      damage: 33
+    - detectionTime: 0.4
+      damage: 58
     clipConfigs:
     - startTime: 0
       audioClip: {fileID: 8300000, guid: bc9c0421212b550488a216ce5280382b, type: 3}
@@ -202112,10 +202147,14 @@ MonoBehaviour:
   - abilityID: 4
     ability: {fileID: 11400000, guid: 68af5560c7bfd6c4cb3654efbfc8f700, type: 2}
     detectionConfigs:
-    - detectionTime: 0
-    - detectionTime: 0
-    - detectionTime: 0
-    - detectionTime: 0
+    - detectionTime: 0.3
+      damage: 62
+    - detectionTime: 0.3
+      damage: 64
+    - detectionTime: 0.3
+      damage: 70
+    - detectionTime: 0.3
+      damage: 83
     clipConfigs:
     - startTime: 0
       audioClip: {fileID: 8300000, guid: 4ca865c7fa4e61941ba620963f648389, type: 3}
@@ -202161,9 +202200,12 @@ MonoBehaviour:
   - abilityID: 5
     ability: {fileID: 11400000, guid: a7950a1f041d5a9419e90c2ef1ea719e, type: 2}
     detectionConfigs:
-    - detectionTime: 0
-    - detectionTime: 0
-    - detectionTime: 0
+    - detectionTime: 0.3
+      damage: 67
+    - detectionTime: 0.3
+      damage: 67
+    - detectionTime: 0.3
+      damage: 93
     clipConfigs:
     - startTime: 0
       audioClip: {fileID: 8300000, guid: 594615cc8e31e1b47a810bdd76b9dc33, type: 3}
@@ -202200,55 +202242,63 @@ MonoBehaviour:
       rotation: {x: 10, y: 180, z: 90}
       scale: {x: -1, y: 1, z: 1}
   currentAbilityConfig:
-    abilityID: 4
-    ability: {fileID: 11400000, guid: 68af5560c7bfd6c4cb3654efbfc8f700, type: 2}
+    abilityID: 3
+    ability: {fileID: 11400000, guid: 2e7091396fe31d04e93baf925b2905b7, type: 2}
     detectionConfigs:
-    - detectionTime: 0
-    - detectionTime: 0
-    - detectionTime: 0
-    - detectionTime: 0
+    - detectionTime: 0.4
+      damage: 38
+    - detectionTime: 0.4
+      damage: 47
+    - detectionTime: 0.4
+      damage: 33
+    - detectionTime: 0.4
+      damage: 58
     clipConfigs:
     - startTime: 0
-      audioClip: {fileID: 8300000, guid: 4ca865c7fa4e61941ba620963f648389, type: 3}
+      audioClip: {fileID: 8300000, guid: bc9c0421212b550488a216ce5280382b, type: 3}
       volume: 0.5
       duration: 0
     - startTime: 0
-      audioClip: {fileID: 8300000, guid: d415f9f342ed8f54192920213e1a3264, type: 3}
+      audioClip: {fileID: 8300000, guid: 7b939bef9d65be645a1c64642742ef3f, type: 3}
       volume: 0.5
       duration: 0
     - startTime: 0
-      audioClip: {fileID: 8300000, guid: 62e3491d61ae3ff47b1dab27d6f80395, type: 3}
+      audioClip: {fileID: 8300000, guid: dcb6c5298c81d3545b922fb03c6ffd18, type: 3}
+      volume: 0.5
+      duration: 0
+    - startTime: 0
+      audioClip: {fileID: 8300000, guid: c9496ca055cff5e4aa92d65084af839e, type: 3}
       volume: 0.5
       duration: 0
     fxConfigs:
-    - startTime: 0.1
-      FXPrefab: {fileID: 6477124811497415813, guid: 07705e695734e9440bad11e60a27c766,
+    - startTime: 0
+      FXPrefab: {fileID: 7257810882012927379, guid: b60c9eeeaae8e074191b6f7cb4075acc,
         type: 3}
-      FXName: FX/FX_07
-      position: {x: 0, y: 1.1, z: 1}
-      rotation: {x: 0, y: 180, z: 100}
+      FXName: FX/FX_03
+      position: {x: 0, y: 1.1, z: 1.1}
+      rotation: {x: 0, y: 180, z: 30}
+      scale: {x: 1, y: 1, z: 1}
+    - startTime: 0
+      FXPrefab: {fileID: 7257810882012927379, guid: b60c9eeeaae8e074191b6f7cb4075acc,
+        type: 3}
+      FXName: FX/FX_03
+      position: {x: 0, y: 1.1, z: 0.5}
+      rotation: {x: 0, y: 175, z: 280}
+      scale: {x: 1, y: 1, z: 1}
+    - startTime: 0
+      FXPrefab: {fileID: 7257810882012927379, guid: b60c9eeeaae8e074191b6f7cb4075acc,
+        type: 3}
+      FXName: FX/FX_03
+      position: {x: 0, y: 1.5, z: 1.5}
+      rotation: {x: 0, y: 180, z: 90}
       scale: {x: -1, y: 1, z: 1}
-    - startTime: 0.1
-      FXPrefab: {fileID: 6477124811497415813, guid: 07705e695734e9440bad11e60a27c766,
+    - startTime: 0
+      FXPrefab: {fileID: 7257810882012927379, guid: b60c9eeeaae8e074191b6f7cb4075acc,
         type: 3}
-      FXName: FX/FX_07
-      position: {x: 0, y: 1.1, z: 0.8}
-      rotation: {x: 0, y: 180, z: 40}
+      FXName: FX/FX_03
+      position: {x: 0, y: 1.1, z: 1.1}
+      rotation: {x: 0, y: 180, z: 250}
       scale: {x: -1, y: 1, z: 1}
-    - startTime: 0.05
-      FXPrefab: {fileID: 6477124811497415813, guid: 07705e695734e9440bad11e60a27c766,
-        type: 3}
-      FXName: FX/FX_07
-      position: {x: 0, y: 1.1, z: 1}
-      rotation: {x: 0, y: 180, z: 100}
-      scale: {x: -1, y: 1, z: 1}
-    - startTime: 0.05
-      FXPrefab: {fileID: 7043130890640255736, guid: 7b8632a97d49c1049b7d6bc7290588e7,
-        type: 3}
-      FXName: FX/Floor/FX_Explosion_H_2
-      position: {x: 0, y: 0, z: 2.6}
-      rotation: {x: 0, y: 0, z: 0}
-      scale: {x: 0.5, y: 0.5, z: 0.5}
 --- !u!82 &1535738824
 AudioSource:
   m_ObjectHideFlags: 0
@@ -202359,15 +202409,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weapons:
   - weaponName: Katana
+    weaponType: 0
     weaponInHand: {fileID: 1715633143}
     weaponOnBack: {fileID: 201717373}
+    weaponDetection: {fileID: 1715633144}
   - weaponName: GreatSword
+    weaponType: 0
     weaponInHand: {fileID: 2017388293}
     weaponOnBack: {fileID: 470285478}
+    weaponDetection: {fileID: 2017388294}
   currentActiveWeapon:
     weaponName: 
+    weaponType: 0
     weaponInHand: {fileID: 0}
     weaponOnBack: {fileID: 0}
+    weaponDetection: {fileID: 0}
+  enemyWeaponType: 1
 --- !u!114 &1535738826
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -224000,6 +224057,40 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1376945088}
   m_PrefabAsset: {fileID: 0}
+--- !u!65 &1715633144
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1715633143}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 0
+  serializedVersion: 3
+  m_Size: {x: 0.2679198, y: 0.085, z: 1.3544486}
+  m_Center: {x: -0.00000032534422, y: 0.029999884, z: 0.122634985}
+--- !u!114 &1715633145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1715633143}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5541635e80cd57c4f84703bfe1788bac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyCombatController: {fileID: 1535738816}
 --- !u!1 &1715664481
 GameObject:
   m_ObjectHideFlags: 0
@@ -226400,6 +226491,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7763131634050781237, guid: 5662b9ef69cd0944bb5588fe94b42d53,
     type: 3}
   m_PrefabInstance: {fileID: 432295419}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1739390516 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8546300309049391518, guid: 97909ded206dc6f40b4fb9b6b4a3262f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1516131088134221019}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1739391921 stripped
 GameObject:
@@ -270680,6 +270777,40 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1250129208}
   m_PrefabAsset: {fileID: 0}
+--- !u!65 &2017388294
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2017388293}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 0
+  serializedVersion: 3
+  m_Size: {x: 0.5513997, y: 0.235, z: 2.1932664}
+  m_Center: {x: -0.00000017229618, y: -0.00000019793856, z: 0.7837565}
+--- !u!114 &2017388295
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2017388293}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5541635e80cd57c4f84703bfe1788bac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyCombatController: {fileID: 1535738816}
 --- !u!4 &2017400630 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -2786318568346944761, guid: f4d26dc7cdad5ab428bf93a7d271da9a,
@@ -272064,7 +272195,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2027832628}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.027242364, y: -0.0000000682658, z: 0.0000000018604118, w: 0.9996289}
+  m_LocalRotation: {x: 0.027242364, y: -0, z: -0, w: 0.9996289}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -285933,6 +286064,11 @@ PrefabInstance:
       propertyPath: m_StepOffset
       value: 0.1
       objectReference: {fileID: 0}
+    - target: {fileID: 7991621453664287045, guid: 97909ded206dc6f40b4fb9b6b4a3262f,
+        type: 3}
+      propertyPath: hitCoolDown
+      value: 0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 8546300309049391518, guid: 97909ded206dc6f40b4fb9b6b4a3262f,
         type: 3}
       propertyPath: m_Name
@@ -285945,13 +286081,32 @@ PrefabInstance:
       objectReference: {fileID: 330585545}
     - target: {fileID: 8846350306166964554, guid: 97909ded206dc6f40b4fb9b6b4a3262f,
         type: 3}
+      propertyPath: cubeCenter.x
+      value: -4.560001
+      objectReference: {fileID: 0}
+    - target: {fileID: 8846350306166964554, guid: 97909ded206dc6f40b4fb9b6b4a3262f,
+        type: 3}
+      propertyPath: cubeCenter.y
+      value: 1.2462835
+      objectReference: {fileID: 0}
+    - target: {fileID: 8846350306166964554, guid: 97909ded206dc6f40b4fb9b6b4a3262f,
+        type: 3}
+      propertyPath: cubeCenter.z
+      value: 11.059937
+      objectReference: {fileID: 0}
+    - target: {fileID: 8846350306166964554, guid: 97909ded206dc6f40b4fb9b6b4a3262f,
+        type: 3}
       propertyPath: cinemachineTargetGroup
       value: 
       objectReference: {fileID: 1567772237}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8546300309049391518, guid: 97909ded206dc6f40b4fb9b6b4a3262f,
+        type: 3}
+      insertIndex: 4
+      addedObject: {fileID: 8544287328110565006}
   m_SourcePrefab: {fileID: 100100000, guid: 97909ded206dc6f40b4fb9b6b4a3262f, type: 3}
 --- !u!4 &2338288337575152890 stripped
 Transform:
@@ -285976,6 +286131,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GamePanel
+      objectReference: {fileID: 0}
+    - target: {fileID: 6551396169284699450, guid: 8a0f28a93c407d4419f1b2b796a3b781,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8909454783055861927, guid: 8a0f28a93c407d4419f1b2b796a3b781,
         type: 3}
@@ -286249,6 +286409,29 @@ Animator:
     type: 3}
   m_PrefabInstance: {fileID: 1516131088134221019}
   m_PrefabAsset: {fileID: 0}
+--- !u!136 &8544287328110565006
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1739390516}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1
+  m_Height: 1.7
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.85, z: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
