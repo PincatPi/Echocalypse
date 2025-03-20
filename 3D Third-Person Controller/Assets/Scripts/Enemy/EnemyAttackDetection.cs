@@ -5,77 +5,22 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.PlayerLoop;
 
-public class AttackCheckGizmos : MonoBehaviour
+public class EnemyAttackDetection : AttackCheckGizmos
 {
-    //敌人层级
-    [SerializeField] protected LayerMask enemyLayer;
-    //是否正在攻击
-    [SerializeField] protected bool isAttacking = false;
-    //当前的武器类型
-    [SerializeField] public E_WeaponType weaponType = E_WeaponType.Empty;
-    //对应武器和攻击检测点组的字典
-    protected Dictionary<E_WeaponType, Transform[]> attackCheckPointsOfWeapon = new Dictionary<E_WeaponType, Transform[]>();
-    //太刀攻击检测点
-    public Transform[] katanaCheckPoints;
-    //大剑攻击检测点
-    public Transform[] greatSwordCheckPoints;
+    private EnemyCombatController enemyCombatController;
     
-    //武器上的攻击检测点
-    [SerializeField] protected Transform[] attackCheckPoints;
-    //上一次检测时检测点的位置
-    [SerializeField] protected Vector3[] lastCheckPointsPosition;
-    //检测时间间隔
-    public float timeBetweenCheck;
-    //计时器
-    protected float timeCounter;
-    //是否是第一次检测
-    protected bool isFirstCheck = true;
-    protected RaycastHit[] enemiesRaycastHits;
-    
-    //本次攻击的交互数据
-    protected ComboInteractionConfig comboInteractionConfig;
-
-    protected virtual void Start()
+    private void Start()
     {
-        //注册不同武器的攻击检测点
-        attackCheckPointsOfWeapon.Add(E_WeaponType.Katana, katanaCheckPoints);
-        attackCheckPointsOfWeapon.Add(E_WeaponType.GreatSword, greatSwordCheckPoints);
+        base.Start();
+        enemyCombatController = GetComponent<EnemyCombatController>();
     }
 
-    protected virtual void Update()
+    private void Update()
     {
-        if (isAttacking)
-        {
-            timeCounter += Time.deltaTime;
-        }
-        SwitchAttackCheckPoints();
-        AttackCheck();
+        base.Update();
     }
 
-    protected virtual void SwitchAttackCheckPoints()
-    {
-        switch (weaponType)
-        {
-            case E_WeaponType.Empty:
-                break;
-            
-            case E_WeaponType.Katana:
-                attackCheckPoints = attackCheckPointsOfWeapon[E_WeaponType.Katana];
-                enemiesRaycastHits = new RaycastHit[attackCheckPoints.Length];
-                break;
-            
-            case E_WeaponType.GreatSword:
-                attackCheckPoints = attackCheckPointsOfWeapon[E_WeaponType.GreatSword];
-                enemiesRaycastHits = new RaycastHit[attackCheckPoints.Length];
-                break;
-            
-            case E_WeaponType.Bow:
-                //功能待添加
-                break;
-        }
-    }
-    
-    public virtual void AttackCheck()
+    public override void AttackCheck()
     {
         if(weaponType == E_WeaponType.Empty)
             return;
@@ -110,10 +55,10 @@ public class AttackCheckGizmos : MonoBehaviour
                                 // enemyHit.TakeDamage(this.transform.gameObject);
                                 if (enemy.transform)
                                 {
-                                    EnemyCombatController enemyHit = enemy.transform.gameObject.GetComponent<EnemyCombatController>();
-                                    if (enemyHit)
+                                    PlayerCombatController playerHit = enemy.transform.gameObject.GetComponent<PlayerCombatController>();
+                                    if (playerHit)
                                     {
-                                        enemyHit.OnHit(comboInteractionConfig, this.transform); //调用受击函数   
+                                        enemyCombatController.HitPlayer(enemy.collider);   
                                     }
                                 }
                             }
@@ -137,15 +82,13 @@ public class AttackCheckGizmos : MonoBehaviour
         }
     }
 
-    public void StartAttacking(ComboInteractionConfig config)
+    public void StartAttacking()
     {
         isAttacking = true;
-        comboInteractionConfig = config;
     }
 
-    public void EndAttacking()
+    public void StopAttacking()
     {
         isAttacking = false;
-        comboInteractionConfig = null;
     }
 }

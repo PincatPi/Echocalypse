@@ -15,8 +15,8 @@ MonoBehaviour:
   comboName: KatanaCombo06
   coolDownTime: 1.1
   comboInteractionConfigs:
-  - startTime: 0.1
-    endTime: 0.25
+  - startTime: 0.2
+    endTime: 0.3
     hitName: hit_front
     hitAirName: 
     weaponType: 1
