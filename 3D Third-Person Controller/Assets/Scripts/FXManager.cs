@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Text;
 using UnityEngine;
 
 public class FXManager : SingletonPatternBase<FXManager>
@@ -30,6 +31,7 @@ public class FXManager : SingletonPatternBase<FXManager>
         //设置特效位置
         FX.transform.position = position;
         FX.transform.localScale = scale;
+        Debug.Log(scale);
         ParticleSystem particleSystem = FX.GetComponent<ParticleSystem>();
         particleSystem.Play();
     }

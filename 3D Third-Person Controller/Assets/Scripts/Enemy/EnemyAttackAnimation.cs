@@ -11,6 +11,7 @@ public class EnemyAttackAnimation : MonoBehaviour
     public AICombat aiCombat;
     [SerializeField] private Animator animator;
     [SerializeField] private EnemyCombatController enemyCombatController;
+    [SerializeField] private EnemyAttackDetection enemyAttackDetection;
     [SerializeField] private Transform enemyTransform;
     [SerializeField] private AudioSource audioSource;
     [SerializeField] private EnemySwapWeapon enemySwapWeapon;
@@ -24,6 +25,7 @@ public class EnemyAttackAnimation : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         enemyCombatController = GetComponent<EnemyCombatController>();
+        enemyAttackDetection = GetComponent<EnemyAttackDetection>();
         enemyTransform = GetComponent<Transform>();
         audioSource = GetComponent<AudioSource>();
         enemySwapWeapon = GetComponent<EnemySwapWeapon>();
@@ -57,8 +59,7 @@ public class EnemyAttackAnimation : MonoBehaviour
     {
         if(count >= currentAbilityConfig.detectionConfigs.Length)
             return;
-        //攻击检测开启
-        enemyCombatController.isAttacking = true;
+        enemyAttackDetection.StartAttacking(); //攻击检测开启
         enemySwapWeapon.GetCurrentActiveWeapon().weaponDetection.enabled = true; //碰撞体启用
         //开始进行攻击检测关闭倒数,倒数结束后关闭攻击检测
         StartCoroutine(IE_AttackDetectionCount(currentAbilityConfig.detectionConfigs[count].detectionTime));
@@ -76,8 +77,7 @@ public class EnemyAttackAnimation : MonoBehaviour
             yield return null;
             timer -= Time.deltaTime;
         }
-        //结束攻击判定
-        enemyCombatController.isAttacking = false;
+        enemyAttackDetection.EndAttacking(); //结束攻击判定
         enemySwapWeapon.GetCurrentActiveWeapon().weaponDetection.enabled = false; //关闭碰撞体
     }
 

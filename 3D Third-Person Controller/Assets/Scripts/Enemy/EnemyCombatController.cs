@@ -26,10 +26,9 @@ public class EnemyCombatController : CombatControllerBase
     [SerializeField] public List<CombatAbilityBase> availableAbilityList = new List<CombatAbilityBase>();
     
     [Header("攻击检测")] 
-    [SerializeField] public bool isAttacking = false;
-    [SerializeField] private Collider[] weaponDetection;
     private int attackConfigCount; //当前攻击配置信息索引
     private AbilityConfig currentAbilityConfig; //当前攻击配置信息
+    
     
     
     private int lockOnHash;

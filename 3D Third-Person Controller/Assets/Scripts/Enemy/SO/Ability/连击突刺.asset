@@ -9,9 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0d0db8e0daa4ba74db7ccbc2f2c2d2d3, type: 3}
-  m_Name: PlayerHitFXConfig
+  m_Script: {fileID: 11500000, guid: a51718d623f055045a21bc75d20877bd, type: 3}
+  m_Name: "\u8FDE\u51FB\u7A81\u523A"
   m_EditorClassIdentifier: 
-  hitFXInfoList:
-  - hitFX: {fileID: 872462168564033203, guid: acf04d7f21caf984996dd7a49973c39d, type: 3}
-    hitFXName: FX/FX_hit01
+  abilityName: Ability01_1
+  abilityID: 1
+  abilityCD: 10
+  abilityUseDistance: 3
+  abilitiyIsAvailable: 0

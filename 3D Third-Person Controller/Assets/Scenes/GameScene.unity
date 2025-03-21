@@ -12254,6 +12254,37 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 56274059}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &56293859
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 56293860}
+  m_Layer: 9
+  m_Name: KatanaAttackCheckPoint4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &56293860
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 56293859}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0.3}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1883007234}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &56498245
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14578,6 +14609,37 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 73819861}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &73948183
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 73948184}
+  m_Layer: 9
+  m_Name: KatanaAttackCheckPoint3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &73948184
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 73948183}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0.2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1883007234}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &74815255
 GameObject:
   m_ObjectHideFlags: 0
@@ -21255,6 +21317,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1923970571}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &127754799
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 127754800}
+  m_Layer: 9
+  m_Name: KatanaAttackCheckPoint11
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &127754800
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 127754799}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1883007234}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &127914373
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22227,6 +22320,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &136361023
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 136361024}
+  m_Layer: 9
+  m_Name: KatanaAttackCheckPoint9
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &136361024
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 136361023}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0.8}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1883007234}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &136461566 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8697294837991512692, guid: e6be662361bf53c4797cb51c922e9024,
@@ -30607,6 +30731,37 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 965152041}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &204317145
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 204317146}
+  m_Layer: 9
+  m_Name: GreatSwordAttackCheckPoint5
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &204317146
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 204317145}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0.4}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 970046546}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &204810533
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30732,6 +30887,37 @@ Transform:
   m_Children:
   - {fileID: 534391479}
   m_Father: {fileID: 746876522}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &205018227
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 205018228}
+  m_Layer: 9
+  m_Name: GreatSwordAttackCheckPoint19
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &205018228
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 205018227}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 1.8}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 970046546}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &205308689
 GameObject:
@@ -33987,6 +34173,37 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 965152041}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &241050146
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 241050147}
+  m_Layer: 9
+  m_Name: GreatSwordAttackCheckPoint13
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &241050147
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 241050146}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 1.2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 970046546}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &241078763 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -1112083276932731704, guid: 5662b9ef69cd0944bb5588fe94b42d53,
@@ -43365,7 +43582,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.031673107, y: 0.00000003466317, z: -0.000000001098441, w: 0.9994983}
+  m_LocalRotation: {x: 0.031673107, y: -0.00000003466317, z: 0.0000000010984419, w: 0.9994983}
   m_LocalPosition: {x: -4.56, y: 2.196, z: 1.0799999}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -61757,6 +61974,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &460171795
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 460171796}
+  m_Layer: 9
+  m_Name: GreatSwordAttackCheckPoint14
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &460171796
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 460171795}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 1.3}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 970046546}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &460292430
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -78275,6 +78523,37 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0.27
   m_ShadowAngle: 0
+--- !u!1 &621134440
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 621134441}
+  m_Layer: 9
+  m_Name: GreatSwordAttackCheckPoint11
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &621134441
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 621134440}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 970046546}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &621864445 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3231969680419345459, guid: 05f1611eef196ff44b32ee4be95b5656,
@@ -89146,6 +89425,37 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 965152041}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &678815759
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 678815760}
+  m_Layer: 9
+  m_Name: KatanaAttackCheckPoint7
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &678815760
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 678815759}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0.6}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1883007234}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &679265945 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6396185537429065960, guid: 05f1611eef196ff44b32ee4be95b5656,
@@ -97121,6 +97431,37 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 758913239}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &742397806
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 742397807}
+  m_Layer: 9
+  m_Name: KatanaAttackCheckPoint2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &742397807
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 742397806}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0.1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1883007234}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &742810567 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8706677887170178843, guid: e6be662361bf53c4797cb51c922e9024,
@@ -97397,6 +97738,37 @@ Transform:
   m_Children:
   - {fileID: 1982256885}
   m_Father: {fileID: 338409800}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &746503824
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 746503825}
+  m_Layer: 9
+  m_Name: GreatSwordAttackCheckPoint9
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &746503825
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 746503824}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0.8}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 970046546}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &746876521
 GameObject:
@@ -104578,6 +104950,68 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 803901666}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &803911819
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 803911820}
+  m_Layer: 9
+  m_Name: GreatSwordAttackCheckPoint15
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &803911820
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 803911819}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 1.4}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 970046546}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &804020905
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 804020906}
+  m_Layer: 9
+  m_Name: GreatSwordAttackCheckPoint1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &804020906
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 804020905}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 970046546}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &804241349 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8262207762395207119, guid: 5662b9ef69cd0944bb5588fe94b42d53,
@@ -121252,6 +121686,37 @@ CapsuleCollider:
   m_Height: 1.8
   m_Direction: 1
   m_Center: {x: 0, y: 0.9269827, z: 6.2319816e-11}
+--- !u!1 &935314261
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 935314262}
+  m_Layer: 9
+  m_Name: KatanaAttackCheckPoint10
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &935314262
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 935314261}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0.9}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1883007234}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &935402581 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -3915122272136039909, guid: 5662b9ef69cd0944bb5588fe94b42d53,
@@ -124547,6 +125012,57 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 970007390}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &970046545
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 970046546}
+  m_Layer: 9
+  m_Name: GreatSwordAttackCheckPoints
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &970046546
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 970046545}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: -0, y: 0, z: 1.495}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 804020906}
+  - {fileID: 1320038861}
+  - {fileID: 1795908411}
+  - {fileID: 1266447544}
+  - {fileID: 204317146}
+  - {fileID: 1442717641}
+  - {fileID: 1893339564}
+  - {fileID: 2068285994}
+  - {fileID: 746503825}
+  - {fileID: 1397676522}
+  - {fileID: 621134441}
+  - {fileID: 1607534586}
+  - {fileID: 241050147}
+  - {fileID: 460171796}
+  - {fileID: 803911820}
+  - {fileID: 1015921275}
+  - {fileID: 2022548850}
+  - {fileID: 1362567655}
+  - {fileID: 205018228}
+  - {fileID: 1709146876}
+  m_Father: {fileID: 1544627770}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!1001 &970628761
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -129881,6 +130397,37 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 432295419}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1015921274
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1015921275}
+  m_Layer: 9
+  m_Name: GreatSwordAttackCheckPoint16
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1015921275
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1015921274}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 1.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 970046546}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1016008587 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4738224911919108960, guid: 5662b9ef69cd0944bb5588fe94b42d53,
@@ -150176,6 +150723,37 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1142187371}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1142257336
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1142257337}
+  m_Layer: 9
+  m_Name: KatanaAttackCheckPoint8
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1142257337
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1142257336}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0.7}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1883007234}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1143084218 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -6880827031007680840, guid: f4d26dc7cdad5ab428bf93a7d271da9a,
@@ -150752,6 +151330,37 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 965152041}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1149658694
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1149658695}
+  m_Layer: 9
+  m_Name: KatanaAttackCheckPoint12
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1149658695
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1149658694}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 1.1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1883007234}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1149666544 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -3055532222411270362, guid: 05f1611eef196ff44b32ee4be95b5656,
@@ -167440,16 +168049,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: b61107ea85fb2b749ac5c761a41a53fa,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 970046546}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: b61107ea85fb2b749ac5c761a41a53fa,
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 2017388294}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: b61107ea85fb2b749ac5c761a41a53fa,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2017388295}
   m_SourcePrefab: {fileID: 100100000, guid: b61107ea85fb2b749ac5c761a41a53fa, type: 3}
 --- !u!4 &1252514863 stripped
 Transform:
@@ -169349,6 +169958,37 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 758913239}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1266447543
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1266447544}
+  m_Layer: 9
+  m_Name: GreatSwordAttackCheckPoint4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1266447544
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1266447543}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0.3}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 970046546}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1266512820 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5126479083085287766, guid: e6be662361bf53c4797cb51c922e9024,
@@ -172189,6 +172829,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1535738823}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: f4d26dc7cdad5ab428bf93a7d271da9a,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1535738828}
   m_SourcePrefab: {fileID: 100100000, guid: f4d26dc7cdad5ab428bf93a7d271da9a, type: 3}
 --- !u!1 &1294729907
 GameObject:
@@ -175001,6 +175645,37 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1320012307}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1320038860
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1320038861}
+  m_Layer: 9
+  m_Name: GreatSwordAttackCheckPoint2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1320038861
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1320038860}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0.1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 970046546}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1321968610 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2123056680634496160, guid: 5662b9ef69cd0944bb5588fe94b42d53,
@@ -175296,7 +175971,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1326575442}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.031673104, y: 0.000000017331587, z: -5.4922067e-10, w: 0.9994983}
+  m_LocalRotation: {x: 0.031673104, y: -0.000000017331587, z: 5.4922067e-10, w: 0.9994983}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -178389,6 +179064,37 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1362151636}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1362567654
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1362567655}
+  m_Layer: 9
+  m_Name: GreatSwordAttackCheckPoint18
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1362567655
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1362567654}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 1.7}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 970046546}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1364070154
 GameObject:
   m_ObjectHideFlags: 0
@@ -184272,16 +184978,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: f6def7be08557c840bcfd191ab70bef2,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1883007234}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: f6def7be08557c840bcfd191ab70bef2,
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1715633144}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: f6def7be08557c840bcfd191ab70bef2,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1715633145}
   m_SourcePrefab: {fileID: 100100000, guid: f6def7be08557c840bcfd191ab70bef2, type: 3}
 --- !u!4 &1376945089 stripped
 Transform:
@@ -186496,6 +187202,37 @@ MonoBehaviour:
   vertexToTriangleIndexList: 
   childDataList: []
   baseScale: {x: 0, y: 0, z: 0}
+--- !u!1 &1397676521
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1397676522}
+  m_Layer: 9
+  m_Name: GreatSwordAttackCheckPoint10
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1397676522
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1397676521}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0.9}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 970046546}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1397909132
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -191450,6 +192187,37 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 977037427}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1442717640
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1442717641}
+  m_Layer: 9
+  m_Name: GreatSwordAttackCheckPoint6
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1442717641
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1442717640}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 970046546}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1443199660
 PrefabInstance:
@@ -201920,6 +202688,7 @@ MonoBehaviour:
   hitFXList:
   - {fileID: 11400000, guid: f937dd40ba0a4e545bbc8e9929212aab, type: 2}
   hitTransform: {fileID: 1833201465}
+  hitFXScale: {x: 0.2, y: 0.2, z: 0.2}
   rotationSpeed: 0.01
   playerLayer:
     serializedVersion: 2
@@ -201927,13 +202696,12 @@ MonoBehaviour:
   currentTarget: {fileID: 0}
   attacker: {fileID: 0}
   abilityList:
+  - {fileID: 11400000, guid: 19ed1cd05c6788641b3045a73948269e, type: 2}
   - {fileID: 11400000, guid: a123d0a05c5720a4c80a4f40411228cb, type: 2}
   - {fileID: 11400000, guid: 2e7091396fe31d04e93baf925b2905b7, type: 2}
   - {fileID: 11400000, guid: 68af5560c7bfd6c4cb3654efbfc8f700, type: 2}
   - {fileID: 11400000, guid: a7950a1f041d5a9419e90c2ef1ea719e, type: 2}
   availableAbilityList: []
-  isAttacking: 0
-  weaponDetection: []
 --- !u!114 &1535738817
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -202052,20 +202820,80 @@ MonoBehaviour:
   aiCombat: {fileID: 11400000, guid: 9fea5acaf36fa9b499c68f3f0caba73d, type: 2}
   animator: {fileID: 1535738821}
   enemyCombatController: {fileID: 1535738816}
+  enemyAttackDetection: {fileID: 1535738828}
   enemyTransform: {fileID: 1535738822}
   audioSource: {fileID: 1535738824}
   enemySwapWeapon: {fileID: 1535738825}
   abilityConfigs:
+  - abilityID: 1
+    ability: {fileID: 11400000, guid: 19ed1cd05c6788641b3045a73948269e, type: 2}
+    detectionConfigs:
+    - detectionTime: 0.2
+      damage: 27
+    - detectionTime: 0.2
+      damage: 35
+    - detectionTime: 0.2
+      damage: 33
+    - detectionTime: 0.2
+      damage: 49
+    clipConfigs:
+    - startTime: 0
+      audioClip: {fileID: 8300000, guid: bc9c0421212b550488a216ce5280382b, type: 3}
+      volume: 0.5
+      duration: 0
+    - startTime: 0
+      audioClip: {fileID: 8300000, guid: 9fbf265154d108e4385f667e1d331b98, type: 3}
+      volume: 0.5
+      duration: 0
+    - startTime: 0
+      audioClip: {fileID: 8300000, guid: 7b939bef9d65be645a1c64642742ef3f, type: 3}
+      volume: 0.5
+      duration: 0
+    - startTime: 0
+      audioClip: {fileID: 8300000, guid: 6430d209b86562d46857849f7a039d87, type: 3}
+      volume: 0.5
+      duration: 0
+    fxConfigs:
+    - startTime: 0
+      FXPrefab: {fileID: 0}
+      FXName: 
+      position: {x: 0, y: 0, z: 1}
+      rotation: {x: 0, y: 180, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - startTime: 0
+      FXPrefab: {fileID: 0}
+      FXName: 
+      position: {x: 0, y: 0, z: 1}
+      rotation: {x: 0, y: 180, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - startTime: 0
+      FXPrefab: {fileID: 0}
+      FXName: 
+      position: {x: 0, y: 0, z: 1}
+      rotation: {x: 0, y: 180, z: 0}
+      scale: {x: 1, y: 1, z: 1}
+    - startTime: 0
+      FXPrefab: {fileID: 0}
+      FXName: 
+      position: {x: 0, y: 0, z: 1}
+      rotation: {x: 0, y: 180, z: 0}
+      scale: {x: 1, y: 1, z: 1}
   - abilityID: 2
     ability: {fileID: 11400000, guid: a123d0a05c5720a4c80a4f40411228cb, type: 2}
     detectionConfigs:
-    - detectionTime: 0.4
+    - detectionTime: 0.2
       damage: 59
-    - detectionTime: 0.4
+    - detectionTime: 0.2
       damage: 43
+    - detectionTime: 0.2
+      damage: 42
     clipConfigs:
     - startTime: 0
       audioClip: {fileID: 8300000, guid: cef0cd1c49dd90c4f9ac6722b5d61917, type: 3}
+      volume: 0.5
+      duration: 0
+    - startTime: 0
+      audioClip: {fileID: 8300000, guid: 594615cc8e31e1b47a810bdd76b9dc33, type: 3}
       volume: 0.5
       duration: 0
     - startTime: 0
@@ -202084,19 +202912,26 @@ MonoBehaviour:
       FXPrefab: {fileID: 7257810882012927379, guid: b60c9eeeaae8e074191b6f7cb4075acc,
         type: 3}
       FXName: FX/FX_03
-      position: {x: 0, y: 1.1, z: 1}
+      position: {x: 0, y: 1.2, z: 0.6}
       rotation: {x: 0, y: 180, z: 200}
+      scale: {x: 1, y: 1, z: 1}
+    - startTime: 0.05
+      FXPrefab: {fileID: 7257810882012927379, guid: b60c9eeeaae8e074191b6f7cb4075acc,
+        type: 3}
+      FXName: FX/FX_03
+      position: {x: 0.2, y: 1.3, z: 0.6}
+      rotation: {x: 20, y: 180, z: 210}
       scale: {x: 1, y: 1, z: 1}
   - abilityID: 3
     ability: {fileID: 11400000, guid: 2e7091396fe31d04e93baf925b2905b7, type: 2}
     detectionConfigs:
-    - detectionTime: 0.4
+    - detectionTime: 0.2
       damage: 38
-    - detectionTime: 0.4
+    - detectionTime: 0.2
       damage: 47
-    - detectionTime: 0.4
+    - detectionTime: 0.2
       damage: 33
-    - detectionTime: 0.4
+    - detectionTime: 0.15
       damage: 58
     clipConfigs:
     - startTime: 0
@@ -202147,13 +202982,13 @@ MonoBehaviour:
   - abilityID: 4
     ability: {fileID: 11400000, guid: 68af5560c7bfd6c4cb3654efbfc8f700, type: 2}
     detectionConfigs:
-    - detectionTime: 0.3
+    - detectionTime: 0.2
       damage: 62
-    - detectionTime: 0.3
+    - detectionTime: 0.2
       damage: 64
-    - detectionTime: 0.3
+    - detectionTime: 0.2
       damage: 70
-    - detectionTime: 0.3
+    - detectionTime: 0.2
       damage: 83
     clipConfigs:
     - startTime: 0
@@ -202200,11 +203035,11 @@ MonoBehaviour:
   - abilityID: 5
     ability: {fileID: 11400000, guid: a7950a1f041d5a9419e90c2ef1ea719e, type: 2}
     detectionConfigs:
-    - detectionTime: 0.3
+    - detectionTime: 0.2
       damage: 67
-    - detectionTime: 0.3
+    - detectionTime: 0.2
       damage: 67
-    - detectionTime: 0.3
+    - detectionTime: 0.2
       damage: 93
     clipConfigs:
     - startTime: 0
@@ -202242,63 +203077,50 @@ MonoBehaviour:
       rotation: {x: 10, y: 180, z: 90}
       scale: {x: -1, y: 1, z: 1}
   currentAbilityConfig:
-    abilityID: 3
-    ability: {fileID: 11400000, guid: 2e7091396fe31d04e93baf925b2905b7, type: 2}
+    abilityID: 2
+    ability: {fileID: 11400000, guid: a123d0a05c5720a4c80a4f40411228cb, type: 2}
     detectionConfigs:
-    - detectionTime: 0.4
-      damage: 38
-    - detectionTime: 0.4
-      damage: 47
-    - detectionTime: 0.4
-      damage: 33
-    - detectionTime: 0.4
-      damage: 58
+    - detectionTime: 0.2
+      damage: 59
+    - detectionTime: 0.2
+      damage: 43
+    - detectionTime: 0.2
+      damage: 42
     clipConfigs:
     - startTime: 0
-      audioClip: {fileID: 8300000, guid: bc9c0421212b550488a216ce5280382b, type: 3}
+      audioClip: {fileID: 8300000, guid: cef0cd1c49dd90c4f9ac6722b5d61917, type: 3}
       volume: 0.5
       duration: 0
     - startTime: 0
-      audioClip: {fileID: 8300000, guid: 7b939bef9d65be645a1c64642742ef3f, type: 3}
+      audioClip: {fileID: 8300000, guid: 594615cc8e31e1b47a810bdd76b9dc33, type: 3}
       volume: 0.5
       duration: 0
     - startTime: 0
-      audioClip: {fileID: 8300000, guid: dcb6c5298c81d3545b922fb03c6ffd18, type: 3}
-      volume: 0.5
-      duration: 0
-    - startTime: 0
-      audioClip: {fileID: 8300000, guid: c9496ca055cff5e4aa92d65084af839e, type: 3}
+      audioClip: {fileID: 8300000, guid: d415f9f342ed8f54192920213e1a3264, type: 3}
       volume: 0.5
       duration: 0
     fxConfigs:
     - startTime: 0
-      FXPrefab: {fileID: 7257810882012927379, guid: b60c9eeeaae8e074191b6f7cb4075acc,
+      FXPrefab: {fileID: 7266547793633636748, guid: 4d1c453d1767e1e40abb493f17836b28,
         type: 3}
-      FXName: FX/FX_03
-      position: {x: 0, y: 1.1, z: 1.1}
-      rotation: {x: 0, y: 180, z: 30}
+      FXName: FX/FX_stab09
+      position: {x: 0.27, y: 1.2, z: 1.4}
+      rotation: {x: 20, y: 202, z: 0}
       scale: {x: 1, y: 1, z: 1}
-    - startTime: 0
+    - startTime: 0.05
       FXPrefab: {fileID: 7257810882012927379, guid: b60c9eeeaae8e074191b6f7cb4075acc,
         type: 3}
       FXName: FX/FX_03
-      position: {x: 0, y: 1.1, z: 0.5}
-      rotation: {x: 0, y: 175, z: 280}
+      position: {x: 0, y: 1.2, z: 0.6}
+      rotation: {x: 0, y: 180, z: 200}
       scale: {x: 1, y: 1, z: 1}
-    - startTime: 0
+    - startTime: 0.05
       FXPrefab: {fileID: 7257810882012927379, guid: b60c9eeeaae8e074191b6f7cb4075acc,
         type: 3}
       FXName: FX/FX_03
-      position: {x: 0, y: 1.5, z: 1.5}
-      rotation: {x: 0, y: 180, z: 90}
-      scale: {x: -1, y: 1, z: 1}
-    - startTime: 0
-      FXPrefab: {fileID: 7257810882012927379, guid: b60c9eeeaae8e074191b6f7cb4075acc,
-        type: 3}
-      FXName: FX/FX_03
-      position: {x: 0, y: 1.1, z: 1.1}
-      rotation: {x: 0, y: 180, z: 250}
-      scale: {x: -1, y: 1, z: 1}
+      position: {x: 0.2, y: 1.3, z: 0.6}
+      rotation: {x: 20, y: 180, z: 210}
+      scale: {x: 1, y: 1, z: 1}
 --- !u!82 &1535738824
 AudioSource:
   m_ObjectHideFlags: 0
@@ -202424,7 +203246,7 @@ MonoBehaviour:
     weaponInHand: {fileID: 0}
     weaponOnBack: {fileID: 0}
     weaponDetection: {fileID: 0}
-  enemyWeaponType: 1
+  enemyAttackDetection: {fileID: 0}
 --- !u!114 &1535738826
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -202458,6 +203280,61 @@ MonoBehaviour:
   audioSource: {fileID: 406882058}
   bgmClip: {fileID: 8300000, guid: 5f81f212a5f6af34ba553be561f23da5, type: 3}
   volume: 0.3
+--- !u!114 &1535738828
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1535738811}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 114de2c854fe57f4e92aab35b833a235, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 256
+  isAttacking: 0
+  weaponType: 0
+  katanaCheckPoints:
+  - {fileID: 1870990852}
+  - {fileID: 742397807}
+  - {fileID: 73948184}
+  - {fileID: 56293860}
+  - {fileID: 1813377648}
+  - {fileID: 1629041472}
+  - {fileID: 678815760}
+  - {fileID: 1142257337}
+  - {fileID: 136361024}
+  - {fileID: 935314262}
+  - {fileID: 127754800}
+  - {fileID: 1149658695}
+  - {fileID: 1574436702}
+  greatSwordCheckPoints:
+  - {fileID: 804020906}
+  - {fileID: 1320038861}
+  - {fileID: 1795908411}
+  - {fileID: 1266447544}
+  - {fileID: 204317146}
+  - {fileID: 1442717641}
+  - {fileID: 1893339564}
+  - {fileID: 2068285994}
+  - {fileID: 746503825}
+  - {fileID: 1397676522}
+  - {fileID: 621134441}
+  - {fileID: 1607534586}
+  - {fileID: 241050147}
+  - {fileID: 460171796}
+  - {fileID: 803911820}
+  - {fileID: 1015921275}
+  - {fileID: 2022548850}
+  - {fileID: 1362567655}
+  - {fileID: 205018228}
+  - {fileID: 1709146876}
+  attackCheckPoints: []
+  lastCheckPointsPosition: []
+  timeBetweenCheck: 0.001
 --- !u!1 &1536194649 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2671506329830476668, guid: 05f1611eef196ff44b32ee4be95b5656,
@@ -207417,6 +208294,37 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 965152041}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1574436701
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1574436702}
+  m_Layer: 9
+  m_Name: KatanaAttackCheckPoint13
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1574436702
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1574436701}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 1.2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1883007234}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1574450735 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -3894590540166322101, guid: e6be662361bf53c4797cb51c922e9024,
@@ -210849,6 +211757,37 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1607489331}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1607534585
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1607534586}
+  m_Layer: 9
+  m_Name: GreatSwordAttackCheckPoint12
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1607534586
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1607534585}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 1.1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 970046546}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1607895142
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -213453,6 +214392,37 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 965152041}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1629041471
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1629041472}
+  m_Layer: 9
+  m_Name: KatanaAttackCheckPoint6
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1629041472
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1629041471}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1883007234}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1629064205 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4452050088377590169, guid: e6be662361bf53c4797cb51c922e9024,
@@ -223649,6 +224619,37 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1709062804}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1709146875
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1709146876}
+  m_Layer: 9
+  m_Name: GreatSwordAttackCheckPoint20
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1709146876
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1709146875}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 1.9}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 970046546}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1709249712
 GameObject:
   m_ObjectHideFlags: 0
@@ -224078,19 +225079,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.2679198, y: 0.085, z: 1.3544486}
   m_Center: {x: -0.00000032534422, y: 0.029999884, z: 0.122634985}
---- !u!114 &1715633145
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1715633143}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5541635e80cd57c4f84703bfe1788bac, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemyCombatController: {fileID: 1535738816}
 --- !u!1 &1715664481
 GameObject:
   m_ObjectHideFlags: 0
@@ -232741,6 +233729,37 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1795854961}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1795908410
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1795908411}
+  m_Layer: 9
+  m_Name: GreatSwordAttackCheckPoint3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1795908411
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1795908410}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0.2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 970046546}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1796272252
 GameObject:
   m_ObjectHideFlags: 0
@@ -234552,6 +235571,37 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1813026931}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1813377647
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1813377648}
+  m_Layer: 9
+  m_Name: KatanaAttackCheckPoint5
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1813377648
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1813377647}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0.4}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1883007234}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1813709022
 GameObject:
   m_ObjectHideFlags: 0
@@ -241860,6 +242910,37 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 758913239}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1870990851
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1870990852}
+  m_Layer: 9
+  m_Name: KatanaAttackCheckPoint1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1870990852
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1870990851}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1883007234}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1871481381
 GameObject:
   m_ObjectHideFlags: 0
@@ -244424,6 +245505,50 @@ Transform:
   - {fileID: 408783150}
   m_Father: {fileID: 915858380}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1883007233
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1883007234}
+  m_Layer: 9
+  m_Name: KatanaAttackCheckPoints
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1883007234
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1883007233}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0, y: 0.018, z: -0.343}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1870990852}
+  - {fileID: 742397807}
+  - {fileID: 73948184}
+  - {fileID: 56293860}
+  - {fileID: 1813377648}
+  - {fileID: 1629041472}
+  - {fileID: 678815760}
+  - {fileID: 1142257337}
+  - {fileID: 136361024}
+  - {fileID: 935314262}
+  - {fileID: 127754800}
+  - {fileID: 1149658695}
+  - {fileID: 1574436702}
+  m_Father: {fileID: 1376945089}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1884058037
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -245122,6 +246247,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b7c58dc2d739b4c90fe59f6875debf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1893339563
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1893339564}
+  m_Layer: 9
+  m_Name: GreatSwordAttackCheckPoint7
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1893339564
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1893339563}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0.6}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 970046546}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1894088892 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -201437108399278414, guid: 05f1611eef196ff44b32ee4be95b5656,
@@ -270798,19 +271954,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.5513997, y: 0.235, z: 2.1932664}
   m_Center: {x: -0.00000017229618, y: -0.00000019793856, z: 0.7837565}
---- !u!114 &2017388295
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2017388293}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5541635e80cd57c4f84703bfe1788bac, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemyCombatController: {fileID: 1535738816}
 --- !u!4 &2017400630 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -2786318568346944761, guid: f4d26dc7cdad5ab428bf93a7d271da9a,
@@ -271320,6 +272463,37 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 758913239}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2022548849
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2022548850}
+  m_Layer: 9
+  m_Name: GreatSwordAttackCheckPoint17
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2022548850
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2022548849}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 1.6}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 970046546}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &2022920576 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 161977758812352224, guid: e6be662361bf53c4797cb51c922e9024,
@@ -276140,6 +277314,37 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2067730107}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2068285993
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2068285994}
+  m_Layer: 9
+  m_Name: GreatSwordAttackCheckPoint8
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2068285994
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2068285993}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0.7}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 970046546}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2068794717
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -282219,6 +283424,37 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2112834803}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2112891024
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2112891025}
+  m_Layer: 0
+  m_Name: HitTransform
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2112891025
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2112891024}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.186, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2338288337575152890}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &2114726829 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3220546315595391459, guid: e6be662361bf53c4797cb51c922e9024,
@@ -286069,6 +287305,32 @@ PrefabInstance:
       propertyPath: hitCoolDown
       value: 0.2
       objectReference: {fileID: 0}
+    - target: {fileID: 7991621453664287045, guid: 97909ded206dc6f40b4fb9b6b4a3262f,
+        type: 3}
+      propertyPath: hitFXScale.x
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7991621453664287045, guid: 97909ded206dc6f40b4fb9b6b4a3262f,
+        type: 3}
+      propertyPath: hitFXScale.y
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7991621453664287045, guid: 97909ded206dc6f40b4fb9b6b4a3262f,
+        type: 3}
+      propertyPath: hitFXScale.z
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7991621453664287045, guid: 97909ded206dc6f40b4fb9b6b4a3262f,
+        type: 3}
+      propertyPath: hitTransform
+      value: 
+      objectReference: {fileID: 2112891025}
+    - target: {fileID: 7991621453664287045, guid: 97909ded206dc6f40b4fb9b6b4a3262f,
+        type: 3}
+      propertyPath: hitFXList.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: dbf1bc7720d258e4ba8e30ae02a8842e,
+        type: 2}
     - target: {fileID: 8546300309049391518, guid: 97909ded206dc6f40b4fb9b6b4a3262f,
         type: 3}
       propertyPath: m_Name
@@ -286082,7 +287344,7 @@ PrefabInstance:
     - target: {fileID: 8846350306166964554, guid: 97909ded206dc6f40b4fb9b6b4a3262f,
         type: 3}
       propertyPath: cubeCenter.x
-      value: -4.560001
+      value: -4.560002
       objectReference: {fileID: 0}
     - target: {fileID: 8846350306166964554, guid: 97909ded206dc6f40b4fb9b6b4a3262f,
         type: 3}
@@ -286101,7 +287363,11 @@ PrefabInstance:
       objectReference: {fileID: 1567772237}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 1654731262280262433, guid: 97909ded206dc6f40b4fb9b6b4a3262f,
+        type: 3}
+      insertIndex: 0
+      addedObject: {fileID: 2112891025}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 8546300309049391518, guid: 97909ded206dc6f40b4fb9b6b4a3262f,
         type: 3}
@@ -286428,7 +287694,7 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 1
+  m_Radius: 0.9
   m_Height: 1.7
   m_Direction: 1
   m_Center: {x: 0, y: 0.85, z: 0}

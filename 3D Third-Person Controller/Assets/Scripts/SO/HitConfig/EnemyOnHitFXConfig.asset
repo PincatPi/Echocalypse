@@ -9,11 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 467fb588afb9bf64aabbbe40f36903db, type: 3}
-  m_Name: "\u5927\u5251\u8DF3\u6740"
+  m_Script: {fileID: 11500000, guid: 0d0db8e0daa4ba74db7ccbc2f2c2d2d3, type: 3}
+  m_Name: EnemyOnHitFXConfig
   m_EditorClassIdentifier: 
-  abilityName: Ability04_1
-  abilityID: 4
-  abilityCD: 15
-  abilityUseDistance: 3
-  abilitiyIsAvailable: 1
+  hitFXInfoList:
+  - hitFX: {fileID: 872462168564033203, guid: acf04d7f21caf984996dd7a49973c39d, type: 3}
+    hitFXName: FX/FX_hit01

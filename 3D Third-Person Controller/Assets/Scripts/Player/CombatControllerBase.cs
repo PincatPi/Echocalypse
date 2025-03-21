@@ -25,6 +25,7 @@ public class CombatControllerBase : MonoBehaviour
     [SerializeField] protected float hitCoolDown = 0.25f;
     [SerializeField] protected HitFXConfig[] hitFXList;
     public Transform hitTransform; //播放受击特效的位置
+    [SerializeField] protected Vector3 hitFXScale;
     
     protected virtual void Start()
     {
@@ -172,7 +173,7 @@ public class CombatControllerBase : MonoBehaviour
         StartCoroutine(IE_HitCoolDown(hitCoolDown));
         //生成受击特效
         string hitFXName = hitFXList[(int)interactionConfig.attackForce].TryGetHitFXName();
-        FXManager.Instance.PlayOneHitFX(hitFXName, hitTransform.position, new Vector3(0.2f, 0.2f, 0.2f));
+        FXManager.Instance.PlayOneHitFX(hitFXName, hitTransform.position, hitFXScale);
         //生成音效
     }
 

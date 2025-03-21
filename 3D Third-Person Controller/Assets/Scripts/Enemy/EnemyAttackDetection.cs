@@ -12,16 +12,33 @@ public class EnemyAttackDetection : AttackCheckGizmos
     private void Start()
     {
         base.Start();
+        weaponType = E_WeaponType.Katana;
         enemyCombatController = GetComponent<EnemyCombatController>();
     }
 
     private void Update()
     {
-        base.Update();
+        // if (isAttacking)
+        // {
+        //     timeCounter += Time.deltaTime;
+        // }
+        SwitchAttackCheckPoints();
+        //AttackCheck();
     }
 
+    private void FixedUpdate()
+    {
+        if (isAttacking)
+        {
+            timeCounter += Time.fixedDeltaTime;
+        }
+        AttackCheck();
+    }
+
+    
     public override void AttackCheck()
     {
+        //TODO: 检查这句是否可以删除
         if(weaponType == E_WeaponType.Empty)
             return;
         
@@ -50,14 +67,12 @@ public class EnemyAttackDetection : AttackCheckGizmos
                         {
                             foreach (RaycastHit enemy in enemiesRaycastHits)
                             {
-                                //TODO: 此处改为调用Enemy身上的受伤函数
-                                // EnemyBase enemyHit = enemy.transform.GetComponent<BossFSM>();
-                                // enemyHit.TakeDamage(this.transform.gameObject);
                                 if (enemy.transform)
                                 {
                                     PlayerCombatController playerHit = enemy.transform.gameObject.GetComponent<PlayerCombatController>();
                                     if (playerHit)
                                     {
+                                        Debug.Log("打到了玩家!");
                                         enemyCombatController.HitPlayer(enemy.collider);   
                                     }
                                 }
@@ -87,7 +102,7 @@ public class EnemyAttackDetection : AttackCheckGizmos
         isAttacking = true;
     }
 
-    public void StopAttacking()
+    public void EndAttacking()
     {
         isAttacking = false;
     }

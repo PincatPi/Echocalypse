@@ -15,5 +15,5 @@ MonoBehaviour:
   abilityName: Ability05_1
   abilityID: 5
   abilityCD: 18
-  abilityUseDistance: 7
+  abilityUseDistance: 3
   abilitiyIsAvailable: 1

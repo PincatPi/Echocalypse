@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0d0db8e0daa4ba74db7ccbc2f2c2d2d3, type: 3}
-  m_Name: EnemyHitFXConfig
+  m_Name: PlayerOnHitFXConfig
   m_EditorClassIdentifier: 
   hitFXInfoList:
-  - hitFX: {fileID: 2981233846487126522, guid: e1f4dd03241f73b4f9c7cac980f0e7d6, type: 3}
-    hitFXName: FX/FX_hit02
+  - hitFX: {fileID: 2423165197030479627, guid: b123dea2e6213494f8effc0a2a2c27ad, type: 3}
+    hitFXName: FX/FX_hit_15

@@ -119,6 +119,11 @@ public class PlayerCombatController : CombatControllerBase
             }
         }
         
+        //生成受击特效
+        string hitFXName = hitFXList[0].TryGetHitFXName();
+        FXManager.Instance.PlayOneHitFX(hitFXName, hitTransform.position, hitFXScale);
+        Debug.Log(hitFXScale);
+        
         //无敌时间计时
         StartCoroutine(IE_HitCoolDown(hitCoolDown));
     }
@@ -135,6 +140,20 @@ public class PlayerCombatController : CombatControllerBase
         movementInputAction.Enable();
         attackAction.Enable();
     }
+
+    #region 动画事件
+
+    public void StartInvincibleFrame()
+    {
+        canBeHit = false;
+    }
+
+    public void EndInvincibleFrame()
+    {
+        canBeHit = true;
+    }
+
+    #endregion
 
     #region 玩家输入相关
 
