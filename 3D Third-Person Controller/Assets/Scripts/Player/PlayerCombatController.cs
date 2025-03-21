@@ -33,6 +33,18 @@ public class PlayerCombatController : CombatControllerBase
     private Dictionary<E_WeaponType, ComboList> comboListDict;
     [SerializeField] private bool canPlayHitAnim;
     
+    [Header("无敌帧")]
+    [SerializeField] private int invincibleFrame;
+    private int countInvincibleFrame;
+    private bool startToCountInvincibleFrame;
+    
+    [Header("完美闪避")]
+    [SerializeField] private float perfectDodgeTime;
+    [SerializeField] private float canPerfectDodgeTime;
+    [SerializeField][Range(0f, 1f)] private float perfectDodgeTimeScale;
+    [SerializeField] public bool isPerfectDodging;
+    [SerializeField] private string perfectDodgeAudioClipPath;
+    
     private int rollHash;
 
     void Awake()
@@ -58,11 +70,19 @@ public class PlayerCombatController : CombatControllerBase
         rollHash = Animator.StringToHash("Roll");
 
         canPlayHitAnim = true;
+        startToCountInvincibleFrame = false;
+        countInvincibleFrame = invincibleFrame; //初始化无敌帧
+        isPerfectDodging = false;
     }
     
     void Update()
     {
         base.Update();
+    }
+
+    void FixedUpdate()
+    {
+        CountInvincibleFrame();
     }
 
     public void SwitchComboList(E_WeaponType _weaponType)
@@ -89,7 +109,8 @@ public class PlayerCombatController : CombatControllerBase
         //TODO: 扣除生命值等逻辑
         Debug.Log("玩家受到了" + damage + "点伤害!");
 
-        if (canPlayHitAnim)
+        //播放大剑的攻击动画时不播放受击动画（大剑攻击有硬直）
+        if (canPlayHitAnim && !animator.GetCurrentAnimatorStateInfo(0).IsTag("GSAttack"))
         {
             Vector3 dir = (attackerTransform.position - this.transform.position).normalized;
         
@@ -137,16 +158,64 @@ public class PlayerCombatController : CombatControllerBase
         attackAction.Enable();
     }
 
+    /// <summary>
+    /// 计算无敌帧
+    /// </summary>
+    private void CountInvincibleFrame()
+    {
+        if (startToCountInvincibleFrame)
+        {
+            if (countInvincibleFrame > 0)
+            {
+                countInvincibleFrame--;
+                if (countInvincibleFrame <= 0)
+                {
+                    canBeHit = true; //无敌结束，可以被攻击
+                    startToCountInvincibleFrame = false; //停止计算无敌帧
+                    countInvincibleFrame = invincibleFrame; //重置无敌帧
+                }
+            }   
+        }
+    }
+
+    /// <summary>
+    /// 完美闪避函数，在角色的完美闪避碰撞体与EnemyWeapon碰撞时调用
+    /// </summary>
+    public void PerfectDodge()
+    {
+        if (isPerfectDodging || canBeHit || !startToCountInvincibleFrame) 
+            return;
+
+        isPerfectDodging = true;
+
+        Time.timeScale = perfectDodgeTimeScale;
+
+        //播放完美闪避音效
+        audioSource.PlayOneShot(Resources.Load<AudioClip>(perfectDodgeAudioClipPath), 0.5f);
+
+        StartCoroutine(IE_CountPerfectDodge(perfectDodgeTime));
+    }
+    
+    IEnumerator IE_CountPerfectDodge(float duration)
+    {
+        yield return new WaitForSecondsRealtime(duration);
+        isPerfectDodging = false;
+        Debug.Log("完美闪避结束");
+        Time.timeScale = 1f;
+    }
+
+    #region 公共接口
+
+    public float GetCanPerfectDodgeTime() => canPerfectDodgeTime;
+
+    #endregion
+    
     #region 动画事件
 
     public void StartInvincibleFrame()
     {
         canBeHit = false;
-    }
-
-    public void EndInvincibleFrame()
-    {
-        canBeHit = true;
+        startToCountInvincibleFrame = true;
     }
 
     #endregion

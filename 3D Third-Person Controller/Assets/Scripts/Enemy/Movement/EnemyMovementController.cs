@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -50,6 +51,12 @@ public class EnemyMovementController : MonoBehaviour
         {
             CharacterGravity();
             CheckOnGround();
+            FreezeRotation();
+        }
+
+        private void LateUpdate()
+        {
+            //FreezeRotation();
         }
 
         #region 内部函数
@@ -133,6 +140,11 @@ public class EnemyMovementController : MonoBehaviour
         {
             //TODO: 检查此处的animationMoveID有什么作用
             return Physics.Raycast(transform.position + transform.up * .5f, dir.normalized * animator.GetFloat(animationMoveID), out var hit, 1f,whatIsObs);
+        }
+
+        private void FreezeRotation()
+        {
+            transform.eulerAngles = new Vector3(0, transform.eulerAngles.y, 0); //修正X和Z上的旋转为0
         }
         
         #endregion

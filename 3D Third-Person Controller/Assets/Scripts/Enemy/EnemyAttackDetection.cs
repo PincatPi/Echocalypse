@@ -8,22 +8,19 @@ using UnityEngine.PlayerLoop;
 public class EnemyAttackDetection : AttackCheckGizmos
 {
     private EnemyCombatController enemyCombatController;
+    private EnemySwapWeapon enemySwapWeapon;
     
     private void Start()
     {
         base.Start();
         weaponType = E_WeaponType.Katana;
         enemyCombatController = GetComponent<EnemyCombatController>();
+        enemySwapWeapon = GetComponent<EnemySwapWeapon>();
     }
 
     private void Update()
     {
-        // if (isAttacking)
-        // {
-        //     timeCounter += Time.deltaTime;
-        // }
         SwitchAttackCheckPoints();
-        //AttackCheck();
     }
 
     private void FixedUpdate()
@@ -69,10 +66,20 @@ public class EnemyAttackDetection : AttackCheckGizmos
                             {
                                 if (enemy.transform)
                                 {
-                                    PlayerCombatController playerHit = enemy.transform.gameObject.GetComponent<PlayerCombatController>();
-                                    if (playerHit)
+                                    //TEST: 测试测试！！！
+                                    if (enemy.transform.CompareTag("PerfectDodgeCollider"))
                                     {
-                                        enemyCombatController.HitPlayer(enemy.collider);   
+                                        Debug.Log("使用了射线检测");
+                                        PerfectDodge perfectDodge = enemy.transform.gameObject.GetComponent<PerfectDodge>();
+                                        perfectDodge.PerfectDodgeInterface();
+                                    }
+                                    else if (enemy.transform.CompareTag("Player"))
+                                    {
+                                        PlayerCombatController playerHit = enemy.transform.gameObject.GetComponent<PlayerCombatController>();
+                                        if (playerHit)
+                                        {
+                                            enemyCombatController.HitPlayer(enemy.collider);   
+                                        }   
                                     }
                                 }
                             }
@@ -99,10 +106,12 @@ public class EnemyAttackDetection : AttackCheckGizmos
     public void StartAttacking()
     {
         isAttacking = true;
+        enemySwapWeapon.GetCurrentActiveWeapon().weaponCollider.enabled = true; //开启武器Trigger
     }
 
     public void EndAttacking()
     {
         isAttacking = false;
+        enemySwapWeapon.GetCurrentActiveWeapon().weaponCollider.enabled = false; //关闭武器Trigger
     }
 }

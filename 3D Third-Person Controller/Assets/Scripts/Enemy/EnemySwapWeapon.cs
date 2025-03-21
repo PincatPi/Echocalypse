@@ -12,8 +12,6 @@ public class EnemySwapWeapon : MonoBehaviour
     {
         //默认手上拿的是Katana
         currentActiveWeapon = weapons[0];
-        currentActiveWeapon.weaponDetection.enabled = true;
-
         enemyAttackDetection = GetComponent<EnemyAttackDetection>();
     }
     
@@ -49,5 +47,5 @@ public struct WeaponConfig
     public E_WeaponType weaponType;
     public GameObject weaponInHand;
     public GameObject weaponOnBack;
-    public Collider weaponDetection;
+    public Collider weaponCollider;
 }

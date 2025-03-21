@@ -49,6 +49,10 @@ public class AttackCheckGizmos : MonoBehaviour
             timeCounter += Time.deltaTime;
         }
         SwitchAttackCheckPoints();
+    }
+
+    protected virtual void FixedUpdate()
+    {
         AttackCheck();
     }
 

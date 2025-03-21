@@ -14,7 +14,6 @@ public class EnemyAttackAnimation : MonoBehaviour
     [SerializeField] private EnemyAttackDetection enemyAttackDetection;
     [SerializeField] private Transform enemyTransform;
     [SerializeField] private AudioSource audioSource;
-    [SerializeField] private EnemySwapWeapon enemySwapWeapon;
 
     //每个技能的配置信息
     [SerializeField] private List<AbilityConfig> abilityConfigs;
@@ -28,7 +27,6 @@ public class EnemyAttackAnimation : MonoBehaviour
         enemyAttackDetection = GetComponent<EnemyAttackDetection>();
         enemyTransform = GetComponent<Transform>();
         audioSource = GetComponent<AudioSource>();
-        enemySwapWeapon = GetComponent<EnemySwapWeapon>();
     }
 
     /// <summary>
@@ -60,7 +58,6 @@ public class EnemyAttackAnimation : MonoBehaviour
         if(count >= currentAbilityConfig.detectionConfigs.Length)
             return;
         enemyAttackDetection.StartAttacking(); //攻击检测开启
-        enemySwapWeapon.GetCurrentActiveWeapon().weaponDetection.enabled = true; //碰撞体启用
         //开始进行攻击检测关闭倒数,倒数结束后关闭攻击检测
         StartCoroutine(IE_AttackDetectionCount(currentAbilityConfig.detectionConfigs[count].detectionTime));
     }
@@ -78,7 +75,6 @@ public class EnemyAttackAnimation : MonoBehaviour
             timer -= Time.deltaTime;
         }
         enemyAttackDetection.EndAttacking(); //结束攻击判定
-        enemySwapWeapon.GetCurrentActiveWeapon().weaponDetection.enabled = false; //关闭碰撞体
     }
 
     private void PlayFXEvent(int count)
