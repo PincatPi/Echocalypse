@@ -92,9 +92,6 @@ public class PlayerCombatController : CombatControllerBase
         if (canPlayHitAnim)
         {
             Vector3 dir = (attackerTransform.position - this.transform.position).normalized;
-            //float dot = Vector3.Dot(dir, this.transform.forward);
-            // //在正前方90度内
-            //float angle = Mathf.Acos(dot) * Mathf.Rad2Deg;
         
             // 计算与前方和右侧的夹角
             float angleForward = Vector3.Angle(dir, transform.forward);
@@ -122,7 +119,6 @@ public class PlayerCombatController : CombatControllerBase
         //生成受击特效
         string hitFXName = hitFXList[0].TryGetHitFXName();
         FXManager.Instance.PlayOneHitFX(hitFXName, hitTransform.position, hitFXScale);
-        Debug.Log(hitFXScale);
         
         //无敌时间计时
         StartCoroutine(IE_HitCoolDown(hitCoolDown));

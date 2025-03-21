@@ -72,7 +72,6 @@ public class EnemyAttackDetection : AttackCheckGizmos
                                     PlayerCombatController playerHit = enemy.transform.gameObject.GetComponent<PlayerCombatController>();
                                     if (playerHit)
                                     {
-                                        Debug.Log("打到了玩家!");
                                         enemyCombatController.HitPlayer(enemy.collider);   
                                     }
                                 }
