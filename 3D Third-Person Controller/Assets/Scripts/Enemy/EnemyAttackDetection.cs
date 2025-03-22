@@ -85,7 +85,7 @@ public class EnemyAttackDetection : AttackCheckGizmos
                             }
                         }
                         //绘制从上一次记录的该点的位置到当前该点的位置的线段
-                        Debug.DrawRay(lastCheckPointsPosition[i], (attackCheckPoints[i].position - lastCheckPointsPosition[i]).normalized * Vector3.Distance(attackCheckPoints[i].position, lastCheckPointsPosition[i]), Color.red, 2f);
+                        Debug.DrawRay(lastCheckPointsPosition[i], (attackCheckPoints[i].position - lastCheckPointsPosition[i]).normalized * Vector3.Distance(attackCheckPoints[i].position, lastCheckPointsPosition[i]), Color.yellow, 2f);
                     }
                 }
                 //记录上一次Check时攻击判定点的位置

@@ -33,6 +33,7 @@ public class FXManager : SingletonPatternBase<FXManager>
         FX.transform.localScale = scale;
         ParticleSystem particleSystem = FX.GetComponent<ParticleSystem>();
         particleSystem.Play();
+        Debug.Log("播放了特效" + FXName);
     }
     
     public void PlayOneFX(EnemyFXConfig fxConfig, Vector3 position, Vector3 rotation, Vector3 scale)
