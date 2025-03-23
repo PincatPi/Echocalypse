@@ -361,23 +361,12 @@ public class ThirdPersonController : MonoBehaviour
         //将该向量转换到玩家本地坐标系下，得到玩家Y方向和输入方向的夹角
         playerMovement = playerTransform.InverseTransformVector(playerMovement);
     }
-
-    //TEST: 测试代码
-    [SerializeField] private Transform target;
-    [SerializeField] private float lockRotationSpeed;
-    [SerializeField] private Transform headTransform;
-    [SerializeField] private float offsetAngle;
+    
     /// <summary>
     /// 设置动画状态机
     /// </summary>
     private void SetupAnimator()
     {
-        //TODO: 检查此处修改是否存在问题
-        // //装备状态
-        // animator.SetInteger(equipHash, );
-        // //控制掏出武器和收起武器时的右手IK权重
-        // rightHandIKConstraint.weight = animator.GetFloat("Right Hand Weight");
-        
         //站立状态
         if (playerPosture == PlayerPosture.Stand)
         {
@@ -387,21 +376,12 @@ public class ThirdPersonController : MonoBehaviour
             {
                 case LocomotionState.Idle:
                     animator.SetFloat(moveSpeedHash, 0, 0.1f, Time.deltaTime);
-                    //TEST: 测试代码
-                    //animator.SetFloat("XSpeed", 0, 0.1f, Time.deltaTime);
-                    //animator.SetFloat("YSpeed", 0, 0.1f, Time.deltaTime);
                     break;
                 case LocomotionState.Walk:
                     animator.SetFloat(moveSpeedHash, playerMovement.magnitude * walkSpeed, 0.1f, Time.deltaTime);
-                    //TEST: 测试代码
-                    //animator.SetFloat("XSpeed", dir.x * walkSpeed, 0.1f, Time.deltaTime);
-                    //animator.SetFloat("YSpeed", dir.z * walkSpeed, 0.1f, Time.deltaTime);
                     break;
                 case LocomotionState.Run:
                     animator.SetFloat(moveSpeedHash, playerMovement.magnitude * runSpeed, 0.1f, Time.deltaTime);
-                    //TEST: 测试代码
-                    //animator.SetFloat("XSpeed", dir.x * runSpeed, 0.1f, Time.deltaTime);
-                    //animator.SetFloat("YSpeed", dir.z * runSpeed, 0.1f, Time.deltaTime);
                     break;
             }
         }

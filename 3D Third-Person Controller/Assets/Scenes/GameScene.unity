@@ -99673,7 +99673,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 748277629}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.027170664, y: 0.000000017200025, z: -4.6750864e-10, w: 0.9996308}
+  m_LocalRotation: {x: 0.027170664, y: -0.000000017200035, z: 4.675089e-10, w: 0.9996308}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -107829,10 +107829,6 @@ MonoBehaviour:
   isLanding: 0
   longJumpMultiplier: 1.6
   couldFall: 0
-  target: {fileID: 0}
-  lockRotationSpeed: 0
-  headTransform: {fileID: 0}
-  offsetAngle: 0
 --- !u!143 &811913020
 CharacterController:
   m_ObjectHideFlags: 0
@@ -154702,10 +154698,6 @@ MonoBehaviour:
   isLanding: 0
   longJumpMultiplier: 1.6
   couldFall: 0
-  target: {fileID: 0}
-  lockRotationSpeed: 0
-  headTransform: {fileID: 0}
-  offsetAngle: 0
 --- !u!114 &1155446020
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -297937,7 +297929,7 @@ PrefabInstance:
     - target: {fileID: 7991621453664287045, guid: 97909ded206dc6f40b4fb9b6b4a3262f,
         type: 3}
       propertyPath: invincibleFrame
-      value: 13
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 7991621453664287045, guid: 97909ded206dc6f40b4fb9b6b4a3262f,
         type: 3}
@@ -297989,6 +297981,11 @@ PrefabInstance:
         type: 3}
       propertyPath: offsetAngle
       value: -15
+      objectReference: {fileID: 0}
+    - target: {fileID: 8846350306166964554, guid: 97909ded206dc6f40b4fb9b6b4a3262f,
+        type: 3}
+      propertyPath: stopFaceDis
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8846350306166964554, guid: 97909ded206dc6f40b4fb9b6b4a3262f,
         type: 3}

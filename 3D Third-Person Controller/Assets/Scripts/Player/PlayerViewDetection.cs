@@ -138,8 +138,8 @@ public class PlayerViewDetection : MonoBehaviour
         //Vector3 dir = new Vector3(targetDirection.x, 0, targetDirection.z);
         if (thirdPersonController.playerPosture == ThirdPersonController.PlayerPosture.Stand)
         {
-            animator.SetFloat("XInput", thirdPersonController.GetMoveInput().x, 0.1f, Time.deltaTime);
-            animator.SetFloat("YInput", thirdPersonController.GetMoveInput().y, 0.1f, Time.deltaTime);
+            animator.SetFloat("XInput", thirdPersonController.GetMoveInput().x);
+            animator.SetFloat("YInput", thirdPersonController.GetMoveInput().y);
             switch (thirdPersonController.locomotionState)
             {
                 case ThirdPersonController.LocomotionState.Idle:
@@ -164,6 +164,7 @@ public class PlayerViewDetection : MonoBehaviour
     [SerializeField] private Transform target;
     [SerializeField] private float lockRotationSpeed;
     [SerializeField] private float offsetAngle;
+    [SerializeField] private float stopFaceDis;
     private Vector3 targetDirection;
     /// <summary>
     /// //TODO: 锁定状态下的攻击，令玩家对象始终面朝敌人对象
@@ -191,10 +192,12 @@ public class PlayerViewDetection : MonoBehaviour
             //dir = new Vector3(thirdPersonController.GetPlayerMovement().x, 0f, thirdPersonController.GetPlayerMovement().z);
             Vector3 toTarget = target.position - transform.position;
             toTarget.y = 0;
-            if (animator.GetCurrentAnimatorStateInfo(0).IsTag("EquipMotion") || 
+            if (animator.GetCurrentAnimatorStateInfo(0).IsTag("EquipMotion") ||
+                animator.GetCurrentAnimatorStateInfo(0).IsTag("Equip") ||
                 animator.GetCurrentAnimatorStateInfo(0).IsTag("KatanaAttack") ||
-                animator.GetCurrentAnimatorStateInfo(0).IsTag("GreatSwordAttack") ||
-                animator.GetCurrentAnimatorStateInfo(0).IsTag("Roll"))
+                animator.GetCurrentAnimatorStateInfo(0).IsTag("GSAttack") ||
+                ((animator.GetCurrentAnimatorStateInfo(0).IsTag("Roll")) && Vector3.Distance(transform.position, target.position) > stopFaceDis) ||
+                animator.IsInTransition(0))
             {
                 Quaternion baseRotation = Quaternion.LookRotation(toTarget);
                 //创建左侧偏移（绕Y轴旋转offsetAngle度）

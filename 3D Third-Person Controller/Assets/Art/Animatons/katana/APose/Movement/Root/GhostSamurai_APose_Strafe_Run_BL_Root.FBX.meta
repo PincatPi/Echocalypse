@@ -548,7 +548,7 @@ ModelImporter:
       firstFrame: 124
       lastFrame: 148
       wrapMode: 0
-      orientationOffsetY: 0
+      orientationOffsetY: 30
       level: 0
       cycleOffset: 0
       loop: 0
