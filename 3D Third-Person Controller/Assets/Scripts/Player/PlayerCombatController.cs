@@ -109,8 +109,9 @@ public class PlayerCombatController : CombatControllerBase
         //TODO: 扣除生命值等逻辑
         Debug.Log("玩家受到了" + damage + "点伤害!");
 
-        //播放大剑的攻击动画时不播放受击动画（大剑攻击有硬直）
-        if (canPlayHitAnim && !animator.GetCurrentAnimatorStateInfo(0).IsTag("GSAttack"))
+        //播放切换装备动画、大剑的攻击动画时不播放受击动画（大剑攻击有硬直）
+        if (canPlayHitAnim && !animator.GetCurrentAnimatorStateInfo(0).IsTag("GSAttack") ||
+            !animator.GetCurrentAnimatorStateInfo(0).IsTag("Equip"))
         {
             Vector3 dir = (attackerTransform.position - this.transform.position).normalized;
         

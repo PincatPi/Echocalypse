@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 521328907262818003}
   - component: {fileID: 521328907262818005}
   - component: {fileID: 521328907262818002}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: slash
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4976,7 +4976,7 @@ GameObject:
   - component: {fileID: 1753103435554430788}
   - component: {fileID: 1753103435554430786}
   - component: {fileID: 1753103435554430789}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: highlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9883,7 +9883,7 @@ GameObject:
   - component: {fileID: 1753103435636765311}
   - component: {fileID: 1753103435636765309}
   - component: {fileID: 1753103435636765308}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: particle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14866,7 +14866,7 @@ GameObject:
   - component: {fileID: 1753103435683360935}
   - component: {fileID: 1753103435683360933}
   - component: {fileID: 1753103435683360932}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: slash_inner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19832,7 +19832,7 @@ GameObject:
   - component: {fileID: 1753103436398305417}
   - component: {fileID: 1753103436398305416}
   - component: {fileID: -4320418376324237515}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: FX_hit_07
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24757,7 +24757,7 @@ GameObject:
   - component: {fileID: 7498911359151003681}
   - component: {fileID: 1170606227322206456}
   - component: {fileID: 4356616356672839553}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: heat_add
   m_TagString: Untagged
   m_Icon: {fileID: 0}

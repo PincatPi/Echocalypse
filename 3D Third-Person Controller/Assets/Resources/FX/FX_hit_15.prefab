@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5736967712168030475}
   - component: {fileID: 7701542336612491059}
   - component: {fileID: 6767234217723132782}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: dust
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4991,7 +4991,7 @@ GameObject:
   - component: {fileID: 2423165197030479625}
   - component: {fileID: 2423165197030479624}
   - component: {fileID: 5615982193814093865}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: FX_hit_15
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9974,7 +9974,7 @@ GameObject:
   - component: {fileID: 2423165197952997916}
   - component: {fileID: 2423165197952997919}
   - component: {fileID: 396872876271569238}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: black
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14953,7 +14953,7 @@ GameObject:
   - component: {fileID: 2423165198114839843}
   - component: {fileID: 2423165198114839842}
   - component: {fileID: 3952504840930447055}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: highlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19932,7 +19932,7 @@ GameObject:
   - component: {fileID: 2686815182281773687}
   - component: {fileID: 7109636893705535593}
   - component: {fileID: 2379272796555354191}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: particle
   m_TagString: Untagged
   m_Icon: {fileID: 0}

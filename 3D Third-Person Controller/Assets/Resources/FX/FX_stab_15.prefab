@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 429119596381806547}
   - component: {fileID: 429119596381806545}
   - component: {fileID: 429119596381806544}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: mesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4909,7 +4909,7 @@ GameObject:
   - component: {fileID: 4885969898620426827}
   - component: {fileID: 4885969898620426825}
   - component: {fileID: 4885969898620426824}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: highlight02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9796,7 +9796,7 @@ GameObject:
   - component: {fileID: 8671251078060065634}
   - component: {fileID: 8513143878108336358}
   - component: {fileID: -438532306197895413}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: FX_stab_15
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14698,7 +14698,7 @@ GameObject:
   - component: {fileID: 7010667870509019823}
   - component: {fileID: 1880609725829098881}
   - component: {fileID: 1582378908831721695}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: highlight01
   m_TagString: Untagged
   m_Icon: {fileID: 0}

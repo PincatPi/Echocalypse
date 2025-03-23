@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 225120383}
   - component: {fileID: 225120385}
   - component: {fileID: 225120384}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: particle_white
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4976,7 +4976,7 @@ GameObject:
   - component: {fileID: 1744597953}
   - component: {fileID: 1744597955}
   - component: {fileID: 1744597954}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: particle_black
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9941,7 +9941,7 @@ GameObject:
   - component: {fileID: 1131376887329746514}
   - component: {fileID: 1131376887329746516}
   - component: {fileID: 1131376887329746515}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: sharp_out_apb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14906,7 +14906,7 @@ GameObject:
   - component: {fileID: 2981233844972496460}
   - component: {fileID: 2981233844972496466}
   - component: {fileID: 2981233844972496467}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: impact_apb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19863,7 +19863,7 @@ GameObject:
   - component: {fileID: 2981233846487126527}
   - component: {fileID: 2981233846487126520}
   - component: {fileID: 9193888293261863103}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: FX_hit02
   m_TagString: Untagged
   m_Icon: {fileID: 0}

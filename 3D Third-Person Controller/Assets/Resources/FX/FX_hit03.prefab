@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 243361284}
   - component: {fileID: 243361286}
   - component: {fileID: 243361285}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: fire_apb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4909,7 +4909,7 @@ GameObject:
   - component: {fileID: 1651174135}
   - component: {fileID: 1651174137}
   - component: {fileID: 1651174136}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: fire_add
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9807,7 +9807,7 @@ GameObject:
   - component: {fileID: 8049695311191997005}
   - component: {fileID: 8049695311191997003}
   - component: {fileID: 8049695311191997004}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: outline
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14706,7 +14706,7 @@ GameObject:
   - component: {fileID: 8049695311549817456}
   - component: {fileID: 8049695311549817457}
   - component: {fileID: 2899625908981509535}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: FX_hit03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19621,7 +19621,7 @@ GameObject:
   - component: {fileID: 8049695311742748004}
   - component: {fileID: 8049695311742748005}
   - component: {fileID: 8049695311742748006}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: particle_apb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24519,7 +24519,7 @@ GameObject:
   - component: {fileID: 8049695312970588918}
   - component: {fileID: 8049695312970588919}
   - component: {fileID: 8049695312970588808}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: highlight01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29417,7 +29417,7 @@ GameObject:
   - component: {fileID: 8049695313018879533}
   - component: {fileID: 8049695313018879531}
   - component: {fileID: 8049695313018879532}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: highlight02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34315,7 +34315,7 @@ GameObject:
   - component: {fileID: 8049695313088817488}
   - component: {fileID: 8049695313088817502}
   - component: {fileID: 8049695313088817503}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: emitter
   m_TagString: Untagged
   m_Icon: {fileID: 0}

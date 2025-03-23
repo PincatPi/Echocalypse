@@ -65,7 +65,7 @@ AnimatorState:
   m_TimeParameterActive: 0
   m_Motion: {fileID: -4685774653820375207, guid: b12b4b239efc0ed469580c327154797f,
     type: 3}
-  m_Tag: Roll
+  m_Tag: NormalRoll
   m_SpeedParameter: 
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
@@ -964,7 +964,10 @@ AnimatorStateTransition:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: 
-  m_Conditions: []
+  m_Conditions:
+  - m_ConditionMode: 3
+    m_ConditionEvent: LockOn
+    m_EventTreshold: 0.8
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 7177049357292911689}
   m_Solo: 0
@@ -4163,7 +4166,10 @@ AnimatorStateTransition:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: 
-  m_Conditions: []
+  m_Conditions:
+  - m_ConditionMode: 4
+    m_ConditionEvent: LockOn
+    m_EventTreshold: 0.2
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 712522847832910388}
   m_Solo: 0

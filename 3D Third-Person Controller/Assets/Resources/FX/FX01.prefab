@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1046192946819082379}
   - component: {fileID: 1046192946819082378}
   - component: {fileID: 4647126826122170213}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: FX01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4925,7 +4925,7 @@ GameObject:
   - component: {fileID: 2859113247784673495}
   - component: {fileID: 5078199511241726668}
   - component: {fileID: 370447482506495854}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: black
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9823,7 +9823,7 @@ GameObject:
   - component: {fileID: 8373892551068396375}
   - component: {fileID: 8373892551068396374}
   - component: {fileID: 8373892551068396329}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: highlight01
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2041115700}
   - component: {fileID: 2041115702}
   - component: {fileID: 2041115701}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: smoke_fog
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5321,7 +5321,7 @@ GameObject:
   - component: {fileID: 160080909141802390}
   - component: {fileID: 160080909141802376}
   - component: {fileID: 160080909141802377}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: smoke_mesh_floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10301,7 +10301,7 @@ GameObject:
   - component: {fileID: 160080909641008889}
   - component: {fileID: 160080909641008886}
   - component: {fileID: 160080909641008887}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: impact_splash_view
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15255,7 +15255,7 @@ GameObject:
   - component: {fileID: 160080909668655535}
   - component: {fileID: 160080909668655532}
   - component: {fileID: 160080909668655533}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: smoke_mesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20379,7 +20379,7 @@ GameObject:
   - component: {fileID: 160080909974926832}
   - component: {fileID: 160080909974926833}
   - component: {fileID: 160080909974926606}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: particle_stone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25265,7 +25265,7 @@ GameObject:
   - component: {fileID: 160080910265182781}
   - component: {fileID: 160080910265182778}
   - component: {fileID: 160080910265182779}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: start_glow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30205,7 +30205,7 @@ GameObject:
   - component: {fileID: 160080910304104265}
   - component: {fileID: 160080910304104262}
   - component: {fileID: 160080910304104263}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: particle_spark
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35100,7 +35100,7 @@ GameObject:
   - component: {fileID: 160080910628720223}
   - component: {fileID: 160080910628720193}
   - component: {fileID: 160080910628720222}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: impact_splash_floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40053,7 +40053,7 @@ GameObject:
   - component: {fileID: 4846832632158665250}
   - component: {fileID: 6798040829426132814}
   - component: {fileID: 1855341020533437284}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: start_impact
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -45064,7 +45064,7 @@ GameObject:
   - component: {fileID: 1946995814214374675}
   - component: {fileID: 1946995814214374684}
   - component: {fileID: 1946995814214374685}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: smoke_spread
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -49959,7 +49959,7 @@ GameObject:
   - component: {fileID: 4136779215994973173}
   - component: {fileID: 4136779215994973175}
   - component: {fileID: 4136779215994973172}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: trail_smoke_outer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -54994,7 +54994,7 @@ GameObject:
   - component: {fileID: 4136779216315181923}
   - component: {fileID: 4136779216315181925}
   - component: {fileID: 4136779216315181922}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: trail_smoke_outer_bright
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -59853,7 +59853,7 @@ GameObject:
   - component: {fileID: 4136779217181494692}
   - component: {fileID: 4136779217181494694}
   - component: {fileID: 4136779217181494695}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: smoke_center
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -64758,7 +64758,7 @@ GameObject:
   - component: {fileID: 4136779217393580493}
   - component: {fileID: 4136779217393580495}
   - component: {fileID: 4136779217393580492}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: trail_bright
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -69809,7 +69809,7 @@ GameObject:
   - component: {fileID: 4136779217716463589}
   - component: {fileID: 4136779217716463591}
   - component: {fileID: 4136779217716463588}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: smoke_center_bright
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -74713,7 +74713,7 @@ GameObject:
   - component: {fileID: 3970779408918090653}
   - component: {fileID: 4911431208556265733}
   - component: {fileID: 7161145525669686112}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: floor_trace
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -79599,7 +79599,7 @@ GameObject:
   - component: {fileID: 7043130890640255733}
   - component: {fileID: 7043130890640255738}
   - component: {fileID: 7043130890640255739}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: FX_Explosion_H_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}

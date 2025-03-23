@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1242522405}
   - component: {fileID: 1242522407}
   - component: {fileID: 1242522406}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: emitter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4937,7 +4937,7 @@ GameObject:
   - component: {fileID: 4519667697023692366}
   - component: {fileID: 5799842555270655302}
   - component: {fileID: 5402200321637165661}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: black_dust
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9836,7 +9836,7 @@ GameObject:
   - component: {fileID: 5855900376577935060}
   - component: {fileID: 4211852112303102830}
   - component: {fileID: 4935135449123201658}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: FX_03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14750,7 +14750,7 @@ GameObject:
   - component: {fileID: 7338011215565485933}
   - component: {fileID: 7338011215565485935}
   - component: {fileID: 7338011215565485934}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: highlight01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19648,7 +19648,7 @@ GameObject:
   - component: {fileID: 9150606207946990125}
   - component: {fileID: 9150606207946990127}
   - component: {fileID: 9150606207946990124}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: highlight02
   m_TagString: Untagged
   m_Icon: {fileID: 0}

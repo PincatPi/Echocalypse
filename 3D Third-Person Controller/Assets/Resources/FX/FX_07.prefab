@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 117678102232861736}
   - component: {fileID: 117678102232861734}
   - component: {fileID: 117678102232861735}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: highlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4910,7 +4910,7 @@ GameObject:
   - component: {fileID: 6030099347534224518}
   - component: {fileID: 3221313346155791564}
   - component: {fileID: 7055239187892829630}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: emitter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9847,7 +9847,7 @@ GameObject:
   - component: {fileID: 7597707905613545992}
   - component: {fileID: 7153848060415380731}
   - component: {fileID: 7561376065334128111}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: heat_add
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14755,7 +14755,7 @@ GameObject:
   - component: {fileID: 3606191660577332217}
   - component: {fileID: 3606191660577332219}
   - component: {fileID: 3606191660577332218}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: dark
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19655,7 +19655,7 @@ GameObject:
   - component: {fileID: 6477124811497415814}
   - component: {fileID: 6477124811497415815}
   - component: {fileID: 987288607143857563}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: FX_07
   m_TagString: Untagged
   m_Icon: {fileID: 0}

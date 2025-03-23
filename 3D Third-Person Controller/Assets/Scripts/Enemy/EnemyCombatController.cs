@@ -16,9 +16,9 @@ public class EnemyCombatController : CombatControllerBase
     private EnemyMovementController enemyMovementController;
 
     //战斗相关
+    [Header("战斗相关")]
     [SerializeField] protected LayerMask playerLayer;
-    [SerializeField, Header("攻击目标")] 
-    protected Transform currentTarget = null;
+    [SerializeField] protected Transform currentTarget = null;
     [SerializeField] protected GameObject attacker;
 
     [Header("技能")] 
@@ -28,7 +28,9 @@ public class EnemyCombatController : CombatControllerBase
     [Header("攻击检测")] 
     private int attackConfigCount; //当前攻击配置信息索引
     private AbilityConfig currentAbilityConfig; //当前攻击配置信息
-    
+
+    [Header("玩家射线检测")] 
+    [SerializeField] private Transform lockOnTransform;
     
     
     private int lockOnHash;
@@ -131,6 +133,8 @@ public class EnemyCombatController : CombatControllerBase
             return Vector3.zero;
         return (currentTarget.position - transform.position).normalized;
     }
+    
+    public Transform GetLockOnTransform() => lockOnTransform;
 
     public void SetAttackConfigCount(int count) => attackConfigCount = count;
     
