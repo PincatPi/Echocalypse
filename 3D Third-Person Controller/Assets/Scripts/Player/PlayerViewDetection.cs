@@ -28,13 +28,17 @@ public class PlayerViewDetection : MonoBehaviour
     [SerializeField] private LayerMask playerLayer;
     [SerializeField] private LayerMask playerSubLayer;
 
-    private int lockOnHash;
+    private int lockOnHash = Animator.StringToHash("LockOn");
+    private int xInputHash = Animator.StringToHash("XInput");
+    private int yInputHash = Animator.StringToHash("YInput");
+    private int xSpeedHash = Animator.StringToHash("XSpeed");
+    private int ySpeedHash = Animator.StringToHash("YSpeed");
+    
     
     void Start()
     {
         animator = GetComponent<Animator>();
         thirdPersonController = GetComponent<ThirdPersonController>();
-        lockOnHash = Animator.StringToHash("LockOn");
     }
 
     void LateUpdate()
@@ -138,22 +142,22 @@ public class PlayerViewDetection : MonoBehaviour
         //Vector3 dir = new Vector3(targetDirection.x, 0, targetDirection.z);
         if (thirdPersonController.playerPosture == ThirdPersonController.PlayerPosture.Stand)
         {
-            animator.SetFloat("XInput", thirdPersonController.GetMoveInput().x);
-            animator.SetFloat("YInput", thirdPersonController.GetMoveInput().y);
+            animator.SetFloat(xInputHash, thirdPersonController.GetMoveInput().x);
+            animator.SetFloat(yInputHash, thirdPersonController.GetMoveInput().y);
             switch (thirdPersonController.locomotionState)
             {
                 case ThirdPersonController.LocomotionState.Idle:
                     //TEST: 测试代码
-                    animator.SetFloat("XSpeed", 0, 0.1f, Time.deltaTime);
-                    animator.SetFloat("YSpeed", 0, 0.1f, Time.deltaTime);
+                    animator.SetFloat(xSpeedHash, 0, 0.1f, Time.deltaTime);
+                    animator.SetFloat(ySpeedHash, 0, 0.1f, Time.deltaTime);
                     break;
                 case ThirdPersonController.LocomotionState.Walk:
-                    animator.SetFloat("XSpeed", dir.x * thirdPersonController.GetWalkSpeed(), 0.1f, Time.deltaTime);
-                    animator.SetFloat("YSpeed", dir.z * thirdPersonController.GetWalkSpeed(), 0.1f, Time.deltaTime);
+                    animator.SetFloat(xSpeedHash, dir.x * thirdPersonController.GetWalkSpeed(), 0.1f, Time.deltaTime);
+                    animator.SetFloat(ySpeedHash, dir.z * thirdPersonController.GetWalkSpeed(), 0.1f, Time.deltaTime);
                     break;
                 case ThirdPersonController.LocomotionState.Run:
-                    animator.SetFloat("XSpeed", dir.x * thirdPersonController.GetRunSpeed(), 0.1f, Time.deltaTime);
-                    animator.SetFloat("YSpeed", dir.z * thirdPersonController.GetRunSpeed(), 0.1f, Time.deltaTime);
+                    animator.SetFloat(xSpeedHash, dir.x * thirdPersonController.GetRunSpeed(), 0.1f, Time.deltaTime);
+                    animator.SetFloat(ySpeedHash, dir.z * thirdPersonController.GetRunSpeed(), 0.1f, Time.deltaTime);
                     break;
             }
         }
