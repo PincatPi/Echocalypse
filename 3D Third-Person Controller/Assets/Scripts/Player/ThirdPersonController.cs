@@ -362,6 +362,11 @@ public class ThirdPersonController : MonoBehaviour
         playerMovement = playerTransform.InverseTransformVector(playerMovement);
     }
 
+    //TEST: 测试代码
+    [SerializeField] private Transform target;
+    [SerializeField] private float lockRotationSpeed;
+    [SerializeField] private Transform headTransform;
+    [SerializeField] private float offsetAngle;
     /// <summary>
     /// 设置动画状态机
     /// </summary>
@@ -382,12 +387,21 @@ public class ThirdPersonController : MonoBehaviour
             {
                 case LocomotionState.Idle:
                     animator.SetFloat(moveSpeedHash, 0, 0.1f, Time.deltaTime);
+                    //TEST: 测试代码
+                    //animator.SetFloat("XSpeed", 0, 0.1f, Time.deltaTime);
+                    //animator.SetFloat("YSpeed", 0, 0.1f, Time.deltaTime);
                     break;
                 case LocomotionState.Walk:
                     animator.SetFloat(moveSpeedHash, playerMovement.magnitude * walkSpeed, 0.1f, Time.deltaTime);
+                    //TEST: 测试代码
+                    //animator.SetFloat("XSpeed", dir.x * walkSpeed, 0.1f, Time.deltaTime);
+                    //animator.SetFloat("YSpeed", dir.z * walkSpeed, 0.1f, Time.deltaTime);
                     break;
                 case LocomotionState.Run:
                     animator.SetFloat(moveSpeedHash, playerMovement.magnitude * runSpeed, 0.1f, Time.deltaTime);
+                    //TEST: 测试代码
+                    //animator.SetFloat("XSpeed", dir.x * runSpeed, 0.1f, Time.deltaTime);
+                    //animator.SetFloat("YSpeed", dir.z * runSpeed, 0.1f, Time.deltaTime);
                     break;
             }
         }
@@ -437,11 +451,9 @@ public class ThirdPersonController : MonoBehaviour
         else if (playerPosture == PlayerPosture.Falling)
         {
             //线性插值地改变动画状态机中的Posture为Midair值
-            //TODO:检查此处的dampTime是否有问题
             animator.SetFloat(postureHash, midairThreshold, 0.5f, Time.deltaTime);
             //设置状态机中VerticalSpeed的值
             animator.SetFloat(verticalSpeedHash, verticalVelocity, 0.1f, Time.deltaTime);
-            //TODO:检查此处的footTween是否正确
             animator.SetFloat(jumpTypeHash, footTween);
         }
         
@@ -663,6 +675,20 @@ public class ThirdPersonController : MonoBehaviour
             canStop = false;
         }
     }
+
+
+    #region 公共接口
+
+    public float GetWalkSpeed() => walkSpeed;
+    
+    public float GetRunSpeed() => runSpeed;
+    
+    public Vector3 GetPlayerMovement() => playerMovement;
+    
+    public Vector2 GetMoveInput() => moveInput;
+
+    #endregion
+    
     
     #region 玩家输入相关
     

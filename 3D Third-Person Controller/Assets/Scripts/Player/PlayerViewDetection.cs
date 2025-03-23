@@ -8,16 +8,18 @@ using UnityEngine.InputSystem;
 public class PlayerViewDetection : MonoBehaviour
 {
     private Animator animator;
-    public Camera mainCamera;
-    public CinemachineTargetGroup cinemachineTargetGroup;
+    private ThirdPersonController thirdPersonController;
+    [SerializeField] private Camera mainCamera;
+    [SerializeField] private CinemachineTargetGroup cinemachineTargetGroup;
     
-    //玩家面前一定距离内的敌人数组
-    private Collider[] enemies;
+    [Header("玩家锁敌")]
+    private Collider[] enemies; //玩家面前一定距离内的敌人数组
     [SerializeField] private Transform targetTransform = null;
-    //锁定敌人目标
-    [SerializeField]private bool isLockTarget = false;
-    //能够发现敌人的最远视线距离
-    [SerializeField] private float distance = 30f;
+    [SerializeField] private bool isLockTarget = false; //锁定敌人目标
+    [SerializeField] private bool isLocked = false;
+    
+    [Header("玩家视野检测")]
+    [SerializeField] private float distance = 30f; //能够发现敌人的最远视线距离
     [SerializeField] private Vector3 offset;
     [SerializeField] private Vector3 size;
     [SerializeField] private Vector3 cubeCenter;
@@ -25,18 +27,20 @@ public class PlayerViewDetection : MonoBehaviour
     [SerializeField] private LayerMask enemyLayer;
     [SerializeField] private LayerMask playerLayer;
     [SerializeField] private LayerMask playerSubLayer;
-    
+
     private int lockOnHash;
     
     void Start()
     {
         animator = GetComponent<Animator>();
+        thirdPersonController = GetComponent<ThirdPersonController>();
         lockOnHash = Animator.StringToHash("LockOn");
     }
 
     void LateUpdate()
     {
         FindEnemyInFront();
+        SwitchAnimator();
         LockOnEnemy();
     }
     
@@ -125,8 +129,86 @@ public class PlayerViewDetection : MonoBehaviour
         }
         return false;
     }
+
+
+    private Vector3 dir;
+    private void SwitchAnimator()
+    {
+        dir = new Vector3(thirdPersonController.GetPlayerMovement().x, 0, thirdPersonController.GetPlayerMovement().z);
+        //Vector3 dir = new Vector3(targetDirection.x, 0, targetDirection.z);
+        if (thirdPersonController.playerPosture == ThirdPersonController.PlayerPosture.Stand)
+        {
+            animator.SetFloat("XInput", thirdPersonController.GetMoveInput().x, 0.1f, Time.deltaTime);
+            animator.SetFloat("YInput", thirdPersonController.GetMoveInput().y, 0.1f, Time.deltaTime);
+            switch (thirdPersonController.locomotionState)
+            {
+                case ThirdPersonController.LocomotionState.Idle:
+                    //TEST: 测试代码
+                    animator.SetFloat("XSpeed", 0, 0.1f, Time.deltaTime);
+                    animator.SetFloat("YSpeed", 0, 0.1f, Time.deltaTime);
+                    break;
+                case ThirdPersonController.LocomotionState.Walk:
+                    animator.SetFloat("XSpeed", dir.x * thirdPersonController.GetWalkSpeed(), 0.1f, Time.deltaTime);
+                    animator.SetFloat("YSpeed", dir.z * thirdPersonController.GetWalkSpeed(), 0.1f, Time.deltaTime);
+                    break;
+                case ThirdPersonController.LocomotionState.Run:
+                    animator.SetFloat("XSpeed", dir.x * thirdPersonController.GetRunSpeed(), 0.1f, Time.deltaTime);
+                    animator.SetFloat("YSpeed", dir.z * thirdPersonController.GetRunSpeed(), 0.1f, Time.deltaTime);
+                    break;
+            }
+        }
+    }
     
-    //TEST: 绘制玩家视线范围
+    
+    //TEST: 测试代码
+    [SerializeField] private Transform target;
+    [SerializeField] private float lockRotationSpeed;
+    [SerializeField] private float offsetAngle;
+    private Vector3 targetDirection;
+    /// <summary>
+    /// //TODO: 锁定状态下的攻击，令玩家对象始终面朝敌人对象
+    /// </summary>
+    private void LockOnEnemy()
+    {
+        //若不处在锁定状态 || 找不到可以锁定的目标
+        //TEST: 下面这条语句将来要取消注释
+        //if (!isLockTarget || !targetTransform)
+        if(!isLockTarget)
+        {
+            //切换为NormalCamera
+            animator.SetFloat(lockOnHash, 0f);
+            targetTransform = null; //锁定目标置空（针对不处在锁定状态）
+            isLockTarget = false; //退出锁定状态（针对找不到可以锁定的目标）
+            return;
+        }
+
+        if (isLockTarget)
+        {
+            //设状态为LockOn，切换至LockOnCamera
+            animator.SetFloat(lockOnHash, 1f);
+            Debug.Log("处于锁定目标状态");
+            
+            //dir = new Vector3(thirdPersonController.GetPlayerMovement().x, 0f, thirdPersonController.GetPlayerMovement().z);
+            Vector3 toTarget = target.position - transform.position;
+            toTarget.y = 0;
+            if (animator.GetCurrentAnimatorStateInfo(0).IsTag("EquipMotion") || 
+                animator.GetCurrentAnimatorStateInfo(0).IsTag("KatanaAttack") ||
+                animator.GetCurrentAnimatorStateInfo(0).IsTag("GreatSwordAttack") ||
+                animator.GetCurrentAnimatorStateInfo(0).IsTag("Roll"))
+            {
+                Quaternion baseRotation = Quaternion.LookRotation(toTarget);
+                //创建左侧偏移（绕Y轴旋转offsetAngle度）
+                Quaternion leftOffset = Quaternion.AngleAxis(offsetAngle, Vector3.up);
+                //组合两个旋转（注意乘法顺序）
+                Quaternion targetRotation = baseRotation * leftOffset;
+                //旋转玩家root
+                transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, lockRotationSpeed * Time.deltaTime);
+            }
+        }
+    }
+
+    #region Gizmos
+    
     private void OnDrawGizmos()
     {
         Vector3 cameraPos = mainCamera.transform.position;
@@ -147,31 +229,7 @@ public class PlayerViewDetection : MonoBehaviour
         }
     }
 
-    /// <summary>
-    /// //TODO: 锁定状态下的攻击，令玩家对象始终面朝敌人对象
-    /// </summary>
-    private void LockOnEnemy()
-    {
-        //若不处在锁定状态 || 找不到可以锁定的目标
-        if (!isLockTarget || !targetTransform)
-        {
-            //切换为NormalCamera
-            animator.SetBool(lockOnHash, false);
-            targetTransform = null; //锁定目标置空（针对不处在锁定状态）
-            isLockTarget = false; //退出锁定状态（针对找不到可以锁定的目标）
-            return;   
-        }
-        //设状态为LockOn，切换至LockOnCamera
-        animator.SetBool(lockOnHash, true);
-        //目标旋转
-        Quaternion targetRotation = Quaternion.LookRotation(targetTransform.position - transform.position);
-        //当前旋转
-        Quaternion currentRotation = transform.rotation;
-        //对旋转进行平滑插值
-        transform.rotation = Quaternion.Slerp(currentRotation, targetRotation, Time.deltaTime * 10f);
-        transform.eulerAngles = new Vector3(0, transform.eulerAngles.y, 0);
-    }
-    
+    #endregion
     
     #region 玩家输入相关
     
@@ -179,7 +237,9 @@ public class PlayerViewDetection : MonoBehaviour
     public void GetLockTargetInput(InputAction.CallbackContext ctx)
     {
         if (ctx.started)
+        {
             isLockTarget = !isLockTarget;
+        }
     }
     
     #endregion
