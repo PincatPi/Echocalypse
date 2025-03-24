@@ -8,6 +8,7 @@ using UnityEngine;
 using UnityEngine.Serialization;
 using UnityEngine.UIElements;
 using Assembly = System.Reflection.Assembly;
+using Random = UnityEngine.Random;
 
 
 public class EnemyCombatController : CombatControllerBase
@@ -17,7 +18,7 @@ public class EnemyCombatController : CombatControllerBase
     private EnemyBase enemyParameter;
     private EnemyMovementController enemyMovementController;
     private CinemachineImpulseSource cinemachineImpulseSource;
-    //[SerializeField] private AudioSource audioSourceForHitClip;
+    private EnemyAttackDetection enemyAttackDetection;
 
     //战斗相关
     [Header("战斗相关")]
@@ -46,6 +47,7 @@ public class EnemyCombatController : CombatControllerBase
         enemyParameter = GetComponent<EnemyBase>();
         enemyMovementController = GetComponent<EnemyMovementController>();
         cinemachineImpulseSource = GetComponent<CinemachineImpulseSource>();
+        enemyAttackDetection = GetComponent<EnemyAttackDetection>();
 
         lockOnHash = Animator.StringToHash("LockOn");
 
@@ -62,13 +64,87 @@ public class EnemyCombatController : CombatControllerBase
     //受到攻击
     public override void OnHit(ComboInteractionConfig interactionConfig, AttackFeedbackConfig attackFeedbackConfig, Transform attacker)
     {
-        if(!canBeHit)
+        //若可以受击且血量大于0，才能执行受击逻辑（否则要么在硬直，要么敌人已经处于死亡状态）
+        if(!canBeHit || enemyParameter.health <= 0)
             return;
         base.OnHit(interactionConfig, attackFeedbackConfig, attacker);
-        //播放受击动画
-        //animator.Play(interactionConfig.hitName);
+
+        //受击时停止攻击检测，防止因为受击而导致攻击检测不会停止
+        enemyAttackDetection.EndAttacking();
+        
+        //计算敌人攻击方向
+        Vector3 dir = (attacker.position - this.transform.position).normalized;
+        // 计算与前方和右侧的夹角
+        float angleForward = Vector3.Angle(dir, transform.forward);
+        
+        //处理受伤逻辑
+        int healthDamage = interactionConfig.healthDamage + Random.Range(-10, 10);
+        Debug.Log("受击了!受到了来自" + interactionConfig.weaponType + "的" +  healthDamage + "点伤害!");
+        enemyParameter.health -= healthDamage; //扣血
+        if (enemyParameter.health <= 0)
+        {
+            enemyParameter.health = 0; Debug.Log("敌人似了!"); 
+            //TODO: 进敌人死亡状态，切换状态机（此处先直接播放死亡动画来替代）
+            if (angleForward < 90f)
+            {
+                animator.CrossFadeInFixedTime("Die_Front", 0.15f, 0, 0);
+            }
+            else
+            {
+                animator.CrossFadeInFixedTime("Die_Back", 0.15f, 0, 0);
+            }
+        }   
+        
+        //处理耐力逻辑
+        if (enemyParameter.endurance > 0) //还有耐力时
+        {
+            int enduranceDamage = interactionConfig.enduranceDamage + Random.Range(-10, 10);
+            Debug.Log(string.Format("减少了{0}点耐力，当前耐力为{1}点!",  interactionConfig.enduranceDamage, enemyParameter.endurance));
+            enemyParameter.endurance -= enduranceDamage; //扣耐力
+            //若耐力归零，则出大硬直
+            if (enemyParameter.endurance <= 0)
+            {
+                enemyParameter.endurance = 0;
+                Debug.Log("敌人耐力清空");
+                
+                //TODO: 播放耐力清零动画，出大硬直
+                //TODO: 可以添加子弹时间效果
+                if (angleForward < 90f)
+                {
+                    animator.CrossFadeInFixedTime("KnockDown_Front", 0.15f, 0, 0);
+                }
+                else
+                {
+                    animator.CrossFadeInFixedTime("KnockDown_Back", 0.15f, 0, 0);
+                }
+            }
+            //若没有归零，则播放Hit层的上半身受击动画
+            else
+            {
+                //播放Hit层的受击动画
+                animator.CrossFadeInFixedTime(interactionConfig.hitName, 0.1555f, 1, 0);
+            }
+        }
+        else //没有耐力时
+        {
+            //若是大剑攻击或大硬直动画，则播放Hit层的受击动画（大剑攻击无法被打断）
+            if (animator.GetCurrentAnimatorStateInfo(0).IsTag("GSAbility") || animator.GetCurrentAnimatorStateInfo(0).IsTag("HitStun"))
+            {
+                animator.CrossFadeInFixedTime(interactionConfig.hitName, 0.1555f, 1, 0);
+            }
+            //若不是大剑攻击，则播放Base层的受击动画（非大剑攻击可以被打断）
+            else
+            {
+                //播放Base层的受击动画
+                animator.CrossFadeInFixedTime(interactionConfig.hitName, 0.1555f, 0, 0);
+            }
+        }
+        
+        //处理敌人旋转
         FindTarget();
         LookAtTarget();
+        
+        //处理攻击反馈
         if (attackFeedbackConfig != null)
         {
             cinemachineImpulseSource.GenerateImpulseWithVelocity(attackFeedbackConfig.velocity); //屏幕震动

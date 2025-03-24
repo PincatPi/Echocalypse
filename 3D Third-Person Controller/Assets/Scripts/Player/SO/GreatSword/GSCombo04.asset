@@ -21,7 +21,8 @@ MonoBehaviour:
     hitAirName: 
     weaponType: 2
     attackForce: 0
-    damage: 130
+    healthDamage: 180
+    enduranceDamage: 65
   fxConfigs:
   - startTime: 0.33
     FXPrefab: {fileID: 8049695311549817459, guid: 91c4875628c3abd4fbe9ea8dbc43c61c,

@@ -168,17 +168,15 @@ public class CombatControllerBase : MonoBehaviour
         // 平滑过渡到目标旋转
         transform.rotation = Quaternion.Lerp(fromRotation, toRotation, Time.deltaTime * rotationSpeed);
         
-        //播放受击动画
         if(!canBeHit)
             return;
-        Debug.Log("受击了!受到了来自" + interactionConfig.weaponType + "的" + interactionConfig.damage + Random.Range(-10, 10) + "点伤害!");
+
         canBeHit = false;
         
         StartCoroutine(IE_HitCoolDown(attackFeedbackConfig, hitCoolDown));
         //生成受击特效
         string hitFXName = hitFXList[(int)interactionConfig.attackForce].TryGetHitFXName();
         FXManager.Instance.PlayOneHitFX(hitFXName, hitTransform.position, hitFXScale);
-        //生成音效
     }
 
     IEnumerator IE_HitCoolDown( AttackFeedbackConfig attackFeedbackConfig, float coolDownTime)

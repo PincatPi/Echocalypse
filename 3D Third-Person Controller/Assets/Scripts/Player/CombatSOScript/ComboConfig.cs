@@ -35,7 +35,8 @@ public class ComboInteractionConfig
     public E_WeaponType weaponType;
     //攻击力度
     public E_AttackForce attackForce;
-    public float damage;
+    public int healthDamage;
+    public int enduranceDamage;
 }
 
 [System.Serializable]

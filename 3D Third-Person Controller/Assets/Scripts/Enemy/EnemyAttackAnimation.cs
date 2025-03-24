@@ -38,7 +38,8 @@ public class EnemyAttackAnimation : MonoBehaviour
         if(abilityConfigs == null)
             return;
         if (!(animator.GetCurrentAnimatorStateInfo(0).IsTag("Ability") ||
-            animator.GetCurrentAnimatorStateInfo(0).IsTag("Attack")))
+              animator.GetCurrentAnimatorStateInfo(0).IsTag("GSAbility") ||
+              animator.GetCurrentAnimatorStateInfo(0).IsTag("Attack")))
             return;
         
         int currentAbilityID = count / 10;

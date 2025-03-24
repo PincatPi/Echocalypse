@@ -45,8 +45,8 @@ public class AICombat : StateActionSO
     private void NoCombatMove()
     {
         //若正在处于无法被打断的动画片段，或正处于动画过渡状态，则不执行
-        if (animator.GetCurrentAnimatorStateInfo(0).IsTag("Roll") || animator.GetCurrentAnimatorStateInfo(0).IsName("Ability") ||
-            animator.IsInTransition(0))
+        if (animator.GetCurrentAnimatorStateInfo(0).IsTag("Roll") || animator.GetCurrentAnimatorStateInfo(0).IsTag("Ability") ||
+            animator.IsInTransition(0) || animator.GetCurrentAnimatorStateInfo(0).IsTag("GSAbililty"))
             return;
         
         if (animator.GetCurrentAnimatorStateInfo(0).IsTag("Motion") && !Mathf.Approximately(enemyCombatController.GetCurrentTargetDistance(), -1f))
@@ -54,7 +54,8 @@ public class AICombat : StateActionSO
             //玩家距离小于攻击距离，则进行攻击
             if (enemyCombatController.GetCurrentTargetDistance() < attackDistance)
             {
-                if (!animator.GetCurrentAnimatorStateInfo(0).IsTag("Attack") || !animator.GetCurrentAnimatorStateInfo(0).IsTag("Ability"))
+                if (!animator.GetCurrentAnimatorStateInfo(0).IsTag("Attack") || !animator.GetCurrentAnimatorStateInfo(0).IsTag("Ability") ||
+                    !animator.GetCurrentAnimatorStateInfo(0).IsTag("GSAbililty"))
                 {
                     //TODO:待添加
                     animator.Play("Normal01");

@@ -17,3 +17,7 @@ MonoBehaviour:
     toState: {fileID: 11400000, guid: 9fea5acaf36fa9b499c68f3f0caba73d, type: 2}
     conditions:
     - {fileID: 11400000, guid: 530fb5424965cfa4ca0f203d3f94508f, type: 2}
+  - fromState: {fileID: 11400000, guid: 9fea5acaf36fa9b499c68f3f0caba73d, type: 2}
+    toState: {fileID: 11400000, guid: fdc435acde3b80b4e83751c47ba23f92, type: 2}
+    conditions:
+    - {fileID: 11400000, guid: 82707e5d9ca13d849ac147aee984724f, type: 2}
