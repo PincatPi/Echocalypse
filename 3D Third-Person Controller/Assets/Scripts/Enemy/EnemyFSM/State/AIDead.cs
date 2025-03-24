@@ -6,6 +6,9 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "AIDead", menuName = "StateMachine/State/AIDead")]
 public class AIDead : StateActionSO
 {
+    //TODO: 将来应该重构UI逻辑
+    private BossHealthAndEndurance bossHealthAndEndurance;
+    
     private CharacterController characterController;
     private EnemyView enemyView;
     private MonoBehaviour[] components;
@@ -19,6 +22,9 @@ public class AIDead : StateActionSO
         base.Init(stateMachineSystem);
         components = stateMachineSystem.GetComponents<MonoBehaviour>();
         characterController = stateMachineSystem.GetComponentInChildren<CharacterController>();
+        
+        //TODO: 将来应该重构UI逻辑
+        bossHealthAndEndurance = stateMachineSystem.GetComponent<BossHealthAndEndurance>();
     }
 
     public override void OnEnter(StateMachineSystem stateMachineSystem)
@@ -27,6 +33,10 @@ public class AIDead : StateActionSO
         DisableAllScripts();
         //延迟destoryTime时间后销毁该对象
         DelayDestoryThisGameObject();
+        
+        //TODO: 将来应该重构UI逻辑
+        bossHealthAndEndurance.AppearText();
+        bossHealthAndEndurance.DisappearBar();
     }
 
     public override void OnUpdate()
@@ -47,9 +57,11 @@ public class AIDead : StateActionSO
     {
         foreach (var component in components)
         {
-            if (component.GetType().Name != nameof(StateMachineSystem))
+            component.enabled = false;
+            if (component.GetType().Name == nameof(StateMachineSystem) ||
+                component.GetType().Name == nameof(BossHealthAndEndurance))
             {
-                component.enabled = false;   
+                component.enabled = true;
             }
         }
         characterController.enabled = false;

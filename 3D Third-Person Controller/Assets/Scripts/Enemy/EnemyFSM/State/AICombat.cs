@@ -6,6 +6,9 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "AICombat", menuName = "StateMachine/State/AICombat")]
 public class AICombat : StateActionSO
 {
+    //TODO: 将来应该重构UI逻辑
+    private BossHealthAndEndurance bossHealthAndEndurance;
+    
     private EnemyAttackAnimation enemyAttackAnimation;
     
     [SerializeField] private float backwardDistance;
@@ -29,8 +32,20 @@ public class AICombat : StateActionSO
     {
         base.Init(stateMachineSystem);
         enemyAttackAnimation = stateMachineSystem.GetComponent<EnemyAttackAnimation>();
+        
+        //TODO: 将来应该重构UI逻辑
+        bossHealthAndEndurance = stateMachineSystem.GetComponent<BossHealthAndEndurance>();
     }
-    
+
+    public override void OnEnter(StateMachineSystem stateMachineSystem)
+    {
+        base.OnEnter(stateMachineSystem);
+        animator.Play("WakeUp"); //播放苏醒动画
+        
+        //TODO: UI逻辑需要重构
+        bossHealthAndEndurance.AppearBar(); //显示UI
+    }
+
     public override void OnUpdate()
     {
         CombatAction();

@@ -83,8 +83,9 @@ public class EnemyCombatController : CombatControllerBase
         enemyParameter.health -= healthDamage; //扣血
         if (enemyParameter.health <= 0)
         {
-            enemyParameter.health = 0; Debug.Log("敌人似了!"); 
-            //TODO: 进敌人死亡状态，切换状态机（此处先直接播放死亡动画来替代）
+            enemyParameter.health = 0; 
+            Debug.Log("敌人似了!"); 
+            //进敌人死亡状态，播放死亡动画，切换状态机
             if (angleForward < 90f)
             {
                 animator.CrossFadeInFixedTime("Die_Front", 0.15f, 0, 0);
@@ -93,6 +94,7 @@ public class EnemyCombatController : CombatControllerBase
             {
                 animator.CrossFadeInFixedTime("Die_Back", 0.15f, 0, 0);
             }
+            return;
         }   
         
         //处理耐力逻辑
