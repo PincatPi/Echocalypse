@@ -7,6 +7,8 @@ using UnityEngine.PlayerLoop;
 
 public class AttackCheckGizmos : MonoBehaviour
 {
+    private Animator animator;
+    
     //敌人层级
     [SerializeField] protected LayerMask enemyLayer;
     //是否正在攻击
@@ -34,9 +36,12 @@ public class AttackCheckGizmos : MonoBehaviour
     
     //本次攻击的交互数据
     protected ComboInteractionConfig comboInteractionConfig;
+    //本次攻击的反馈数据
+    protected AttackFeedbackConfig attackFeedbackConfig;
 
     protected virtual void Start()
     {
+        animator = GetComponent<Animator>();
         //注册不同武器的攻击检测点
         attackCheckPointsOfWeapon.Add(E_WeaponType.Katana, katanaCheckPoints);
         attackCheckPointsOfWeapon.Add(E_WeaponType.GreatSword, greatSwordCheckPoints);
@@ -109,15 +114,14 @@ public class AttackCheckGizmos : MonoBehaviour
                         {
                             foreach (RaycastHit enemy in enemiesRaycastHits)
                             {
-                                //TODO: 此处改为调用Enemy身上的受伤函数
-                                // EnemyBase enemyHit = enemy.transform.GetComponent<BossFSM>();
-                                // enemyHit.TakeDamage(this.transform.gameObject);
                                 if (enemy.transform)
                                 {
                                     EnemyCombatController enemyHit = enemy.transform.gameObject.GetComponent<EnemyCombatController>();
                                     if (enemyHit)
                                     {
-                                        enemyHit.OnHit(comboInteractionConfig, this.transform); //调用受击函数   
+                                        enemyHit.OnHit(comboInteractionConfig, attackFeedbackConfig, this.transform); //调用受击函数   
+                                        SetAnimatorSpeed(attackFeedbackConfig.animatorSpeed); //对玩家进行顿帧
+                                        Invoke(nameof(ResetAnimatorSpeed), attackFeedbackConfig.stopFrameTime); //结束顿帧
                                     }
                                 }
                             }
@@ -141,15 +145,21 @@ public class AttackCheckGizmos : MonoBehaviour
         }
     }
 
-    public void StartAttacking(ComboInteractionConfig config)
+    private void SetAnimatorSpeed(float speed) => animator.speed = speed;
+
+    private void ResetAnimatorSpeed() => animator.speed = 1f;
+    
+    public void StartAttacking(ComboInteractionConfig comboConfig, AttackFeedbackConfig feedbackConfig)
     {
         isAttacking = true;
-        comboInteractionConfig = config;
+        comboInteractionConfig = comboConfig;
+        attackFeedbackConfig = feedbackConfig;
     }
 
     public void EndAttacking()
     {
         isAttacking = false;
         comboInteractionConfig = null;
+        attackFeedbackConfig = null;
     }
 }

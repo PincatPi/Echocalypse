@@ -51,6 +51,16 @@ public class ComboList : ScriptableObject
         return comboList[comboIndex].clipConfigs[eventIndex];
     }
     
+    //攻击反馈
+    public AttackFeedbackConfig TryGetAttackFeedbackConfig(int comboIndex, int eventIndex)
+    {
+        if(comboIndex >= comboList.Length)
+            return null;
+        if(eventIndex >= comboList[comboIndex].attackFeedbackConfigs.Length)
+            return null;
+        return comboList[comboIndex].attackFeedbackConfigs[eventIndex];
+    }
+    
     //自身位移补偿
     public SelfMoveOffsetConfig TryGetSelfMoveOffsetConfig(int comboIndex, int eventIndex)
     {

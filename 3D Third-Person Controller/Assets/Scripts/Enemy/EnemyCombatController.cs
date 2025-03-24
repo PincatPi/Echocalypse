@@ -1,6 +1,8 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using Cinemachine;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Serialization;
@@ -14,6 +16,8 @@ public class EnemyCombatController : CombatControllerBase
     private EnemyView enemyView;
     private EnemyBase enemyParameter;
     private EnemyMovementController enemyMovementController;
+    private CinemachineImpulseSource cinemachineImpulseSource;
+    //[SerializeField] private AudioSource audioSourceForHitClip;
 
     //战斗相关
     [Header("战斗相关")]
@@ -41,6 +45,7 @@ public class EnemyCombatController : CombatControllerBase
         enemyView = GetComponent<EnemyView>();
         enemyParameter = GetComponent<EnemyBase>();
         enemyMovementController = GetComponent<EnemyMovementController>();
+        cinemachineImpulseSource = GetComponent<CinemachineImpulseSource>();
 
         lockOnHash = Animator.StringToHash("LockOn");
 
@@ -55,13 +60,32 @@ public class EnemyCombatController : CombatControllerBase
 
     //敌人公共方法
     //受到攻击
-    public override void OnHit(ComboInteractionConfig interactionConfig, Transform attacker)
+    public override void OnHit(ComboInteractionConfig interactionConfig, AttackFeedbackConfig attackFeedbackConfig, Transform attacker)
     {
-        base.OnHit(interactionConfig, attacker);
+        if(!canBeHit)
+            return;
+        base.OnHit(interactionConfig, attackFeedbackConfig, attacker);
         //播放受击动画
         //animator.Play(interactionConfig.hitName);
         FindTarget();
         LookAtTarget();
+        if (attackFeedbackConfig != null)
+        {
+            cinemachineImpulseSource.GenerateImpulseWithVelocity(attackFeedbackConfig.velocity); //屏幕震动
+            StartCoroutine(IE_HitAudioSound(attackFeedbackConfig.audioStartTime, attackFeedbackConfig.audioClip)); //播放受击音效
+            SetAnimatorSpeed(attackFeedbackConfig.animatorSpeed); //顿帧效果
+            Invoke(nameof(ResetAnimatorSpeed), attackFeedbackConfig.stopFrameTime);
+        }
+    }
+
+    IEnumerator IE_HitAudioSound(float countTime, AudioClip audioClip)
+    {
+        while (countTime > 0)
+        {
+            yield return null;
+            countTime -= Time.deltaTime;
+        }
+        audioSource.PlayOneShot(audioClip, 0.1f); //播放受击音 
     }
 
     private void FindTarget()
@@ -110,7 +134,7 @@ public class EnemyCombatController : CombatControllerBase
     {
         playerCollider.GetComponent<PlayerCombatController>().PlayerOnHit(currentAbilityConfig.detectionConfigs[attackConfigCount], this.transform);
     }
-
+    
     #region 公共接口
     
     public Transform GetCurrentTarget()

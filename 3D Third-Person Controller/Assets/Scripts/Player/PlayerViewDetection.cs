@@ -48,6 +48,17 @@ public class PlayerViewDetection : MonoBehaviour
         FindEnemyInFront();
         SwitchAnimator();
         LockOnEnemy();
+
+        //TEST: 测试代码
+        if (nearestLockOnTarget)
+        {
+            Vector3 dir = nearestLockOnTarget.position - mainCamera.transform.position;
+            dir.Normalize();
+            Quaternion targetRotation = Quaternion.LookRotation(dir);
+            Vector3 eulerAngles = targetRotation.eulerAngles;
+            eulerAngles.y = 0;
+            mainCamera.transform.localEulerAngles = eulerAngles;
+        }
     }
     
     [SerializeField] private Transform viewTransform;
@@ -115,7 +126,6 @@ public class PlayerViewDetection : MonoBehaviour
     private void SetCameraTarget(Transform targetTransform)
     {
         animator.SetFloat(lockOnHash, 1f);
-        mainCamera.transform.forward = targetTransform.position - transform.position; //强制摄像机与玩家、锁定点在同一直线上 
         //cinemachineTargetGroup每时刻最多应该只有2个对象（m_Targets[0]固定为玩家对象，m_Targets[1]为敌人对象）
         //若当前没有
         if (cinemachineTargetGroup.m_Targets.Length == 1)
@@ -135,6 +145,14 @@ public class PlayerViewDetection : MonoBehaviour
         {
             Debug.LogError(string.Format("CinemachineTargetGroup的对象数量不正确, 此时其中有{0}个对象", cinemachineTargetGroup.m_Targets.Length));
         }
+        
+        Vector3 dir = targetTransform.position - mainCamera.transform.position;
+        dir.Normalize();
+        Quaternion targetRotation = Quaternion.LookRotation(dir);
+        Vector3 eulerAngles = targetRotation.eulerAngles;
+        eulerAngles.y = 0;
+        mainCamera.transform.localEulerAngles = eulerAngles;
+        
         cinemachineTargetGroup.DoUpdate(); 
     }
     
@@ -285,7 +303,6 @@ public class PlayerViewDetection : MonoBehaviour
         //设状态为LockOn，切换至LockOnCamera
         //TEST: 测试注释掉
         //animator.SetFloat(lockOnHash, 1f);
-        Debug.Log("处于锁定目标状态");
             
         //dir = new Vector3(thirdPersonController.GetPlayerMovement().x, 0f, thirdPersonController.GetPlayerMovement().z);
         Vector3 toTarget = nearestLockOnTarget.position - transform.position;
@@ -309,7 +326,6 @@ public class PlayerViewDetection : MonoBehaviour
 
     private void ClearViewTarget()
     {
-        Debug.Log("清空了之前找到的ViewTarget");
         //targetTransform = null;
         nearestLockOnTarget = null;
         availableTargets.Clear();
@@ -317,7 +333,6 @@ public class PlayerViewDetection : MonoBehaviour
 
     private void ClearCameraTarget()
     {
-        Debug.Log("清空了CameraGroup的敌人对象，仅保留玩家");
         CinemachineTargetGroup.Target[] newTargets = new CinemachineTargetGroup.Target[]{cinemachineTargetGroup.m_Targets[0]};
         cinemachineTargetGroup.m_Targets = newTargets;
     }

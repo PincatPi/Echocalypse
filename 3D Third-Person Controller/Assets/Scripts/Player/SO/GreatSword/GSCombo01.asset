@@ -35,5 +35,11 @@ MonoBehaviour:
     audioClip: {fileID: 8300000, guid: 445dd173a4bcfa74da371e3af003fbff, type: 3}
     volume: 1
     duration: 0
+  attackFeedbackConfigs:
+  - velocity: {x: -0.03, y: -0.03, z: 0}
+    audioClip: {fileID: 8300000, guid: f439d3763166105458117b474c3e1ab3, type: 3}
+    audioStartTime: 0
+    animatorSpeed: 0
+    stopFrameTime: 0
   selfMoveOffsetConfigsConfigs: []
   targetMoveOffsetConfigsConfigs: []

@@ -101,6 +101,9 @@ public class PlayerCombatController : CombatControllerBase
             return;
         canBeHit = false;
         
+        //停止攻击检测（防止攻击被打断时攻击检测一直开启）
+        attackCheckSystem.EndAttacking();
+        
         //禁用玩家移动和攻击输入
         movementInputAction.Disable();
         attackAction.Disable();
@@ -110,7 +113,7 @@ public class PlayerCombatController : CombatControllerBase
         Debug.Log("玩家受到了" + damage + "点伤害!");
 
         //播放切换装备动画、大剑的攻击动画时不播放受击动画（大剑攻击有硬直）
-        if (canPlayHitAnim && !animator.GetCurrentAnimatorStateInfo(0).IsTag("GSAttack") ||
+        if (canPlayHitAnim && !animator.GetCurrentAnimatorStateInfo(0).IsTag("GSAttack") &&
             !animator.GetCurrentAnimatorStateInfo(0).IsTag("Equip"))
         {
             Vector3 dir = (attackerTransform.position - this.transform.position).normalized;

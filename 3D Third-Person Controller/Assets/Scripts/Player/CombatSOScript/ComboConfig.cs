@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 using UnityEngine.UIElements;
 
 [CreateAssetMenu(fileName = "ComboConfig", menuName = "ScriptableObjects/Combat/ComboConfig")]
@@ -15,6 +16,8 @@ public class ComboConfig : ScriptableObject
     public FXConfig[] fxConfigs;
     [Header("音效数据")]
     public ClipConfig[] clipConfigs;
+    [Header("攻击反馈数据")] 
+    public AttackFeedbackConfig[] attackFeedbackConfigs;
     [Header("自身位移补偿数据")]
     public SelfMoveOffsetConfig[] selfMoveOffsetConfigsConfigs;
     [Header("目标位移补偿数据")]
@@ -67,10 +70,11 @@ public class ClipConfig
 [System.Serializable]
 public class AttackFeedbackConfig
 {
-    public float strength; //屏幕震动
-    public float frequency;
-    public float duration;
-    //TODO: 顿帧
+    public Vector3 velocity; //屏幕震动速度
+    public AudioClip audioClip; //受击音效
+    public float audioStartTime;
+    public float animatorSpeed; //顿帧速度
+    public float stopFrameTime; //顿帧时长
 }
 
 [System.Serializable]

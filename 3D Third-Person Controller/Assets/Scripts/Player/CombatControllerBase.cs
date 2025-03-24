@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.PlayerLoop;
+using Random = UnityEngine.Random;
 
 public class CombatControllerBase : MonoBehaviour
 {
@@ -114,15 +115,17 @@ public class CombatControllerBase : MonoBehaviour
         {
             if (animator.GetCurrentAnimatorStateInfo(0).normalizedTime > comboInteractionConfig.startTime)
             {
+                //获得攻击反馈配置信息
+                AttackFeedbackConfig attackFeedbackConfig = currentComboList.TryGetAttackFeedbackConfig(currentComboIndex, runningEventIndex.attackFeedbackIndex);
                 //执行攻击检测
-                //TODO: 检查此处逻辑
-                attackCheckSystem.StartAttacking(comboInteractionConfig); //开始进行攻击检测
+                attackCheckSystem.StartAttacking(comboInteractionConfig, attackFeedbackConfig); //开始进行攻击检测
             }
             if (animator.GetCurrentAnimatorStateInfo(0).normalizedTime > comboInteractionConfig.endTime)
             {
                 attackCheckSystem.EndAttacking();
                 //执行一次事件后
                 runningEventIndex.attackDetectionIndex++;
+                runningEventIndex.attackFeedbackIndex++;
             }
         }
         //生成特效
@@ -156,7 +159,7 @@ public class CombatControllerBase : MonoBehaviour
 
     [SerializeField] private float rotationSpeed;
     //受击函数
-    public virtual void OnHit(ComboInteractionConfig interactionConfig, Transform attacker)
+    public virtual void OnHit(ComboInteractionConfig interactionConfig, AttackFeedbackConfig attackFeedbackConfig, Transform attacker)
     {
         //看向攻击者
         // 获取当前的旋转和目标旋转
@@ -168,24 +171,31 @@ public class CombatControllerBase : MonoBehaviour
         //播放受击动画
         if(!canBeHit)
             return;
-        Debug.Log("受击了!受到了来自" + interactionConfig.weaponType + "的" + interactionConfig.damage + "点伤害!");
+        Debug.Log("受击了!受到了来自" + interactionConfig.weaponType + "的" + interactionConfig.damage + Random.Range(-10, 10) + "点伤害!");
         canBeHit = false;
-        StartCoroutine(IE_HitCoolDown(hitCoolDown));
+        
+        StartCoroutine(IE_HitCoolDown(attackFeedbackConfig, hitCoolDown));
         //生成受击特效
         string hitFXName = hitFXList[(int)interactionConfig.attackForce].TryGetHitFXName();
         FXManager.Instance.PlayOneHitFX(hitFXName, hitTransform.position, hitFXScale);
         //生成音效
     }
 
-    IEnumerator IE_HitCoolDown(float coolDownTime)
+    IEnumerator IE_HitCoolDown( AttackFeedbackConfig attackFeedbackConfig, float coolDownTime)
     {
+        coolDownTime = coolDownTime + attackFeedbackConfig.stopFrameTime;
+        Debug.Log(coolDownTime);
         while (coolDownTime > 0)
         {
             yield return null;
-            coolDownTime -= Time.deltaTime;
+            coolDownTime -= Time.deltaTime;   
         }
         canBeHit = true;
     }
+    
+    protected void SetAnimatorSpeed(float speed) => animator.speed = speed;
+
+    protected void ResetAnimatorSpeed() => animator.speed = 1f;
 }
 
 public class RunningEventIndex
