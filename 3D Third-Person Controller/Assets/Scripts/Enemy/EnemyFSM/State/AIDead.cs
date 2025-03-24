@@ -1,6 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEditor.Timeline.Actions;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "AIDead", menuName = "StateMachine/State/AIDead")]
