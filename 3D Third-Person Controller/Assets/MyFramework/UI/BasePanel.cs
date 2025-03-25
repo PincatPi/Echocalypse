@@ -10,12 +10,14 @@ public class BasePanel : MonoBehaviour
     public virtual void OpenPanel()
     {
         isActive = true;
-        UIManager.Instance.OpenPanel(gameObject.name);
+        this.gameObject.SetActive(true);
+        //UIManager.Instance.OpenPanel(gameObject.name);
     }
     
     public virtual void ClosePanel()
     {
         isActive = false;
-        UIManager.Instance.ClosePanel(gameObject.name);
+        this.gameObject.SetActive(false);
+        //UIManager.Instance.ClosePanel(gameObject.name);
     }
 }

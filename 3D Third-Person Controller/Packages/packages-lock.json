@@ -214,6 +214,15 @@
       },
       "url": "https://packages.unity.cn"
     },
+    "me.qiankanglai.loopscrollrect": {
+      "version": "https://github.com/qiankanglai/LoopScrollRect.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {
+        "com.unity.ugui": "1.0.0"
+      },
+      "hash": "53ef8bcabb7183e29f4184d3709fbdcb216a8c3f"
+    },
     "com.unity.modules.ai": {
       "version": "1.0.0",
       "depth": 0,
