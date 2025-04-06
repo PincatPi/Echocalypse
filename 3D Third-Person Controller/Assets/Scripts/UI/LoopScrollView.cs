@@ -4,15 +4,17 @@ using System.Collections;
 
 [AddComponentMenu("UI/Loop Vertical Scroll Rect", 51)]
 [DisallowMultipleComponent]
-public class LoopVerticalScrollRect : LoopScrollRect
+public class LoopScrollView : LoopScrollRect
 {
-    protected LoopVerticalScrollRect()
+    protected LoopScrollView()
     {
+        //设置滚动方向为垂直方向
         direction = LoopScrollRectDirection.Vertical;
     }
 
     protected override float GetSize(RectTransform item, bool includeSpacing)
     {
+        //判断是否包含间距
         float size = includeSpacing ? contentSpacing : 0;
         if (m_GridLayout != null)
         {

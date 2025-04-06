@@ -68,8 +68,11 @@ public class PackagePanel : BasePanel
         RefreshScrollView();
     }
 
+    //TEST: 放弃使用原生ScrollView
     private void RefreshScrollView()
     {
+        return;
+        
         RectTransform scrollContent = UIScrollView.GetComponent<ScrollRect>().content;
         for (int i = 0; i < scrollContent.childCount; i++)
         {

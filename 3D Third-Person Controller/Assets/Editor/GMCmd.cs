@@ -47,7 +47,7 @@ public class GMCmd
         //保存数据
         PackageLocalData.Instance.items = new List<PackageLocalItem>();
         //创建一万条背包测试动态数据
-        for (int i = 0; i < 10000; ++i)
+        for (int i = 0; i < 1000; ++i)
         {
             PackageLocalItem packageLocalItem = new PackageLocalItem()
             {

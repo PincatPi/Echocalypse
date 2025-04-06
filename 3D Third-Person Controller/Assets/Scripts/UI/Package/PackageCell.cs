@@ -54,8 +54,9 @@ public class PackageCell : MonoBehaviour, IPointerClickHandler, IPointerEnterHan
         //是否是新获得
         UINew.gameObject.SetActive(this.packageDynamicData.isNew);
         //物品图片
-        //Sprite icon = Resources.Load<Sprite>(this.packageStaticData.imagePath);
-        Texture2D texture = Resources.Load<Texture2D>(this.packageStaticData.imagePath);
+        //TEST: 测试代码
+        //Texture2D texture = Resources.Load<Texture2D>(this.packageStaticData.imagePath);
+        Texture2D texture = TextureDictionary.Instance.GetTexture(this.packageStaticData.imagePath);
         Sprite icon = Sprite.Create(texture, new Rect(0, 0, texture.width, texture.height), Vector2.zero);
         UIIcon.GetComponent<Image>().sprite = icon;
         //刷新星级

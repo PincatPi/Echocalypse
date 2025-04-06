@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<engine:UXML
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:engine="UnityEngine.UIElements"
+    xmlns:editor="UnityEditor.UIElements"
+    xsi:noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd"
+>
+    <Style src="project://database/Assets/Scripts/DialogueSystem/Editor/UI/NodeEditor.uss?fileID=7433441132597879392&amp;guid=6959ca041a5ff8e4193983e160f5ca7a&amp;type=3#NodeEditor" />
+	<engine:Label text="Hello World! From UXML" />
+	<engine:Label class="custom-label" text="Hello World! With Style" />
+
+</engine:UXML>

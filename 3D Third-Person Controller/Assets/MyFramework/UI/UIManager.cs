@@ -150,27 +150,10 @@ public class UIManager : SingletonMonoBase<UIManager>
     {
         BasePanel panel = null;
         //若关闭界面字典中存在，说明已经实例化过，则取出来并设为active即可
-        if (negativePanelDict.TryGetValue(panelName, out panel))
+        if (activePanelDict.TryGetValue(panelName, out panel))
         {
             return panel;
         }
-        //检查路径是否存在UIConfig配置类中
-        string panelPath = "";
-        if (!pathDict.TryGetValue(panelName, out panelPath))
-        {
-            Debug.LogError(panelName + " is doesn't exist");
-            return null;
-        }
-        //若预制件缓存字典中存在，则直接使用，否则进行加载
-        GameObject panelPrefab = null;
-        if (!prefabDict.TryGetValue(panelName, out panelPrefab))
-        {
-            string realPath = rootPath + panelPath;
-            panelPrefab = Resources.Load<GameObject>(realPath);
-            prefabDict.Add(panelName, panelPrefab);
-        }
-        GameObject panelObject = GameObject.Instantiate(panelPrefab, UIRoot, false);
-        panel = panelObject.GetComponent<BasePanel>();
         return panel;
     }
 }
