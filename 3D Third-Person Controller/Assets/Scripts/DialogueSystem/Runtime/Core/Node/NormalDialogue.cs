@@ -16,6 +16,9 @@ namespace DialogueSystem
             if (Keyboard.current.eKey.wasPressedThisFrame)
             {
                 state = E_NodeState.Waiting;
+                //更新childNode结点
+                childNode = children.Count > 0 ? children[0] : null;
+                //TODO: 此处要更新逻辑
                 if (childNode)
                 {
                     childNode.state = E_NodeState.Running;
@@ -28,20 +31,19 @@ namespace DialogueSystem
         //首次进入该结点时，打印对话内容
         protected override void OnStart()
         {
-            Debug.Log(dialogueContent);
-            // DialogueManager dialogueManager = GameObject.Find("DialogueManager").GetComponent<DialogueManager>();
-            // dialogueManager.UpdateDialogueInfo(dialogueContent, speakerName, speakerAvatar);
+            DialogueManager dialogueManager = GameObject.Find("DialogueManager").GetComponent<DialogueManager>();
+            dialogueManager.UpdateDialogueInfo(dialogueContent, speakerName, speakerAvatar);
         }
 
         //退出该结点时，打印日志
         protected override void OnStop()
         {
-            Debug.Log("退出该结点");
-            // if (!childNode)
-            // {
-            //     DialogueManager dialogueManager = GameObject.Find("DialogueManager").GetComponent<DialogueManager>();
-            //     dialogueManager.EndDialogue();
-            // }
+            //若该对话分支上已经没有结点
+            if (!childNode)
+            {
+                DialogueManager dialogueManager = GameObject.Find("DialogueManager").GetComponent<DialogueManager>();
+                dialogueManager.EndDialogue(); //关闭对话UI
+            }
         }
     }
 }

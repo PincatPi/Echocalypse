@@ -1,12 +1,13 @@
-<?xml version="1.0" encoding="utf-8"?>
-<engine:UXML
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns:engine="UnityEngine.UIElements"
-    xmlns:editor="UnityEditor.UIElements"
-    xsi:noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd"
->
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
     <Style src="project://database/Assets/Scripts/DialogueSystem/Editor/UI/NodeEditor.uss?fileID=7433441132597879392&amp;guid=6959ca041a5ff8e4193983e160f5ca7a&amp;type=3#NodeEditor" />
-	<engine:Label text="Hello World! From UXML" />
-	<engine:Label class="custom-label" text="Hello World! With Style" />
-
-</engine:UXML>
+    <ui:VisualElement style="flex-grow: 1; flex-direction: row;">
+        <ui:VisualElement name="LeftDiv" style="flex-grow: 0.4; background-color: rgb(56, 56, 56); background-image: none;">
+            <ui:Label tabindex="-1" text="Inspector" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Inspector" style="-unity-font-style: bold; -unity-text-align: middle-left; height: 21px; background-color: rgb(37, 37, 37); margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; color: rgb(255, 255, 255);" />
+            <InspectorViewer style="flex-grow: 1;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="RightDiv" style="flex-grow: 1; background-color: rgb(56, 56, 56);">
+            <ui:Label tabindex="-1" text="NodeTreeViewer" parse-escape-sequences="true" display-tooltip-when-elided="true" name="NodeTreeViewer" style="-unity-font-style: bold; -unity-text-align: middle-left; height: 21px; background-color: rgb(37, 37, 37); -unity-background-scale-mode: scale-to-fit; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; color: rgb(255, 255, 255);" />
+            <NodeTreeViewer focusable="true" style="flex-grow: 1;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

@@ -1,0 +1,140 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-6690744490155572566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d912f789063e4273b8bc77af5edd5487, type: 3}
+  m_Name: BranchDialogue
+  m_EditorClassIdentifier: 
+  state: 1
+  started: 0
+  children:
+  - {fileID: -5690137995235167562}
+  - {fileID: -1875473583357368664}
+  description: 
+  guid: 6c51a11ecbccbde44bc8bfb9fc5b3dab
+  position: {x: 10, y: 294}
+  dialogueContent: "\u60A8\u60F3\u73B0\u5728\u5F00\u59CB\u5EB7\u590D\u8BAD\u7EC3\u5417\uFF1F"
+  speakerAvatar: {fileID: 0}
+  speakerName: 
+  optionsList:
+  - "\u662F\u7684\uFF0C\u73B0\u5728\u5F00\u59CB\u5427"
+  - "\u6211\u60F3\u518D\u7B49\u4E00\u7B49"
+  nextDialogueIndex: 0
+  nextDialogueStarted: 0
+--- !u!114 &-5690137995235167562
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41679e876dcb4819b43e36a540f9fc41, type: 3}
+  m_Name: NormalDialogue
+  m_EditorClassIdentifier: 
+  state: 1
+  started: 0
+  children: []
+  description: 
+  guid: 17beebfc492a9d041a410cf0be24027a
+  position: {x: -134, y: 485}
+  childNode: {fileID: 0}
+  dialogueContent: "\u597D\u7684\uFF0C\u6211\u5E26\u60A8\u524D\u5F80\u5EB7\u590D\u8BAD\u7EC3\u573A"
+  speakerAvatar: {fileID: 0}
+  speakerName: 
+--- !u!114 &-1875473583357368664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41679e876dcb4819b43e36a540f9fc41, type: 3}
+  m_Name: NormalDialogue
+  m_EditorClassIdentifier: 
+  state: 1
+  started: 0
+  children: []
+  description: 
+  guid: b11a308b38ebeda409dcaa48d9a3d365
+  position: {x: 158, y: 493}
+  childNode: {fileID: 0}
+  dialogueContent: "\u597D\u7684\uFF0C\u60A8\u51C6\u5907\u597D\u4E86\u8BF7\u968F\u65F6\u544A\u8BC9\u6211"
+  speakerAvatar: {fileID: 0}
+  speakerName: 
+--- !u!114 &-159978827248028785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41679e876dcb4819b43e36a540f9fc41, type: 3}
+  m_Name: NormalDialogue
+  m_EditorClassIdentifier: 
+  state: 1
+  started: 0
+  children:
+  - {fileID: -6690744490155572566}
+  description: 
+  guid: 1d4577ca4535ee74fb5968237a93825c
+  position: {x: 4, y: 158}
+  childNode: {fileID: -6690744490155572566}
+  dialogueContent: "\u6211\u5DF2\u7ECF\u7B49\u5019\u4F60\u591A\u65F6\u4E86"
+  speakerAvatar: {fileID: 0}
+  speakerName: 
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25b4982909281474292f6b641959c4ab, type: 3}
+  m_Name: DialogueTree
+  m_EditorClassIdentifier: 
+  rootNode: {fileID: 4958758651449765054}
+  treeState: 0
+  nodes:
+  - {fileID: 4958758651449765054}
+  - {fileID: -159978827248028785}
+  - {fileID: -6690744490155572566}
+  - {fileID: -5690137995235167562}
+  - {fileID: -1875473583357368664}
+--- !u!114 &4958758651449765054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41679e876dcb4819b43e36a540f9fc41, type: 3}
+  m_Name: NormalDialogue
+  m_EditorClassIdentifier: 
+  state: 1
+  started: 0
+  children:
+  - {fileID: -159978827248028785}
+  description: "\u6839\u7ED3\u70B9"
+  guid: 64e36454c94a4964a8a5938ee5ced71a
+  position: {x: -2, y: 12}
+  childNode: {fileID: -159978827248028785}
+  dialogueContent: "\u4F60\u597D\uFF0C\u6B22\u8FCE\u9192\u6765"
+  speakerAvatar: {fileID: 0}
+  speakerName: "\u4FEE\u5973"

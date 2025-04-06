@@ -1,0 +1,13 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/Scripts/DialogueSystem/Editor/UI/NodeView.uss?fileID=7433441132597879392&amp;guid=24112ec35dc56964d9ba613275ca93c6&amp;type=3#NodeView" />
+    <ui:VisualElement name="NodeState" style="flex-grow: 1; position: absolute; left: 0; top: 0; right: 0; bottom: 0;" />
+    <ui:VisualElement name="BackGround">
+        <ui:VisualElement name="input" />
+        <ui:VisualElement name="Divider" style="flex-grow: 0; border-left-color: rgb(255, 255, 255); border-right-color: rgb(255, 255, 255); border-top-color: rgb(255, 255, 255); border-bottom-color: rgb(255, 255, 255); border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; background-color: rgba(255, 255, 255, 0);" />
+        <ui:VisualElement name="Title" style="flex-grow: 1; background-color: rgb(94, 94, 94); color: rgba(91, 91, 91, 0);">
+            <ui:Label tabindex="-1" text="Label" parse-escape-sequences="true" display-tooltip-when-elided="true" name="title-label" style="-unity-text-align: middle-center; -unity-font-style: bold; color: rgb(255, 255, 255); background-color: rgba(255, 255, 255, 0); white-space: normal; font-size: 15px; margin-top: 5px; margin-right: 5px; margin-bottom: 5px; margin-left: 5px; padding-top: 2px; padding-right: 2px; padding-bottom: 2px; padding-left: 2px; -unity-text-outline-color: rgb(0, 0, 0); -unity-text-outline-width: 0;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="Divider" style="flex-grow: 0; border-left-color: rgb(255, 255, 255); border-right-color: rgb(255, 255, 255); border-top-color: rgb(255, 255, 255); border-bottom-color: rgb(255, 255, 255); border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; background-color: rgba(255, 255, 255, 0);" />
+        <ui:VisualElement name="output" />
+    </ui:VisualElement>
+</ui:UXML>

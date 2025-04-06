@@ -10,12 +10,12 @@ public class DialogueTree : NodeTree
     public override void OnTreeStart()
     {
         base.OnTreeStart();
-        GameObject.Find("UI").GetComponent<DialogueManager>().StartDialogue();
+        GameObject.Find("DialogueManager").GetComponent<DialogueManager>().StartDialogue();
     }
     //对话树结束的触发方法
     public override void OnTreeEnd()
     {
         base.OnTreeEnd();
-        GameObject.Find("UI").GetComponent<DialogueManager>().EndDialogue();
+        GameObject.Find("DialogueManager").GetComponent<DialogueManager>().EndDialogue();
     }
 }

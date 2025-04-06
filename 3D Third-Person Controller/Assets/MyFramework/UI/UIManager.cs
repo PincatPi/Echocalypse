@@ -74,7 +74,6 @@ public class UIManager : SingletonMonoBase<UIManager>
         {
             negativePanelDict.Remove(panelName);
             activePanelDict.Add(panelName, panel);
-            //panel.gameObject.SetActive(true);
             panel.OpenPanel();
             return panel;
         }
@@ -100,8 +99,6 @@ public class UIManager : SingletonMonoBase<UIManager>
         GameObject panelObject = GameObject.Instantiate(panelPrefab, UIRoot, false);
         panel = panelObject.GetComponent<BasePanel>();
         activePanelDict.Add(panelName, panel);
-        //panel.gameObject.SetActive(true);
-        //TEST: 测试代码
         panel.OpenPanel();
         return panel;
     }
@@ -123,8 +120,6 @@ public class UIManager : SingletonMonoBase<UIManager>
 
         activePanelDict.Remove(panelName);
         negativePanelDict.Add(panelName, panel);
-        //panel.gameObject.SetActive(false);
-        //TEST: 测试代码
         panel.ClosePanel();
         return true;
     }

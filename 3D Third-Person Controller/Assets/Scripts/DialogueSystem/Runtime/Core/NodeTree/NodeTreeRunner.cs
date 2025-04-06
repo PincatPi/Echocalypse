@@ -31,8 +31,8 @@ public class NodeTreeRunner : MonoBehaviour
         }
         if (Keyboard.current.escapeKey.wasPressedThisFrame)
         {
-            Debug.Log("按下了esc键，退出对话树");
-            nodeTree.OnTreeEnd();
+            // Debug.Log("按下了esc键，退出对话树");
+            // nodeTree.OnTreeEnd();
         }
     }
 }
