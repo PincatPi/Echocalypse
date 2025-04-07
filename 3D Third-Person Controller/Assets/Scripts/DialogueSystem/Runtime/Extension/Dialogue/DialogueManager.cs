@@ -91,7 +91,6 @@ public class DialogueManager : MonoBehaviour
         Button optionButton = optionGameObject.GetComponent<Button>();
         optionButton.onClick.AddListener(() =>
         {
-            Debug.Log("添加事件");
             ReturnNextDialogue(index, branchDialogue);
         });
         

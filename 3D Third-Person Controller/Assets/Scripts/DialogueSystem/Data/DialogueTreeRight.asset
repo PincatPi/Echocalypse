@@ -1,0 +1,99 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-2367748585536359217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41679e876dcb4819b43e36a540f9fc41, type: 3}
+  m_Name: NormalDialogue
+  m_EditorClassIdentifier: 
+  nodeTree: {fileID: 11400000}
+  state: 1
+  started: 0
+  children: []
+  description: 
+  guid: d2ba95eca155457418894f83b25851ca
+  position: {x: 120, y: 209}
+  childNode: {fileID: 0}
+  dialogueContent: "\u60A8\u51C6\u5907\u597D\u4E86\u8BF7\u968F\u65F6\u544A\u8BC9\u6211"
+  speakerAvatar: {fileID: 0}
+  speakerName: 
+  nextDialogueTree: {fileID: 0}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25b4982909281474292f6b641959c4ab, type: 3}
+  m_Name: DialogueTreeRight
+  m_EditorClassIdentifier: 
+  rootNode: {fileID: 8116031912024735283}
+  treeState: 1
+  nodes:
+  - {fileID: 8116031912024735283}
+  - {fileID: 1495702261592889055}
+  - {fileID: -2367748585536359217}
+  isEnd: 1
+--- !u!114 &1495702261592889055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41679e876dcb4819b43e36a540f9fc41, type: 3}
+  m_Name: NormalDialogue
+  m_EditorClassIdentifier: 
+  nodeTree: {fileID: 11400000}
+  state: 1
+  started: 0
+  children: []
+  description: 
+  guid: 799dcbe07c0c38e4693053f8f3a0fdef
+  position: {x: -146, y: 217}
+  childNode: {fileID: 0}
+  dialogueContent: "\u597D\u7684\uFF0C\u8BF7\u60A8\u524D\u5F80\u8BAD\u7EC3\u573A"
+  speakerAvatar: {fileID: 0}
+  speakerName: 
+  nextDialogueTree: {fileID: 11400000, guid: 88400e168a0895c4c948e7a6b5470779, type: 2}
+--- !u!114 &8116031912024735283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d912f789063e4273b8bc77af5edd5487, type: 3}
+  m_Name: BranchDialogue
+  m_EditorClassIdentifier: 
+  nodeTree: {fileID: 11400000}
+  state: 1
+  started: 0
+  children:
+  - {fileID: 1495702261592889055}
+  - {fileID: -2367748585536359217}
+  description: "\u6839\u7ED3\u70B9"
+  guid: 1dbdfe163d4d4cf42b31ecac84deb9bb
+  position: {x: -14, y: 30}
+  dialogueContent: "\u60A8\u51C6\u5907\u597D\u5F00\u59CB\u8BAD\u7EC3\u4E86\u5417"
+  speakerAvatar: {fileID: 0}
+  speakerName: 
+  optionsList:
+  - "\u6211\u51C6\u5907\u597D\u4E86"
+  - "\u8FD8\u8981\u518D\u7B49\u7B49"
+  nextDialogueIndex: 0
+  nextDialogueStarted: 0
+  nextDialogueTree: {fileID: 0}

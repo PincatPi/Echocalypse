@@ -6,6 +6,8 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "DialogueTree", menuName = "DialogueSystem/DialogueTree")]
 public class DialogueTree : NodeTree
 {
+    public bool isEnd = false; //该对话树是否已经结束
+    
     //对话树开始的触发方法
     public override void OnTreeStart()
     {

@@ -9,6 +9,7 @@ namespace DialogueSystem
         [TextArea] public string dialogueContent; //对话内容
         public Sprite speakerAvatar;
         public string speakerName;
+        public DialogueTree nextDialogueTree;
         
         public override Node LogicUpdate()
         {
@@ -41,6 +42,15 @@ namespace DialogueSystem
             //若该对话分支上已经没有结点
             if (!childNode)
             {
+                //若该结点有下一个对话树，说明当前结点是该对话树的结束结点，且需要切换到下一个对话树
+                if (nextDialogueTree)
+                {
+                    Debug.Log("切换下一个对话树");
+                    ((DialogueTree)nodeTree).isEnd = true; //将该结点树标记为已经结束
+                    NodeTreeRunner nodeTreeRunner = GameObject.Find("NodeTreeRunner").GetComponent<NodeTreeRunner>();
+                    NPCDialogueController npcDialogueController = nodeTreeRunner.GetNPCDialogueController();
+                    npcDialogueController.SetDialogueTree(nextDialogueTree); //将该结点的下一个对话树设为当前NPC的对话树
+                }
                 DialogueManager dialogueManager = GameObject.Find("DialogueManager").GetComponent<DialogueManager>();
                 dialogueManager.EndDialogue(); //关闭对话UI
             }

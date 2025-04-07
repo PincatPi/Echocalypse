@@ -5,36 +5,61 @@ using UnityEngine.InputSystem;
 
 namespace DialogueSystem
 {
-/// <summary>
-/// NodeTreeRunner需要挂载到游戏对象上
-/// </summary>
-public class NodeTreeRunner : MonoBehaviour
-{
-    public NodeTree nodeTree;
-    
-    void Start()
+    /// <summary>
+    /// NodeTreeRunner需要挂载到游戏对象上
+    /// </summary>
+    public class NodeTreeRunner : MonoBehaviour
     {
+        public NodeTree nodeTree;
+        [SerializeField] private NPCDialogueController npcDialogueController;
+        [SerializeField] private bool canDialogue = false;
         
-    }
-    
-    void Update()
-    {
-        if (Keyboard.current.enterKey.wasPressedThisFrame)
+        void Update()
         {
-            Debug.Log("按下了enter键，启动对话树");
-            nodeTree.OnTreeStart();
+            if (canDialogue)
+            {
+                if (Keyboard.current.enterKey.wasPressedThisFrame)
+                {
+                    nodeTree?.OnTreeStart();
+                }
+                //执行每一帧的对话树逻辑
+                if (nodeTree)
+                {
+                    nodeTree.Update();
+                }
+            }
         }
-        //执行每一帧的对话树逻辑
-        if (nodeTree)
-        {
-            nodeTree.Update();
-        }
-        if (Keyboard.current.escapeKey.wasPressedThisFrame)
-        {
-            // Debug.Log("按下了esc键，退出对话树");
-            // nodeTree.OnTreeEnd();
-        }
-    }
-}
 
+        /// <summary>
+        /// 执行nodeTree的退出逻辑
+        /// </summary>
+        public void OnNodeTreeExit()
+        {
+            nodeTree?.OnTreeEnd();
+        }
+        
+        #region 公共接口
+
+        public void SetCanDialogue(bool value)
+        {
+            canDialogue = value;
+        }
+
+        public void SetNodeTree(NodeTree value)
+        {
+            nodeTree = value;
+        }
+
+        public void SetNPCDialogueController(NPCDialogueController value)
+        {
+            npcDialogueController = value;
+        }
+
+        public NPCDialogueController GetNPCDialogueController()
+        {
+            return npcDialogueController;
+        }
+
+        #endregion
+    }
 }

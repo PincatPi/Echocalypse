@@ -12,7 +12,7 @@ namespace DialogueSystem
         private Node runningNode; //运行结点
         public E_NodeState treeState = E_NodeState.Waiting; //对话树当前状态
         public List<Node> nodes = new List<Node>(); //所有对话内容的存储列表
-
+        
         public virtual void Update()
         {
             if (treeState == E_NodeState.Running && runningNode.state == E_NodeState.Running)
@@ -46,6 +46,7 @@ namespace DialogueSystem
             Node node = ScriptableObject.CreateInstance(type) as Node;
             node.name = type.Name; //为结点命名
             node.guid = GUID.Generate().ToString(); //生成该结点的guid
+            node.SetNodeTree(this); //设置该结点所属的结点树
             nodes.Add(node); //将该结点添加到这棵树的结点列表
             //若不处于游戏运行模式，才保存结点的创建，否则不保存
             if (!Application.isPlaying)
